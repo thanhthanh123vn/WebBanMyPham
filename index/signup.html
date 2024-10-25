@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<style>
+    html, body{
+        margin: 0;
+        padding: 0;
+        font-family:Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        background: linear-gradient(135deg, rgba(128,0,128,0.6), rgba(135,206,235,0.6));
+    }
+    .container{
+        width: 1200px;
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        display: flex;
+
+    }
+        .form-signup{
+            background: white;
+            padding: 40px;
+            width: 350px;
+            margin:20px ;
+            border-radius: 25px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            display: block;
+        }
+        h1{
+            font-size: 30px;
+            margin-bottom: 15px;
+            color:blueviolet;
+        }
+        .input-sign{
+        margin-bottom: 20px;
+
+        }
+        .input-sign label{
+            float: left;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        .input-sign input{
+            width: 100%;
+            padding: 15px;
+            margin-top: 5px;
+            border-radius: 25px;
+            border: none;
+            font-size: 14px;
+            background: #F0F0F0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            
+        }
+        .input-sign input:focus{
+            outline: none;
+            box-shadow: 0 4px 6px rgba(98, 28, 28, 0.2);
+        }
+        .btn form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 20px;
+            gap: 100px;
+            padding: 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .btn input{
+            cursor: pointer;
+        }
+        .date{
+            float: left;
+            text-align: center;
+            margin: 0;
+            padding: p;
+        }
+        .date form label{
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .date input{
+            width: 50px;
+            margin: 20px 10px;
+            padding: 5px;
+            border: none;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background: #F0F0F0;
+        }
+        .date input:focus{
+            outline: none;
+            box-shadow: 0 4px 6px rgba(98, 28, 28, 0.2);
+        }
+        .sumit button{
+            width: 50%;
+            padding: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            border-radius: 25px;
+            border: none;
+            background: #C71585;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+</style>
+<body>
+    <div class="container">
+        <div class="form-signup">
+            <h1>Đăng Ký Tài Khoản</h1>
+            <form>
+                <div class="input-sign">
+                    <label for ="first">Full Name</label>
+                    <input type="text" id ="name " name="name" placeholder="Enter Your Username" required>
+                </div>
+                <div class="input-sign">
+                    <label for ="email">Email</label>
+                    <input type="text" name="email" placeholder="Enter Your Email" required>
+                </div>
+                <div class="input-sign">
+                    <label for ="phone">Phone</label>
+                    <input type="text" name="phone" placeholder="Enter Your Phone" required>
+                </div>
+            </form>
+            <div class="btn">   
+                <form>
+                    <label class="gender">Gender
+                        <input type="radio" name="gender" value="male"> Nam
+                        <input type="radio" nu="nam" value="female">Nữ
+                    </label>
+                </form>
+            </div>
+            
+            <div class="date">
+                <form>
+                    <label for="day">Day Of Birth</label>
+                    <input type="text" id="day" name="day" placeholder="DD">           
+                    <input type="text" id="month" name="month"placeholder="MM">
+                    <input type="text" id="year" name="year"placeholder="YYYY">
+                </form>  
+            </div>    
+            <div class="sumit">
+                <button id="signUP" class="button">SIGN UP</button>
+            </div>
+           
+    
+    </div>
+    </div>
+    <script src="../js/main.js"></script>
+    <script>
+        document.querySelector('signup').addEventListener('click', function(event) {
+    event.preventDefault(); // Ngăn chặn hành động mặc định của thẻ <a>
+    window.location.href = 'signup.html'; // Điều hướng đến trang signup.html
+});
+    </script>
+</body>
+</html>
