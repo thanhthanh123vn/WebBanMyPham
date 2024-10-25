@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nthanh Header</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="app.js">
+    <script src="../js/main.js"></script>
+
+    <style>
+        .hover-menu:hover #sub-item-menu {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+<header class="header">
+    <div class="top-banner">
+        <p>22.10 Ưu Đãi Đỉnh Nóc & Giờ Vàng Deal Sốc - Duy Nhất Từ 11h Ngày 22.10 (Áp Dụng Online)</p>
+    </div>
+    <div class="header-main">
+        <div class="logo-left">
+            <div class="logo">
+                <img src="logo.png" alt="NThanh.vn">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm sản phẩm, thương hiệu, bạn mong muốn... ">
+                <img src="https://hasaki.vn/v3/images/icons/search_icon.svg" class="icon_search" alt="" search-button="true">
+            </div>
+        </div>
+        <div class="float-right">
+            <div class="header-icons">
+                <div class="login-hover">
+                    <a href="login.html" target="_blank" class="login">Đăng nhập /
+                        <div class="login-box">
+                            <h3>Đăng nhập với</h3>
+                            <div class="social-login">
+                                <button class="facebook-login">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                                         alt="Facebook logo">
+                                    Facebook
+                                </button>
+                                <button class="google-login">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png" alt="Google logo">
+                                    Google +
+                                </button>
+                            </div>
+                            <p>Hoặc đăng nhập với Nthanh.vn</p>
+                            <button class="hasaki-login">Đăng nhập</button>
+                            <p>Bạn chưa có tài khoản? <a href="#">ĐĂNG KÝ NGAY</a></p>
+                        </div>
+                    </a>
+                </div>
+                <a href="signup.html" target="_blank">Đăng ký</a>
+                <a href="#">Hệ thống cửa hàng</a>
+                <a href="#">Hỗ trợ khách hàng</a>
+                <a href="#" class="cart-icon">Giỏ hàng <span class="cart-count">0</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="header-list-product">
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="hover-menu"><a href="#">☰ DANH MỤC</a></li>
+                <div id="sub-menu-web">
+                    <div class="col-menu-cap1">
+                        <div class="sub-item-menu"><a href="#">Sức Khỏe - Làm Đẹp</a></div>
+                        <div class="sub-item-menu"><a href="#">Mỹ Phẩm High-End</a></div>
+                        <div class="sub-item-menu"><a href="#">Chăm Sóc Da Mặt</a></div>
+                        <div class="sub-item-menu"><a href="#">Trang Điểm</a></div>
+                        <div class="sub-item-menu"><a href="#">Chăm Sóc Tóc Và Da Đầu</a></div>
+                        <div class="sub-item-menu"><a href="#">Chăm Sóc Cơ Thể</a></div>
+                        <div class="sub-item-menu"><a href="#">Chăm Sóc Cá Nhân</a></div>
+                        <div class="sub-item-menu"><a href="#">Nước Hoa</a></div>
+                        <div class="sub-item-menu"><a href="#">Thực Phẩm Chức Năng</a></div>
+                        <div class="sub-item-menu"><a href="#">Dịch Vụ Trải Nghiệm</a></div>
+                    </div>
+                </div>
+                <li><a href="#">HASAKI DEALS</a></li>
+                <li><a href="#">HOT DEALS</a></li>
+                <li><a href="#">THƯƠNG HIỆU</a></li>
+                <li><a href="#">HÀNG MỚI VỀ</a></li>
+                <li><a href="#">BÁN CHẠY</a></li>
+                <li><a href="#">CLINIC & SPA</a></li>
+            </ul>
+            <ul class="nav-right">
+                <li><a href="#">Tra cứu đơn hàng</a></li>
+                <li><a href="#">Tải ứng dụng</a></li>
+                <li><a href="#">Chọn khu vực của bạn</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div id="slection-product">
+    <!-- Sidebar -->
+    <div class="list-search-alpha">
+        <ul>
+            <li><a href="#">Trang chủ ></a></li>
+            <li><a href="#">Sức khỏe ></a></li>
+            <li><a href="#">Làm đẹp ></a></li>
+            <li><a href="#">Chăm sóc da mặt ></a></li>
+            <li><a href="#">Dưỡng Ẩm ></a></li>
+            <li><a href="#">Kem dưỡng La Roseche-Posay giúp phục hồi da đa công dụng 40ml </a></li>
+        </ul>
+        <div class="image-product">
+            <div id="container">
+                <div class="image-list">
+                    <div class="image-item" onclick="showImage(this)">
+                        <img
+                                src="https://media.hcdn.vn/catalog/product/f/a/facebook-dynamic-205100137-1695896128.png"
+                                alt="Image 1">
+                    </div>
+                    <div class="image-item" onclick="showImage(this)">
+                        <img
+                                src="https://media.hcdn.vn/catalog/product/t/e/tem-phu-nuoc-tay-trang-tuoi-mat-l-oreal-3-in-1-danh-cho-da-dau-da-hon-hop-400ml-1718605830_img_80x80_d200c5_fit_center.jpg"
+                                alt="Image 2">
+                    </div>
+                    <div class="image-item" onclick="showImage(this)">
+                        <img
+                                src="https://media.hcdn.vn/catalog/product/certificate/giaychungnhan-loreal1684988179_img_80x80_d200c5_fit_center.jpg"
+                                alt="Image 3">
+                    </div>
+                    <div class="image-item" onclick="showImage(this)">
+                        <img src="https://media.hcdn.vn/catalog/product/n/u/nuoc-tay-trang-tuoi-mat-l-oreal-3-in-1-danh-cho-da-dau-da-hon-hop-400ml-1684996339_img_80x80_d200c5_fit_center.jpg"
+                             alt="Image 4">
+                    </div>
+                    <div class="image-item" onclick="showImage(this)">
+                        <img
+                                src="https://media.hcdn.vn/catalog/product/k/e/kem-duong-la-roche-posay-giup-phuc-hoi-da-da-cong-dung-40ml-2-1716439990_img_80x80_d200c5_fit_center.jpg"
+                                alt="Image 5">
+                    </div>
+                    <div class="image-item" onclick="showImage(this)">
+                        <img
+                                src="https://media.hcdn.vn/catalog/product/k/e/kem-duong-la-roche-posay-giup-phuc-hoi-da-da-cong-dung-40ml-6-1716439998_img_80x80_d200c5_fit_center.jpg"
+                                alt="Image 6">
+                    </div>
+                </div>
+            </div>
+            <div class="selected-image">
+                <img id="displayed-image"
+                     src="https://media.hcdn.vn/catalog/product/f/a/facebook-dynamic-205100137-1695896128_img_380x380_64adc6_fit_center.png"
+                     alt="Selected Image">
+            </div>
+            <div class="product-detail">
+                <ul>
+                    <div class="color-orange">
+                        <li>NowFree</li>
+                    </div>
+                    <li>La Roche-Posay</li>
+                    <li>Kem Dưỡng La Roche-Posay Giúp Phục Hồi Da Đa Công Dụng 40ml</li>
+                    <li>Cicaplast Baume B5+ Ultra-Repairing Soothing Balm</li>
+                    <li>Số công bố với Bộ Y Tế : 171996/22/CBMP-QLD</li>
+                    <div class="color-orange">
+                        <li>★★★★★</li>
+                    </div>
+                    <li> 19 đánh giá | 105 Hỏi đáp | Mã sản phẩm: 422211240</li>
+                    <div class="color-orange">
+                        <li>229.000 ₫</li>
+                    </div>
+                    <li>(Đã bao gồm VAT)</li>
+                    <li>Giá thị trường: 410.000 ₫- Tiết kiệm: 181.000 ₫</li>
+                    <div class="color-orange">
+                        <li>(-44%)</li>
+                    </div>
+                    <li>Bill La Roche-Posay 699K tặng Ly Giữ Nhiệt Xanh Mint (SL có hạn)</li>
+                    <li>Dung Tích: 40ml</li>
+                    <li>Số lượng:</li>
+                    <li>k</li>
+                    <li>Giao Nhanh Miễn Phí 2H tại 222 Chi Nhánh:</li>
+                    <li>Bạn muốn nhận hàng trước 20h hôm nay (Miễn phí). Đặt hàng trong 1 giờ 15 phút tới và chọn giao hàng 2H ở bước thanh toán.</li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</body>
+
+</html>
