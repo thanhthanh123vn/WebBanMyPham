@@ -1,0 +1,206 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+/* for id*/
+#wrapper-header{
+    background-color: #ffff;
+    height: 50px; 
+    padding: 10px 0;
+}
+#wrapper-header .left{
+    float: left;
+    width: 50%;
+}
+#wrapper-header .left img{
+    height: 40px; 
+    vertical-align: middle;
+    margin-top: 5px;
+   
+}
+
+#wrapper-header .right{
+    float: right;
+    margin:0;
+    padding: 0;
+    
+}
+#wrapper-header .right-support a{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 25px;
+    color: rgb(75, 66, 66);
+    font-size: 14px;
+}
+#wrapper-header .right-support span{
+    margin: 0 5px;
+}
+#block_banner_page{
+    margin-bottom: 10px;
+    height: 210px;
+    background-color: #f1f1f5;
+  
+}
+#block_banner_page .with-comom{
+    background-color: #437b62 ;
+
+}
+#block_banner_page .block-banner-support{
+    padding: 20px;
+    height: 170px;
+    
+}
+#block_banner_page .block-banner-support .text-center{
+    text-align: center;
+    justify-items: center;
+    color: #fff;
+    font-size: 20px;
+}
+#block_banner_page .block-banner-support .w-100{
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.block-search-support{
+    display: inline-block;
+    width: 60%;
+    position: relative;
+}
+.block-search-support form{
+    display: block;
+    margin-top: 15px;
+    font-size: 10px;
+    padding: 0;
+}
+.block-search-support form input{
+    width: 100%;
+    margin: 0px;
+    padding: 18px;
+    border-radius: 25px;
+    font-size: 16px;
+}
+.block-search-support form button{
+    position: absolute;
+    background: #fff;
+    height: 50px;
+    margin-top: 20px;
+    width: 43px;
+    right: 10px;
+    top: 1px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: none;
+}
+.block-search-suppor img{
+    vertical-align: middle;
+    box-sizing:inherit;
+}
+.mt-2{
+    display: block;
+    
+}
+.mt-2 .flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: inherit;
+}
+.mt-2 .flex-center img{
+    margin: 0 10px;
+}
+.block-kn .box-tv .box-chat{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.block-kn span, .box-tv span, .box-chat span{
+    display: flex;
+    align-items: center;
+    margin-bottom:20px;
+    
+}
+
+.sub-chat {
+    display: flex;               
+    align-items: center;          
+}
+#content {
+    padding: 20px;
+}
+
+#content .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+#content .container .rows {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.col{
+    max-width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.item-logo {
+    flex: 1 1 10%; 
+    width: 10%;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    transition: transform 0.2s;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.item-logo:hover {
+    transform: scale(1.05); 
+}
+
+.img-logo {
+    display: inline-block;
+    height: 90px;
+    width: 90px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 10px;
+    background-image:url(https://hotro.hasaki.vn/css/images/graphics/icon_1.svg);
+}
+
+.txt-logo {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+.icon-1{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 45px;
+    display: block;
+    background-image: url(images/graphics/icon_1.svg);
+}
+.container{
+    width: 1430px;
+    margin-left: auto;
+    margin-right: auto;
+}

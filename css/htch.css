@@ -18,6 +18,7 @@ html, body{
     height: 40px; 
     vertical-align: middle;
     margin-top: 5px;
+   
 }
 
 #wrapper-header .right{
@@ -158,19 +159,19 @@ html, body{
     margin-right: -15px;
 }
 .menu-col-left{
-    width: 20%;
+    width: 10%;
     float: left;
 
 }
 .menu-col-left .block-menu-col-left{
     display: flex;
     flex-direction: column;
-    width: 100%;
-
+    width: 50%;
     padding-left: 50px;
     margin-left: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
+    
 }
 .with-comom{
     width: 100%;
@@ -339,11 +340,7 @@ html, body{
     line-height: 0;
     max-width: 100%;
 }
-a{
-    color: #306E51;
-    text-decoration: none; 
-    
-}
+
 .ggmap{
     width: 100%;
     float:right;
