@@ -280,6 +280,13 @@ body {
 
 
 }
+.nav-menu:first-child{
+    padding: 10px;
+
+}
+.nav-menu:first-child:hover #sub-menu-web{
+    display: block;
+}
 
 #sub-menu-web .col-menu-cap1>.sub-item-menu {
     display: flex;

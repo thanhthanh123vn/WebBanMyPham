@@ -52,7 +52,7 @@ for (var i = 0; i < danhMuc.length; i++) {
 
     danhMuc[i].addEventListener('mouseleave', function (event) {
         event.preventDefault();
-        // ��n menu con khi chuột r��i kh��i
+     
         document.getElementsByClassName('sub-menu-web').style.display = 'none';
     });
 }
