@@ -1,166 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/signUp.css">
 </head>
-<style>
-    html, body{
-        margin: 0;
-        padding: 0;
-        font-family:Arial, Helvetica, sans-serif;
-        box-sizing: border-box;
-        background: linear-gradient(135deg, #8a2be2, #87ceeb);
-    }
-    .container{
-        width: 1200px;
-        background-size: cover;
-        align-items: center;
-        justify-content: center;
-        margin-top: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 5px;
-        display: flex;
 
-    }
-        .form-signup{
-            background: white;
-            padding: 40px;
-            width: 350px;
-           
-            border-radius: 25px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            display: block;
-        }
-        h1{
-            font-size: 30px;
-            margin-bottom: 15px;
-            color:blueviolet;
-        }
-        .input-sign{
-        margin-bottom: 20px;
-
-        }
-        .input-sign label{
-            float: left;
-            font-family: sans-serif;
-            font-weight: bold;
-        }
-        .input-sign input{
-            width: 100%;
-            padding: 15px;
-            margin-top: 5px;
-            border-radius: 25px;
-            border: none;
-            font-size: 14px;
-            background: #F0F0F0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            
-        }
-        .input-sign input:focus{
-            outline: none;
-            box-shadow: 0 4px 6px rgba(98, 28, 28, 0.2);
-        }
-        .btn form{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 20px 20px;
-            gap: 100px;
-            padding: 0;
-            font-size: 16px;
-            font-weight: bold;
-        }
-        .btn input{
-            cursor: pointer;
-        }
-        .date{
-            float: left;
-            text-align: center;
-            margin: 0;
-            padding: p;
-        }
-        .date form label{
-            font-size: 16px;
-            font-weight: bold;
-        }
-        .date input{
-            width: 50px;
-            margin: 20px 10px;
-            padding: 5px;
-            border: none;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            background: #F0F0F0;
-        }
-        .date input:focus{
-            outline: none;
-            box-shadow: 0 4px 6px rgba(98, 28, 28, 0.2);
-        }
-        .sumit button{
-            width: 50%;
-            padding: 20px;
-            font-size: 18px;
-            font-weight: bold;
-            color: white;
-            border-radius: 25px;
-            border: none;
-            background: #C71585;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-        
-</style>
 <body>
-    <div class="container">
-        <div class="form-signup">
-            <h1>Đăng Ký Tài Khoản</h1>
-            <form>
-                <div class="input-sign">
-                    <label for ="first">Nhập Tên</label>
-                    <input type="text"  name="name" placeholder="Tên đăng nhập" id="username" required>
-                </div>
-                <div class="input-sign">
-                    <label for ="pass">Mật Khẩu</label>
-                    <input type="text" name="pass" placeholder="Nhập mật khẩu" id="password" required>
-                </div>
-                <div class="input-sign">
-                    <label for ="pass">Xác Nhận Mật Khẩu</label>
-                    <input type="text" name="pass" placeholder="Nhập mật khẩu" id ="confirm-password"required>
-                </div>
-                <div class="input-sign">
-                    <label for ="email">Email</label>
-                    <input type="text" name="phone" placeholder="Nhập địa chỉ email" id="email" required>
-                </div>
-            </form>
-            <div class="btn">   
-                <form>
-                    <label class="gender">Giới Tính
-                        <input type="radio" name="gender" value="male"> Nam
-                        <input type="radio" nu="nam" value="female">Nữ
-                    </label>
-                </form>
+    <div class="main">
+
+        <form action="login.html" method="POST" class="form" id="register-form">
+            <h3 class="heading">Đăng ký tài khoản❤️</h3>
+            <!-- <p class="desc">Cùng nhau học lập trình miễn phí tại F8 ❤️</p> -->
+
+            <div class="spacer"></div>
+
+            <div class="form-group">
+                <label for="fullname" class="form-label" rules="required">Tên đầy đủ</label>
+                <input id="fullname" name="fullname" type="text" rules="required" placeholder="VD:Nguyễn Thạnh"
+                    class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" name="email" type="text" rules="required|email" placeholder="VD: email@domain.com"
+                    class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="form-label">Mật khẩu</label>
+                <input id="password" name="password" rules="required|min:6" type="password" placeholder="Nhập mật khẩu"
+                    class="form-control">
+                <span class="form-message"></span>
             </div>
             
-            <div class="date">
-                <form>
-                    <label for="day">Ngày sinh</label>
-                    <input type="text" id="day" name="day" placeholder="DD">           
-                    <input type="text" id="month" name="month"placeholder="MM">
-                    <input type="text" id="year" name="year"placeholder="YYYY">
-                </form>  
-            </div>    
-            <div class="sumit">
-                <button id="signUP" class="button">SIGN UP</button>
+            <div class="form-group">
+                <label for="password" class="form-label">Nhập lại Mật khẩu</label>
+                <input id="password" name="password" rules="required|min:6" type="password" placeholder="Nhập mật khẩu"
+                    class="form-control">
+                <span class="form-message"></span>
             </div>
-           
-    
+
+
+            <button class="form-submit">Đăng ký</button>
+        </form>
     </div>
-    </div>
-    <script src="../js/user.js"></script>
-  
+
+    <script src="../js/validator.js"></script>
+    <script>
+        var registerForm =  Validator('#register-form',{
+            onSubmit : function (data){
+                // console.log(data);
+                // // Send data to server
+                 $.ajax({
+                   url: 'your_server_url',
+                    method: 'POST',
+                    data: data,
+                    success: function(response){
+                     console.log(response);
+                       // Show success message
+                       alert('Đăng ký thành công');
+                   },
+                     error: function(error){
+                      console.error(error);
+                       // Show error message
+                       alert('Đăng ký thất bại');
+                  }
+                });
+             
+
+            }
+        });
+
+
+
+
+    </script>
+
 </body>
+
 </html>
