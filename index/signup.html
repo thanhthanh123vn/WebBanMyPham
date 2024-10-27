@@ -11,7 +11,7 @@
         padding: 0;
         font-family:Arial, Helvetica, sans-serif;
         box-sizing: border-box;
-        background: linear-gradient(135deg, rgba(128,0,128,0.6), rgba(135,206,235,0.6));
+        background: linear-gradient(135deg, #8a2be2, #87ceeb);
     }
     .container{
         width: 1200px;
@@ -29,7 +29,7 @@
             background: white;
             padding: 40px;
             width: 350px;
-            margin:20px ;
+           
             border-radius: 25px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             text-align: center;
@@ -120,21 +120,25 @@
             <h1>Đăng Ký Tài Khoản</h1>
             <form>
                 <div class="input-sign">
-                    <label for ="first">Full Name</label>
-                    <input type="text" id ="name " name="name" placeholder="Enter Your Username" required>
+                    <label for ="first">Nhập Tên</label>
+                    <input type="text"  name="name" placeholder="Tên đăng nhập" id="username" required>
+                </div>
+                <div class="input-sign">
+                    <label for ="pass">Mật Khẩu</label>
+                    <input type="text" name="pass" placeholder="Nhập mật khẩu" id="password" required>
+                </div>
+                <div class="input-sign">
+                    <label for ="pass">Xác Nhận Mật Khẩu</label>
+                    <input type="text" name="pass" placeholder="Nhập mật khẩu" id ="confirm-password"required>
                 </div>
                 <div class="input-sign">
                     <label for ="email">Email</label>
-                    <input type="text" name="email" placeholder="Enter Your Email" required>
-                </div>
-                <div class="input-sign">
-                    <label for ="phone">Phone</label>
-                    <input type="text" name="phone" placeholder="Enter Your Phone" required>
+                    <input type="text" name="phone" placeholder="Nhập địa chỉ email" id="email" required>
                 </div>
             </form>
             <div class="btn">   
                 <form>
-                    <label class="gender">Gender
+                    <label class="gender">Giới Tính
                         <input type="radio" name="gender" value="male"> Nam
                         <input type="radio" nu="nam" value="female">Nữ
                     </label>
@@ -143,7 +147,7 @@
             
             <div class="date">
                 <form>
-                    <label for="day">Day Of Birth</label>
+                    <label for="day">Ngày sinh</label>
                     <input type="text" id="day" name="day" placeholder="DD">           
                     <input type="text" id="month" name="month"placeholder="MM">
                     <input type="text" id="year" name="year"placeholder="YYYY">
@@ -156,12 +160,7 @@
     
     </div>
     </div>
-    <script src="../js/main.js"></script>
-    <script>
-        document.querySelector('signup').addEventListener('click', function(event) {
-    event.preventDefault(); // Ngăn chặn hành động mặc định của thẻ <a>
-    window.location.href = 'signup.html'; // Điều hướng đến trang signup.html
-});
-    </script>
+    <script src="../js/user.js"></script>
+  
 </body>
 </html>

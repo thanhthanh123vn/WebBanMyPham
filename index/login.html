@@ -1,84 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
     <style>
-        body ,html{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, rgba(128,0,128,0.6), rgba(135,206,235,0.6));
         }
 
-     
-      .container{
-        width: 1200px;
-        margin-top: 30px;
-        background-size: cover;
-        margin-left: auto;
-        border-radius: 5px ;
-        margin-right: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+        body,
+        html {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #8a2be2, #87ceeb);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1200px;
+            padding: 20px;
+        }
 
         .form-sign {
             background: white;
             padding: 40px;
-            width: 350px;
-            margin-bottom: 50px;
-            margin-top: 50px;
-            border-radius: 15px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
             text-align: center;
+            animation: fadeIn 0.8s ease;
         }
 
         h2 {
             margin-bottom: 20px;
-            color: #6A006A;
-            font-size: 24px;
+            color: #4b0082;
+            font-size: 26px;
         }
 
         .input-group {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .input-group input {
             width: 100%;
-            padding: 15px;
-            margin-top: 8px;
-            font-size: 14px;
-            border: none;
-            background: #F0F0F0;
+            padding: 14px;
+            font-size: 16px;
+            border: 1px solid #ddd;
             border-radius: 25px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background: #f5f5f5;
+            transition: all 0.3s ease;
         }
 
         .input-group input:focus {
             outline: none;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-color: #a020f0;
+            box-shadow: 0 0 10px rgba(160, 32, 240, 0.2);
         }
 
         .btn {
-            width: 50%;
+            width: 100%;
             padding: 15px;
-            background: #C71585;
+            background: linear-gradient(45deg, #c71585, #d75d8d);
             color: white;
-            font-size: 14px;
+            font-size: 16px;
             font-weight: bold;
             border: none;
             border-radius: 25px;
             cursor: pointer;
-      
             margin-top: 10px;
+            transition: background 0.3s ease;
         }
 
         .btn:hover {
-            background: #D75D8D;
+            background: linear-gradient(45deg, #d75d8d, #c71585);
         }
 
         .login-alt {
@@ -88,16 +93,26 @@
             margin: 20px 0;
         }
 
+     
+
         .login-alt img {
             width: 40px;
             height: 40px;
             cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .login-alt img:hover {
+            transform: scale(1.1);
+            background-color: aqua;
         }
 
         .sign-up {
             color: gray;
-            margin-top: 10px;
+            margin-top: 20px;
+            font-size: 15px;
         }
+
 
         .sign-up a {
             text-decoration: none;
@@ -105,30 +120,51 @@
             font-weight: bold;
         }
 
+        .sign-up a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     </style>
 </head>
+
 <body>
 
-<div class="container">
-    <div class="form-sign">
-    <h2>Sign In</h2>
-    <form>
-        <div class="input-group">
-            <input type="text" placeholder="username or email" required>
+    <div class="container">
+        <div class="form-sign">
+            <h2>Sign In</h2>
+            <form>
+                <div class="input-group">
+                    <input type="text" placeholder="Tên người dùng hoặc email" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Mật khẩu" required>
+                </div>
+                <div class="input-group submit">
+                    <button class="btn" type="submit">Đăng nhập</button>
+                    <a href="#" style="display:block; margin-top: 10px; color: #6A006A; ">Quên Mật Khẩu?</a>
+                </div>
+            </form>
+            <p>Hoặc đăng nhập bằng</p>
+            <div class="login-alt">
+                <img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="Facebook">
+                <img src="https://img.icons8.com/ios-filled/50/000000/google-logo.png" alt="Google">
+            </div>
+            <p class="sign-up">Bạn chưa có tài khoản? <a href="#">Đăng ký</a></p>
         </div>
-        <div class="input-group">
-            <input type="password" placeholder="password" required>
-        </div>
-        <button class="btn" type="submit">SIGN IN</button>
-    </form>
-    <p>Or login with</p>
-    <div class="login-alt">
-        <img class="facebook-login" src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="Facebook">
-        <img class="google-login" src="https://img.icons8.com/ios-filled/50/000000/google-logo.png" alt="Google">
     </div>
-    <p class="sign-up">Sign Up</p>
-</div>
-</div>
-<script src="../js/main.js"></script>
+
 </body>
+
 </html>
