@@ -46,7 +46,8 @@ body {
 .logo img {
     height: 50px;
 }
-.search-notification{
+
+.search-notification {
     position: absolute;
     top: 40px;
     right: 0;
@@ -54,10 +55,11 @@ body {
     background-color: #f7f7f7;
     font-size: 14px;
     padding: 5px 10px;
-    border-radius: 50%; 
+    border-radius: 50%;
     z-index: 100;
     display: none;
 }
+
 .notification-container {
     background-color: #f7f7f7;
     padding: 10px;
@@ -79,6 +81,57 @@ body {
     font-size: 14px;
 }
 
+
+/* CSS cho phần nút và menu */
+.account-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.account-button {
+    background-color: #3e8e41;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.account-menu:hover .dropdown-content {
+    display: block;
+}
+
+/* Icon styles */
+.dropdown-content a i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
 /* Phần danh mục và thương hiệu */
 .category-brand-container {
     background-color: white;
@@ -87,7 +140,7 @@ body {
     width: 90%;
     margin: 20px auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
+
 }
 
 .category-title span {
@@ -118,14 +171,17 @@ body {
     color: red;
 }
 
-.category-item:hover { 
+.category-item:hover {
     background-color: #e3f7e6;
     border-color: #2f8440;
     color: #218838;
 }
+
 .search-bar:hover .search-notification {
-    display: block; /* Hiển thị khi hover vào input */
+    display: block;
+    /* Hiển thị khi hover vào input */
 }
+
 /* Phần thương hiệu */
 .brands {
     display: flex;
@@ -135,7 +191,7 @@ body {
 }
 
 .brands img {
-    
+
     max-width: 100px;
     max-height: 40px;
     transition: transform 0.3s ease;
@@ -144,6 +200,7 @@ body {
 .brands img:hover {
     transform: scale(1.1);
 }
+
 .menu ul {
     display: flex;
     list-style-type: none;
@@ -280,11 +337,13 @@ body {
 
 
 }
-.nav-menu:first-child{
+
+.nav-menu:first-child {
     padding: 10px;
 
 }
-.nav-menu:first-child:hover #sub-menu-web{
+
+.nav-menu:first-child:hover #sub-menu-web {
     display: block;
 }
 
@@ -750,6 +809,57 @@ footer {
     margin-right: 5px;
     margin-left: 10px;
 }
+
+.account-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.account-button {
+    background-color: #3e8e41;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 15px 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #10f066;
+}
+
+.account-menu:hover .dropdown-content {
+    display: block;
+}
+
+/* Icon styles */
+.dropdown-content a i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+
 
 .container {
     width: 1200px;

@@ -127,11 +127,81 @@ function Validator(formSelector, option) {
 
             if (isValid) {
                 if (typeof option.onSubmit === 'function') {
+                    event.preventDefault(); // Ngăn gửi form để lưu dữ liệu trước
+                    const tagData = document.getElementById("fullname").value;    
+                    localStorage.setItem("tagData", tagData);
+        
+                 
                     option.onSubmit();
                 }
             }
 
             isSubmitting = false; // Đánh dấu là đã hoàn tất submit
         }
+    }
+}
+let tagData;
+function saveData() {
+    // Lấy nội dung của tag dựa vào id hoặc tên thẻ (tag name)
+     tagData = document.getElementById("fullname").innerText;
+    // Lưu vào localStorage hoặc sessionStorage
+
+    
+
+    localStorage.setItem("tagData", tagData);
+    alert("Dữ liệu đã được lưu!");
+}
+
+function loadData() {
+
+    const loginHoverDiv = document.querySelector(".login-hover");
+
+    if (loginHoverDiv) {
+        // Tạo khối .account-menu
+        const accountMenuDiv = document.createElement("div");
+        accountMenuDiv.classList.add("account-menu");
+
+        // Tạo nút button "Chào Nguyễn Văn ▼"
+        const accountButton = document.createElement("button");
+        accountButton.classList.add("account-button");
+        accountButton.textContent = "Chào "+tagData;
+        
+        // Tạo khối .dropdown-content
+        const dropdownContentDiv = document.createElement("div");
+        dropdownContentDiv.classList.add("dropdown-content");
+
+        // Mảng chứa dữ liệu các mục trong menu
+        const menuItems = [
+            { href: "#", iconClass: "fas fa-user", text: "Tài khoản của bạn" },
+            { href: "#", iconClass: "fas fa-box", text: "Quản lý đơn hàng" },
+            { href: "#", iconClass: "fas fa-heart", text: "Sản phẩm yêu thích" },
+            { href: "#", iconClass: "fas fa-map-marker-alt", text: "Địa chỉ giao hàng" },
+            { href: "#", iconClass: "fas fa-sign-out-alt", text: "Thoát" }
+        ];
+
+
+        menuItems.forEach(item => {
+            const link = document.createElement("a");
+            link.href = item.href;
+            link.className = item.className;  // Gán class cho thẻ <a>
+        
+            const icon = document.createElement("i");
+            icon.className = item.iconClass; // Gán class cho thẻ <i>
+        
+            link.appendChild(icon);
+            link.appendChild(document.createTextNode(" " + item.text));
+            dropdownContentDiv.appendChild(link);
+        });
+        
+     
+
+        // Thêm button và dropdown-content vào account-menu
+        accountMenuDiv.appendChild(accountButton);
+        accountMenuDiv.appendChild(dropdownContentDiv);
+
+        // Thêm account-menu vào login-hover
+        loginHoverDiv.appendChild(accountMenuDiv);
+    } else {
+        console.error("Không tìm thấy phần tử có class 'login-hover'");
     }
 }

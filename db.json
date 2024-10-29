@@ -1,4 +1,17 @@
 {
-    "users": []
-  }
-  
+  "users": [
+    {
+      "id": "e141",
+      "role": "administrator",
+      "fullname": "Nthanh",
+      "email": "22130260@st.hcmuaf.edu.vn",
+      "password": "855568"
+    },
+    {
+      "id": "40ee",
+      "fullname": "LeThanh",
+      "email": "22130255@st.hcmuaf.edu.vn",
+      "password": "123456"
+    }
+  ]
+}
