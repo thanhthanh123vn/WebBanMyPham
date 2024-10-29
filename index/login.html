@@ -32,16 +32,18 @@
         }
 
 
-        p ,a{
+        p,
+        a {
             margin-top: 20px;
             font-size: 14px;
             line-height: 20px;
             font-weight: 700;
             font-style: bold;
         }
-        a:hover{
+
+        a:hover {
             color: #23df12;
-            text-decoration: none;  
+            text-decoration: none;
             cursor: pointer;
         }
 
@@ -125,11 +127,14 @@
     </div>
     <script src="../js/validator.js"></script>
     <script>
-        var quenMk =document.getElementById('quenmk');
-        console.log(quenMk);
-        quenMk.onclick = function (){
-         
-            window.location.href ='../startbootstrap-sb-admin-2-gh-pages/forgot-password.html';
+
+
+       
+        var quenMk = document.getElementById('quenmk');
+
+        quenMk.onclick = function () {
+
+            window.location.href = '../startbootstrap-sb-admin-2-gh-pages/forgot-password.html';
         }
         var loginForm = Validator('#register-form', {
             onSubmit: function () {
@@ -160,9 +165,7 @@
 
                         if (userExists) {
                             alert('Đăng nhập thành công!');
-
                             window.location.href = 'main.html';
-
                         }
                     })
                     .catch(error => {
@@ -171,6 +174,8 @@
                     });
             }
         });
+    
+
     </script>
 </body>
 

@@ -76,6 +76,7 @@
                     <div class="header-icons">
                         <div class="login-hover">
                             <a href="login.html" target="_blank" class="login">Đăng nhập /
+                                <a href="signup.html" target="_blank">Đăng ký</a>
                                 <div class="login-box">
                                     <h3>Đăng nhập với</h3>
                                     <div class="social-login">
@@ -91,12 +92,12 @@
                                         </button>
                                     </div>
                                     <p>Hoặc đăng nhập với Nthanh.vn</p>
-                                    <button class="hasaki-login">Đăng nhập</button>
+                                    <button  class="hasaki-login" onclick="window.location.href='login.html'">Đăng nhập</button>
                                     <p>Bạn chưa có tài khoản? <a href="#">ĐĂNG KÝ NGAY</a></p>
                                 </div>
                             </a>
                         </div>
-                        <a href="signup.html" target="_blank">Đăng ký</a>
+
                         <a href="#">Hệ thống cửa hàng</a>
                         <a href="#">Hỗ trợ khách hàng</a>
                         <a href="#" class="cart-icon">Giỏ hàng <span class="cart-count">0</span></a>
@@ -718,7 +719,30 @@
 
 
     <script src="../js/main.js"></script>
+
     <script src="../js/searchProduct.js"></script>
+
+    <script src="../js/updateUserMain.js">
+        
+
+    </script>
+
+
+    <script>
+        loginUser();
+        // Lấy danh sách tất cả các phần tử có class "logout-account"
+        var logoutElements = document.getElementsByClassName("logout-account");
+
+        // Thêm sự kiện onclick cho từng phần tử
+        Array.from(logoutElements).forEach(element => {
+            element.onclick = function () {
+                logoutUser();
+
+            };
+        });
+
+    </script>
+
 </body>
 
 </html>
