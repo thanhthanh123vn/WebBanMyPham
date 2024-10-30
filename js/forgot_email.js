@@ -78,5 +78,10 @@ async function updatePassword(userId, newPassword) {
     }
 }
 async function ranDomPassword() {
-    return Math.floor(100000 + Math.random() * 900000).toString(); 
+    return Math.floor(100000 + Math.random() * 900000).toString();
+}
+
+function cartProduct() {
+    var cartProduct = document.getElementsByClassName('cart-icon');
+
 }

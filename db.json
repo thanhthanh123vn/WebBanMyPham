@@ -11,6 +11,12 @@
       "id": "40ee",
       "fullname": "LeThanh",
       "email": "22130255@st.hcmuaf.edu.vn",
+      "password": "483744"
+    },
+    {
+      "id": "5d5e",
+      "fullname": "TranThanh",
+      "email": "22130253@st.hcmuaf.edu.vn",
       "password": "123456"
     }
   ]

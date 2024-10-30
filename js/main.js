@@ -100,3 +100,7 @@ function getCheckedItems() {
 }
 
 
+
+function loadMain(){
+    window.location.href = 'main.html';
+}
