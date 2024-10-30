@@ -98,8 +98,8 @@
                             </a>
                         </div>
 
-                        <a href="#">Hệ thống cửa hàng</a>
-                        <a href="#">Hỗ trợ khách hàng</a>
+                        <a href="#" id="htch">Hệ thống cửa hàng</a>
+                        <a href="#"id="htkh">Hỗ trợ khách hàng</a>
                         <a href="#" class="cart-icon">Giỏ hàng <span class="cart-count">0</span></a>
                     </div>
                 </div>
@@ -107,7 +107,7 @@
             <div class="header-list-product">
                 <nav class="navbar">
                     <ul class="nav-menu">
-                        <li "><a href=" #">☰ DANH MỤC</a></li>
+                        <li ><a href=" #">☰ DANH MỤC</a></li>
 
                         <div id="sub-menu-web">
                             <div class="col-menu-cap1">
@@ -743,10 +743,16 @@
             element.onclick = function () {
                 logoutUser();
 
-            };
+            };      
         });
-     
+        
+       var htkh = document.getElementById('htkh');
+       htkh.onclick = function(){window.location.href = 'htkh.html';}
+       
 
+
+
+    
     </script>
    
 </body>
