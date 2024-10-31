@@ -453,7 +453,7 @@ body {
 #session-body {
     height: 500px;
     padding: 20px;
-    width: 100%;
+    
 }
 
 .container-body {
@@ -465,10 +465,12 @@ body {
 .body-left {
     float: left;
     width: 30%;
+  
 }
 
 .content-left {
     margin-bottom: 20px;
+    margin-left: 50px;
 }
 
 .content-icon {
@@ -520,8 +522,7 @@ a:hover {
     text-decoration: none;
     color: #333;
     padding: 10px;
-    transition: background-color 0.3s;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .item_menu_profile:hover {
@@ -536,93 +537,67 @@ a:hover {
 .body-right {
     float: right;
     width: 70%;
+   
 }
 
 .content-right {
-    padding: 10px 20px 20px 20px;
-    background: #fff;
-    margin-bottom: 0;
-    width: 90%;
-    float: left;
+    background: #fff; 
+    width: 100%;
     margin: 10px 20px;
+    height: 300px;
 }
 
 .content-box {
     
+    height: 100px;
     padding: 15px;
     border-radius: 5px;
-    display: flex;
+   
 }
 .title {
-    width: 60%;
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-   
+    float: left;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    justify-content: space-between;
 }
 
 .item_donhang,
 .item_donhang1 {
     text-decoration: none;
-    margin-right: 15px;
     padding: 10px;
-    color: black;
-   font-size: 20px ;
-}
-
-.item_donhang:hover,
-.item_donhang1:hover {
     color:#218838;
+}
+.menu-day{
+   float: right;
+   padding: 20px;
    
 }
-
-.view {
-    text-align: right;
-    float: right;
-    justify-content:flex-end;
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+.menu-day option{
+   font-size: 16px;
+   padding: -10px 10px;
+   
 }
-.abc{
+#content-list{
     display: flex;
     justify-content: center;
-    position: absolute;
-    right: 0;
+    text-align: center;
 }
-#content-list {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    text-align: center; 
-    height: 100%; 
+.txt{
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
-.menu {
-    position: relative;
-    margin-left: 15px;
+.txt .txt_18{
+    margin-bottom: 20px;
+    font-size: 24px;
 }
-
-.dropdown-menu {
-    min-width: 100px;
-}
-
-.txt {
-    padding: 25px 0;
-}
-
-.btn_site_3 {
-    background-color: #007bff;
-    color: white;  
-    padding: 10px 20px;  
+.txt a {
+    background-color: #218838;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
     text-decoration: none;
-    border-radius: 5px; 
-    transition: background-color 0.3s;
-    
-}
-
-.btn_site_3:hover {
-    background-color: #0056b3;
-    /* Darker background on hover */
 }
 
 #session-footer {
@@ -864,4 +839,9 @@ footer {
     height: 80px;
     margin-right: 5px;
     margin-left: 10px;
+}
+.container{
+    width: 1340px;
+    margin-left: auto;
+    margin-right: auto;
 }

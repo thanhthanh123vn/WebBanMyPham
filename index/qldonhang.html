@@ -159,7 +159,7 @@
             </div>
         </header>
         <div id="session-body">
-            <div class="container-body">
+            <div class="container">
                 <div class="body-left">
                     <div class="content-left">
                         <div class="content-icon">
@@ -168,7 +168,7 @@
                             </div>
                             <div class="name">
                                 <strong>Chào bạn</strong>
-                        
+
                                 <a href="https://hasaki.vn/customer/account/edit/">Chỉnh sửa tài khoản</a>
                             </div>
                         </div>
@@ -190,7 +190,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="body-rihgt">
+                <div class="body-right">
                     <div class="content-right">
                         <div class="content-box">
                             <div class="title">
@@ -198,35 +198,24 @@
                                 <a href="/sales/order/history/?type=offline" title="Mua tại cửa hàng"
                                     class="item_donhang1">Mua tại cửa hàng</a>
                             </div>
-                            <div class="view">
-                                <div class="menu">
-                                    <div class="abc">
-                                    <p>Hiển thị</p>
-                                    <button class="btn">Tất cả</button>
-                                    </div>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="left: auto;">
-                                        <li class="active"><a href="javascript:;" data-filter_time=""
-                                                class="_order_filler_times">Tất cả</a></li>
-                                        <li class=""><a href="javascript:;" class="_order_filler_times"
-                                                data-filter_time="last_day">Trong 1 ngày</a></li>
-                                        <li class=""><a href="javascript:;" class="_order_filler_times"
-                                                data-filter_time="last_week">Trong 1 tuần</a></li>
-                                        <li class=""><a href="javascript:;" class="_order_filler_times"
-                                                data-filter_time="last_month">Trong 1 tháng</a></li>
-                                        <li class=""><a href="javascript:;" class="_order_filler_times"
-                                                data-filter_time="last_month_three">Trong 3 tháng</a></li>
-                                        <li class=""><a href="javascript:;" class="_order_filler_times"
-                                                data-filter_time="last_month_six">Trong 6 tháng</a></li>
-                                        <li class=""><a href="javascript:;" class="_order_filler_times"
-                                                data-filter_time="last_year">Trong 1 năm</a></li>
-                                    </ul>
-                                </div>
+
+                            <div class="menu-day">
+                                <select id="view" required>
+                                    <option value="">Hiển thị tất cả</option>
+                                    <option value="1day">Trong 1 ngày</option>
+                                    <option value="1tuan">Trong 1 tuần</option>
+                                    <option value="1thang">Trong 1 tháng</option>
+                                    <option value="3thang">Trong 3 tháng</option>
+                                    <option value="6thang">Trong 6 tháng</option>
+                                    <option value="1nam">Trong 1 năm</option>
+                                    
+                                </select>
                             </div>
                         </div>
                         <div id="content-list">
                             <div class="txt">
                                 <p class="txt_18">Bạn chưa có đơn đặt hàng nào</p>
-                                <a href="" class="btn btn_site_3">Tiếp tục mua sắm</a>
+                                <a href="" class="btn">Tiếp tục mua sắm</a>
                             </div>
                         </div>
                     </div>
