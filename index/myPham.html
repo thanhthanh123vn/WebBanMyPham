@@ -11,6 +11,74 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/detailProduct.css">
+    <style>
+        /* Phong cách cho khối sản phẩm */
+#session-body-product {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Khối chứa sản phẩm */
+.product {
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 200px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+/* Khi di chuột vào sản phẩm */
+.product:hover {
+    transform: translateY(-5px);
+}
+
+/* Ảnh sản phẩm */
+.product-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Thông tin sản phẩm */
+.product-info h3 {
+    font-size: 18px;
+    color: #008000;
+    margin: 8px 0;
+}
+
+.product-info p {
+    margin: 4px 0;
+    color: #555;
+}
+
+/* Giá sản phẩm */
+.price {
+    color: #e63946;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Nút "Buy Now" */
+.buy-button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+/* Khi di chuột vào nút "Buy Now" */
+.buy-button:hover {
+    background-color: #218838;
+}
+
+    </style>
 
 </head>
 
@@ -56,7 +124,7 @@
                     <a href="signup.html" target="_blank">Đăng ký</a>
                     <a href="#">Hệ thống cửa hàng</a>
                     <a href="#">Hỗ trợ khách hàng</a>
-                    <a href="#" class="cart-icon">Giỏ hàng <span class="cart-count">0</span></a>
+                    <a href="cartProduct.html" class="cart-icon">Giỏ hàng <span class="cart-count">0</span></a>
                 </div>
             </div>
         </div>
@@ -136,7 +204,7 @@
                                 alt="Image 6" onclick="selectImage(this.src)">
                         </div>
                     </div>
-                    <img id="display-combobox">
+                    <img id="display-combobox" src="https://media.hcdn.vn/catalog/product/f/a/facebook-dynamic-205100137-1695896128.png">
                 </div>
                 <div class="infor-product">
                     <ul>
@@ -144,7 +212,7 @@
                             <a href="#">
                                 <span class="color-orange italic-bold">N<i
                                         class="fa-regular fa-circle-check"></i>WFree</span>
-                                <span class="green bold">L'Oreal</span>
+                                <span class="green bold name-product">L'Oreal</span>
                             </a>
                         </li>
 
@@ -411,12 +479,29 @@
       
         cardProduct.onclick = function () {
             increaseCartCount();
+            
 
 
         }
         function increaseCartCount() {
             // Lấy phần tử có class 'cart-count'
             const cartCountElement = document.querySelector('.cart-count');
+      
+            const info = document.querySelector('.infor-product');
+            var image = "https://media.hcdn.vn/catalog/product/f/a/facebook-dynamic-205100137-1695896128.png";
+            var name = info.querySelector('.name-product')?.textContent.trim() || '';
+            var detail = info.querySelector('.product-title')?.textContent.trim() || '';
+            var price = info.querySelector('.price')?.textContent.trim() || '';
+            
+            var product = {
+                image: image,
+                name: name,
+                detail: detail,
+                price: price
+            };
+            
+  
+            
             
             // Kiểm tra xem phần tử có tồn tại hay không
             if (cartCountElement) {
@@ -430,6 +515,7 @@
         
                 // Tăng giá trị lên 1 và cập nhật lại nội dung
                 cartCountElement.textContent = currentCount + 1;
+                addProduct(product);
                 alert("Thêm sản phẩm thành công");
             } else {
                 console.log("Không tìm thấy phần tử có class 'cart-count'");

@@ -1,31 +1,31 @@
+const productDiv = document.createElement('div');
+function addProduct(product){
+    console.log(product);   
+productDiv.classList.add('product');
 
-var index = 0;
-function getProductDetail() {
-    // thêm số luọng vào giỏi hàng 
-
-    const cart = document.getElementsByClassName('cart-count');
-    cart.innerHTML = index++;
-    // xóa body
-    var carProduct = document.getElementById('session-body');
-    carProduct.removeAttribute('div');
-    // thêm hình ảnh vào body
-    var newDiv = document.createElement('div');
-    newDiv.classList.add('product');
-    newDiv.innerHTML = `<img src='${imageSrc}' alt='${imageSrc}' onclick='selectImage(this.src)'/>`;
-    carProduct.appendChild(newDiv);
-    // thêm tên sản phẩm vào body
-    var newDiv = document.createElement('div');
-    newDiv.classList.add('product-name');
-    newDiv.innerHTML = productName;
-    carProduct.appendChild(newDiv);
-    // thêm giá sản phẩm vào body
-    var newDiv = document.createElement('div');
-    newDiv.classList.add('product-price');
-    newDiv.innerHTML = price;
-    carProduct.appendChild(newDiv);
-
+// Tạo nội dung HTML cho sản phẩm
+productDiv.innerHTML = `
+<tbody>
+    <tr>
+        <td>
+            <div class="product-row">
+                <img src="${product.image}" alt="L'Oreal">
  
-    
-
-
+                <div class="product-details">
+                        <h4>${product.name}</h3>
+                        <p>${product.detail}</p>
+                        <div class="action-buttons">
+                            <a href="#">♡ Yêu thích</a>
+                            <a href="#">✖ Xóa</a>
+                        </div>
+                        <span class="price">${product.price}</span>
+                        <button class="buy-button">Buy Now</button>
+                 </div>
+            </div>
+    </td>
+    </tr>
+</tbody>
+`;
 }
+// Thêm sản phẩm vào khối `#session-body-product`
+localStorage.setItem('cartProduct',productDiv);

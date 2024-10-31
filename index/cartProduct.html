@@ -6,6 +6,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nthanh Header</title>
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* Phong cách cho khối sản phẩm */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .container {
+            width: 80%;
+            margin-top: 20px;
+            margin: 20px auto;
+        }
+        
+        .breadcrumb {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        h2 span {
+            font-size: 18px;
+            color: #888;
+        }
+        
+        .cart {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .cart-items {
+            width: 65%;
+        }
+        
+        .cart-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background-color: #fff;
+            margin-bottom: 10px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+        }
+        
+        .product-info {
+            display: flex;
+            align-items: center;
+            width: 70%;
+        }
+        
+        .product-info img {
+            width: 80px;
+            height: auto;
+            margin-right: 15px;
+        }
+        
+        .product-details h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        
+        .product-details p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        
+        .product-details span {
+            font-size: 16px;
+            color: #e67e22;
+        }
+        
+        .product-details del {
+            color: #bbb;
+            font-size: 14px;
+            margin-left: 5px;
+        }
+        
+        .actions {
+            font-size: 14px;
+            color: #007bff;
+            margin-top: 10px;
+        }
+        
+        .actions a {
+            color: #007bff;
+            text-decoration: none;
+            margin-right: 5px;
+        }
+        
+        .promotion {
+            background-color: #d4edda;
+            color: #155724;
+            font-size: 12px;
+            padding: 5px;
+            border-radius: 3px;
+            margin-top: 10px;
+        }
+        
+        .quantity {
+            width: 15%;
+            text-align: center;
+        }
+        
+        .quantity input {
+            width: 40px;
+            text-align: center;
+        }
+        
+        .total-price {
+            width: 15%;
+            font-size: 16px;
+            text-align: center;
+            color: #e67e22;
+        }
+        
+        .cart-summary {
+            width: 30%;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+        }
+        
+        .cart-summary h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .cart-summary p {
+            font-size: 16px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .cart-summary p strong {
+            font-size: 18px;
+        }
+        
+        .checkout-btn {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #ff6a00;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        
+    </style>
 
 </head>
 
@@ -159,11 +323,61 @@
                 </nav>
             </div>
         </header>
-        <div id="session-body-product">
-            <div class="container">
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="#">Trang chủ</a> > <a href="#">Giỏ hàng</a>
+        </div>
+        <h2>Giỏ hàng <span>(2 sản phẩm)</span></h2>
+        <div class="cart">
+            <div class="cart-items">
+                <div class="cart-item">
+                    <div class="product-info">
+                        <img src="https://media.hcdn.vn/catalog/product/p/r/promotions-auto-nuoc-tay-trang-tuoi-mat-l-oreal-3-in-1-danh-cho-da-dau-da-hon-hop-400ml_qo5GfcimUJ2bPNQd_img_80x80_d200c5_fit_center.png" alt="L'OREAL">
+                        <div class="product-details">
+                            <h3>L'OREAL</h3>
+                            <p>Nước Tẩy Trang L'Oreal Tươi Mát Cho Da Dầu, Hỗn Hợp 400ml</p>
+                            <span>138.000 ₫ <del>229.000 ₫</del></span>
+                            <div class="actions">
+                                <a href="#">Yêu thích</a> | <a href="#">Xóa</a>
+                            </div>
+                            <div class="promotion">Tặng ngay phần quà khi mua tại cửa hàng còn quà</div>
+                        </div>
+                    </div>
+                    <div class="quantity">
+                        <input type="number" value="1" min="1">
+                    </div>
+                    <div class="total-price">138.000 ₫</div>
+                </div>
 
+                <div class="cart-item">
+                    <div class="product-info">
+                        <img src="https://media.hcdn.vn/catalog/product/f/a/facebook-dynamic-422211183-1696227431_img_80x80_d200c5_fit_center.png" alt="GARNIER">
+                        <div class="product-details">
+                            <h3>GARNIER</h3>
+                            <p>Nước Tẩy Trang Garnier Dành Cho Da Dầu Và Mụn 400ml (Mới)</p>
+                            <span>132.000 ₫ <del>189.000 ₫</del></span>
+                            <div class="actions">
+                                <a href="#" class="favorite">Yêu thích</a> | <a href="#" class="delete">Xóa</a>
+                            </div>
+                            <div class="promotion">Bill 299k Garnier tặng Nước Tẩy Trang Garnier Cho Da Dầu, Mụn 125ml (SL có hạn)</div>
+                        </div>
+                    </div>
+                    <div class="quantity">
+                        <input type="number" value="1" min="1">
+                    </div>
+                    <div class="total-price">132.000 ₫</div>
+                </div>
+            </div>
+
+            <div class="cart-summary">
+                <h3>Hóa đơn của bạn</h3>
+                <p>Tạm tính: <span>270.000 ₫</span></p>
+                <p>Giảm giá: <span>-0 ₫</span></p>
+                <p><strong>Tổng cộng: <span>270.000 ₫</span></strong></p>
+                <button class="checkout-btn">Tiến hành đặt hàng</button>
             </div>
         </div>
+    </div>
 
 
     </div>
@@ -304,7 +518,89 @@
     </div>
 
 
-<script src="../js/cartProduct.js"></script>
+    <script src="../js/detailProduct.js"> </script>
+    <script>
+        var cartProduct = localStorage.getItem('cartProduct');
+        console.log(cartProduct);
+        var productHtml = document.getElementsByClassName('table-container');
+        if (cartProduct) {
+            cartProduct = JSON.parse(cartProduct);
+            cartProduct.foreach((product) => {
+                console.log(product);
+              
+                var productHtml = `
+               <tbody>
+    <tr>
+        <td>
+            <div class="product-row">
+                <img src="${product.image}" alt="L'Oreal">
+ 
+                <div class="product-details">
+                        <h4>${product.name}</h3>
+                        <p>${product.detail}</p>
+                        <div class="action-buttons">
+                            <a href="#">♡ Yêu thích</a>
+                            <a href="#">✖ Xóa</a>
+                        </div>
+                        <span class="price">${product.price}</span>
+                        <button class="buy-button">Buy Now</button>
+                 </div>
+            </div>
+    </td>
+    </tr>
+</tbody>
+`
+document.getElementsByClassName('table-container').appendChild(productHtml);
+
+            });
+
+
+
+        
+        } else {
+            cartProduct = [];
+        }
+
+
+
+    </script>
+    <script>
+        
+            document.addEventListener('DOMContentLoaded', function() {
+                // Lấy tất cả các nút "Xóa"
+                const deleteButtons = document.querySelectorAll('.actions a.delete');
+        
+                deleteButtons.forEach(button => {
+                    button.addEventListener('click', function(event) {
+                        event.preventDefault(); // Ngăn không cho trang tải lại
+                        // Lấy phần tử chứa sản phẩm
+                        const cartItem = this.closest('.cart-item');
+                        if (cartItem) {
+                            // Xóa sản phẩm khỏi giỏ hàng
+                            cartItem.remove();
+                            updateCartSummary();
+                        }
+                    });
+                });
+        
+                function updateCartSummary() {
+                    // Tính lại tổng cộng sau khi xóa sản phẩm
+                    const totalPrices = document.querySelectorAll('.total-price');
+                    let total = 0;
+        
+                    totalPrices.forEach(priceElement => {
+                        const priceText = priceElement.textContent.replace(/[^\d]/g, '');
+                        total += parseInt(priceText, 10);
+                    });
+        
+                    // Cập nhật tổng cộng
+                    document.querySelector('.cart-summary p strong span').textContent = total.toLocaleString() + " ₫";
+                }
+            });
+       
+        
+    </script>
+  
 
 
 </body>
