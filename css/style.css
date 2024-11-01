@@ -251,10 +251,20 @@ body {
 .header-icons {
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    
 }
-
+.header-icons .header-icon-sub{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 .header-icons a {
-    margin-left: 15px;
+    margin-left: 20px;
     color: white;
     text-decoration: none;
     font-size: 14px;
@@ -275,7 +285,7 @@ body {
 
 .header .header-list-product .navbar {
     display: flex;
-    height: 20px;
+    height: 40px;
     justify-content: space-between;
     align-items: center;
     background-color: #e0f3e0;
@@ -343,9 +353,7 @@ body {
 
 }
 
-.nav-menu:first-child:hover #sub-menu-web {
-    display: block;
-}
+
 
 #sub-menu-web .col-menu-cap1>.sub-item-menu {
     display: flex;
@@ -371,7 +379,7 @@ body {
 }
 
 .login-hover a {
-    padding: 24px;
+    
 }
 
 

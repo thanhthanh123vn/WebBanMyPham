@@ -74,6 +74,7 @@
                 </div>
                 <div class="float-right">
                     <div class="header-icons">
+                        <img src="https://hasaki.vn/images/graphics/icon_header_2.svg">
                         <div class="login-hover">
                             <a href="login.html" target="_blank" class="login">Đăng nhập /
                                 <div class="login-box">
@@ -96,10 +97,19 @@
                                 </div>
                             </a>
                         </div>
-                        <a href="signup.html" target="_blank">Đăng ký</a>
-                        <a href="#">Hệ thống cửa hàng</a>
-                        <a href="#">Hỗ trợ khách hàng</a>
-                        <a href="#" class="cart-icon">Giỏ hàng <span class="cart-count">0</span></a>
+                        <div class="header-icon-sub">
+                            <img src="https://hasaki.vn/images/graphics/icon_header_store.svg">
+                            <a href="#" id="htch"> Hệ thống</br> cửa hàng</a>
+                        </div>
+                        <div class="header-icon-sub">
+                            <img src="https://hasaki.vn/images/graphics/icon_header_3.svg">
+                            <a href="#" id="htkh"> Hỗ trợ </br>khách hàng</a>
+                        </div>
+                        <div class="header-icon-sub">
+                            <img src="https://hasaki.vn/images/graphics/icon_header_1.svg">
+
+                            <a href="cartProduct.html" class="cart-icon"> Giỏ hàng <span class="cart-count">2</span></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -425,7 +435,31 @@
     </div>
 
 
+    <script src="../js/updateUserMain.js"></script>
 
+    <script>
+    
+        loginUser();
+        // Lấy danh sách tất cả các phần tử có class "logout-account"
+        var logoutElements = document.getElementsByClassName("logout-account");
+    
+        // Thêm sự kiện onclick cho từng phần tử
+        Array.from(logoutElements).forEach(element => {
+            element.onclick = function () {
+                logoutUser();
+    
+            };
+        });
+    
+        var htkh = document.getElementById('htkh');
+        htkh.onclick = function () { window.location.href = 'htkh.html'; }
+    
+    
+        var htch = document.getElementById('htch');
+        htch.onclick = function () { window.location.href = 'htch.html' }
+    
+    
+    </script>
     <script>
         let searchResults = JSON.parse(localStorage.getItem('searchResults'));
 

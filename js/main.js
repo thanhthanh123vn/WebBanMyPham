@@ -40,22 +40,25 @@ listItems.forEach(item => {
         item.style.color = '#333'; // Reset text color
     });
 });
-var danhMuc = document.getElementsByClassName('hover-menu');
+var danhMuc = document.getElementById('sub-menu-hover');
 console.log(danhMuc);
+
 // Lặp qua tất cả các danh mục và gắn sự kiện onclick
 for (var i = 0; i < danhMuc.length; i++) {
     danhMuc[i].addEventListener('mouseenter', function (event) {
         event.preventDefault();
-        // Hiển thị menu con khi chuột vào
-        document.getElementsByClassName('sub-menu-web').style.display = 'block';
-    });
+        console.log(danhMuc[i]);
+        // Lấy tất cả các phần tử sub-menu
+        var subMenus = document.getElementsByClassName('sub-menu-web');
 
-    danhMuc[i].addEventListener('mouseleave', function (event) {
-        event.preventDefault();
-     
-        document.getElementsByClassName('sub-menu-web').style.display = 'none';
+        // Hiển thị menu con của phần tử hiện tại
+        for (var j = 0; j < subMenus.length; j++) {
+            subMenus[j].style.display = 'block';
+        }
     });
 }
+
+
 // Hàm chọn tất cả các checkbox
 function checkAll() {
     let checkboxes = document.querySelectorAll('.item-checkbox');
