@@ -549,57 +549,49 @@ a:hover {
 }
 
 .content-right {
-    background: #fff; 
+    background: #fff;
     width: 100%;
     margin: 10px 20px;
-    height: 300px;
+    height: 350px;
 }
-
-.content-box {
-    
-    height: 100px;
-    padding: 15px;
-    border-radius: 5px;
-   
-}
-.title {
-    float: left;
-    font-size: 20px;
-    margin-bottom: 20px;
-    padding: 10px 20px;
-    justify-content: space-between;
-}
-
-.item_donhang,
-.item_donhang1 {
-    text-decoration: none;
+.content-icon1{
+  
     padding: 10px;
-    color:#218838;
+    margin: 10px auto;
 }
-.menu-day{
-   float: right;
-   padding: 20px;
-   
+.content-icon1 h5{
+    font-size: 20px;
+    margin-left: 20px;
 }
-.menu-day option{
-   font-size: 16px;
-   padding: -10px 10px;
-   
+.content-title {
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
-#content-list{
+
+#butn{
     display: flex;
     justify-content: center;
     text-align: center;
 }
-.txt{
-    margin-bottom: 20px;
+.menu1{
     margin-top: 20px;
+    margin-bottom: 20px;
 }
-.txt .txt_18{
-    margin-bottom: 40px;
-    font-size: 24px;
+.menu-day img {
+   height: 50px;
 }
-.txt .btn {
+.menu-day h6{
+    font-size: 16px;
+    
+}
+
+#content1{
+
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.btn {
     color: white;
     background-color: #055617;
     border: none;
