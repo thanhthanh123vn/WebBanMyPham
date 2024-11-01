@@ -304,6 +304,7 @@ body {
 .nav-menu li,
 .nav-right li {
     margin-right: 20px;
+
 }
 
 .nav-menu li:last-child,
@@ -342,10 +343,25 @@ body {
     width: 30%;
     margin-left: -65%;
     margin-top: 55%;
+    z-index: 1000;
     background-color: #ffffff;
     border: 1px solid #898989;
 
 
+}
+.nav-menu .paddig-hover{
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.paddig-hover:hover + #sub-menu-web {
+    display: block; 
+}
+
+/* Đảm bảo sub-menu không bị mất khi di chuột vào */
+#sub-menu-hover:hover #sub-menu-web,
+#sub-menu-web:hover {
+    display: block;
 }
 
 .nav-menu:first-child {
