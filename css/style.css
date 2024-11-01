@@ -10,6 +10,11 @@ body {
 
     background-color: #2e5f45;
     color: white;
+    position: sticky;
+    top: 0; /* Dính vào cạnh trên của màn hình */
+    z-index: 1000; /* Đảm bảo header nằm trên các phần tử khác */
+  
+    
 
 }
 
@@ -19,13 +24,15 @@ body {
     height: 30%;
     text-align: center;
     font-size: 16px;
+ 
 }
 
 .header-main {
     display: flex;
-  height: 40px;
+    height: 40px;
     align-items: center;
     padding: 30px 20px;
+ 
 }
 
 .logo-left {
@@ -262,6 +269,7 @@ body {
 }
 
 .float-right {
+
     float: right;
     width: 50%;
 }
@@ -276,10 +284,10 @@ body {
 .header-icons .header-icon-sub{
     display: flex;
     align-items: center;
-    text-align: center;
+    text-align: left;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+   margin-right: 10px;
+   margin-left: 10px;
 }
 .header-icons a {
     margin-left: 20px;
