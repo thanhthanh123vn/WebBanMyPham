@@ -23,19 +23,39 @@ body {
 
 .header-main {
     display: flex;
-    height: 50%;
+  height: 40px;
     align-items: center;
     padding: 30px 20px;
 }
 
 .logo-left {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+   
     float: left;
-
+    margin: 0;
     width: 50%;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px; /* Đặt kích thước ảnh logo theo mong muốn */
+    width: 100px; /* Đặt kích thước ảnh logo theo mong muốn */
+/* Khoảng cách giữa ảnh logo và văn bản */
+}
+
+.logo-text h3 {
+    font-size: 24px;
+    color: white;
+    margin: 0;
+}
+
+.logo-text span {
+    color: white;
+    font-size: 14px;
+    display: block;
 }
 
 .search-bar {
@@ -43,14 +63,12 @@ body {
     position: relative;
 }
 
-.logo img {
-    height: 50px;
-}
+
 
 .search-notification {
     position: absolute;
-    top: 40px;
-    right: 0;
+    top: 70px;
+    right: 10%;
     color: white;
     background-color: #f7f7f7;
     font-size: 14px;
