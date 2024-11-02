@@ -166,6 +166,8 @@
                         if (userExists) {
                             alert('Đăng nhập thành công!');
                             window.location.href = 'main.html';
+                        }else{
+                            alert('Tài khoản hoặc mật khẩu không đúng!');
                         }
                     })
                     .catch(error => {

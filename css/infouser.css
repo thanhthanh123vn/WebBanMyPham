@@ -284,7 +284,11 @@ h3 {
     width: 40%;
     
 }
-
+.profile-picture .profile-picture-left a{
+    color: #055617;
+    text-decoration: none;
+    cursor: pointer;
+}
 .profile-picture .profile-picture-right input[type="text"]{
     padding: 8px;
     margin-bottom: 10px;
