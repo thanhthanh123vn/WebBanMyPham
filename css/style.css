@@ -716,7 +716,7 @@ footer {
 
 .contact-info {
     display: flex;
-    background-color: #218838;
+    background-color: #276143;
     justify-content: space-between;
 
     margin-top: 20px;
@@ -751,13 +751,20 @@ footer {
     font-size: 16px;
     margin-bottom: 10px;
 }
+.social-media{
+    text-transform: uppercase;
+}
 
 .social-media .social-icons img,
 .social-media .payment-methods img {
     width: 30px;
     margin-right: 5px;
 }
+.social-media p a{
+    text-decoration: none;
+    color: #fff;
 
+}
 .payment-methods h3 {
     color: #fff;
     font-size: 16px;
@@ -836,6 +843,56 @@ footer {
     background-color: #25643b;
     /* Đổi màu khi hover */
 }
+.promo-section {
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.promo-section h3 {
+    
+    margin-bottom: 15px;
+}
+
+.promo-input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.promo-input input {
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    outline: none;
+}
+
+.promo-input button {
+    background-color: #f47920;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.promo-download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.promo-download img {
+    width: 50px;
+    height: auto;
+}
+
+.app-links img {
+    width: 120px;
+}
+
 
 #session-info {
     background-color: #f1f1f1;
