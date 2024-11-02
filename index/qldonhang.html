@@ -6,19 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đơn hàng của tôi</title>
     <link rel="stylesheet" href="../css/qldonhang.css">
+    
 </head>
 
 <body>
     <div id="web-service">
         <header class="header">
+
             <div class="top-banner">
                 <p>22.10 Ưu Đãi Đỉnh Nóc & Giờ Vàng Deal Sốc - Duy Nhất Từ 11h Ngày 22.10 (Áp Dụng Online)</p>
             </div>
             <div class="header-main">
                 <div class="logo-left">
+
                     <div class="logo">
-                        <img src="logo.png" alt="NThanh.vn">
+                        <img src="../image/logo.png" alt="NThanh.vn">
+                        <div class="logo-text">
+                            <h3>TTT.vn</h3>
+                            <span>Chất lượng thật - Giá trị thật</span>
+                        </div>
                     </div>
+
                     <div class="search-bar">
                         <input type="text" placeholder="Tìm kiếm sản phẩm..." id="search-input">
                         <div class="search-notification">
@@ -73,9 +81,10 @@
                 </div>
                 <div class="float-right">
                     <div class="header-icons">
+                        <img src="https://hasaki.vn/images/graphics/icon_header_2.svg">
                         <div class="login-hover">
-                            <a href="login.html" target="_blank" class="login">Đăng nhập /
-                                <a href="signup.html" target="_blank">Đăng ký</a>
+                            <a href="login.html" target="_blank" class="login">Đăng nhập/
+                                <a href="signup.html" target="_blank">Đăng ký </br>Tài khoản &darr;</a>
                                 <div class="login-box">
                                     <h3>Đăng nhập với</h3>
                                     <div class="social-login">
@@ -93,22 +102,34 @@
                                     <p>Hoặc đăng nhập với Nthanh.vn</p>
                                     <button class="hasaki-login" onclick="window.location.href='login.html'">Đăng
                                         nhập</button>
-                                    <p>Bạn chưa có tài khoản? <a href="#">ĐĂNG KÝ NGAY</a></p>
+                                    <p>Bạn chưa có tài khoản? <a href="login.html">ĐĂNG KÝ NGAY</a></p>
                                 </div>
+
                             </a>
                         </div>
+                        <div class="header-icon-sub">
+                            <img src="https://hasaki.vn/images/graphics/icon_header_store.svg">
+                            <a href="#" id="htch"> Hệ thống</br> cửa hàng</a>
+                        </div>
+                        <div class="header-icon-sub">
+                            <img src="https://hasaki.vn/images/graphics/icon_header_3.svg">
+                            <a href="#" id="htkh"> Hỗ trợ </br>khách hàng</a>
+                        </div>
+                        <div class="header-icon-sub">
+                            <img src="https://hasaki.vn/images/graphics/icon_header_1.svg">
 
-                        <a href="#" id="htch">Hệ thống cửa hàng</a>
-                        <a href="#" id="htkh">Hỗ trợ khách hàng</a>
-                        <a href="#" class="cart-icon">Giỏ hàng <span class="cart-count">0</span></a>
+                            <a href="cartProduct.html" class="cart-icon"> Giỏ hàng <span class="cart-count">2</span></a>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <div class="header-list-product">
                 <nav class="navbar">
                     <ul class="nav-menu">
-                        <li><a href=" #">☰ DANH MỤC</a></li>
-
+                        <div class="paddig-hover">
+                            <li id="sub-menu-hover"><a href="">☰ DANH MỤC</a> </li>
+                        </div>
                         <div id="sub-menu-web">
                             <div class="col-menu-cap1">
                                 <div class="sub-item-menu">
@@ -142,7 +163,9 @@
                                     <a href="#">Dịch Vụ Trải Nghiệm</a>
                                 </div>
                             </div>
+
                         </div>
+
                         <li><a href="#">HASAKI DEALS</a></li>
                         <li><a href="#">HOT DEALS</a></li>
                         <li><a href="#">THƯƠNG HIỆU</a></li>

@@ -2,40 +2,83 @@ html,
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #F2F1F6;
+}
+
+:root {
+    --primary-color: #2f5d46;
+    /* màu xanh */
+    --button-bg-color: #2f5d46;
+    /* màu nền nút */
+    --text-color: #333;
+    --button-text-color: #fff;
+    --icon-size: 24px;
+    --button-radius: 20px;
+    --font-family: Arial, sans-serif;
 }
 
 .header {
 
     background-color: #2e5f45;
-    color: white;
+    color: black;
+    position: sticky;
+    top: 0;
+    /* Dính vào cạnh trên của màn hình */
+    z-index: 1000;
+    /* Đảm bảo header nằm trên các phần tử khác */
+
 
 }
 
 .top-banner {
     background-color: #9966cc;
     padding: 5px;
-    height: 30%;
+    height: 20%;
     text-align: center;
     font-size: 16px;
+
 }
 
 .header-main {
     display: flex;
-    height: 50%;
+    height: 40px;
     align-items: center;
     padding: 30px 20px;
+
 }
 
 .logo-left {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    float: left;
 
+    float: left;
+    margin: 0;
     width: 50%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px;
+    /* Đặt kích thước ảnh logo theo mong muốn */
+    width: 100px;
+    /* Đặt kích thước ảnh logo theo mong muốn */
+    /* Khoảng cách giữa ảnh logo và văn bản */
+}
+
+.logo-text h3 {
+    font-size: 24px;
+    color: white;
+    margin: 0;
+}
+
+.logo-text span {
+    color: white;
+    font-size: 14px;
+    display: block;
 }
 
 .search-bar {
@@ -43,14 +86,13 @@ body {
     position: relative;
 }
 
-.logo img {
-    height: 50px;
-}
+
 
 .search-notification {
     position: absolute;
-    top: 40px;
-    right: 0;
+    top: 70px;
+    right: -7px;
+
     color: white;
     background-color: #f7f7f7;
     font-size: 14px;
@@ -58,6 +100,7 @@ body {
     border-radius: 50%;
     z-index: 100;
     display: none;
+    width: 140%;
 }
 
 .notification-container {
@@ -109,17 +152,10 @@ body {
     z-index: 1;
 }
 
-.dropdown-content a {
-    color: black;
-    padding: 10px 20px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-}
+
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #00ff44;
 }
 
 .account-menu:hover .dropdown-content {
@@ -244,6 +280,7 @@ body {
 }
 
 .float-right {
+
     float: right;
     width: 50%;
 }
@@ -251,13 +288,47 @@ body {
 .header-icons {
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.header-icons .header-icon-sub {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .header-icons a {
-    margin-left: 15px;
+    margin-left: 10px;
     color: white;
     text-decoration: none;
     font-size: 14px;
+}
+.dropdown-content a {
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+
+}
+
+.login-hover {
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-bottom: 10px;
+
+}
+
+.login-hover a {
+    margin: 0;
+
+
 }
 
 .cart-icon {
@@ -294,6 +365,7 @@ body {
 .nav-menu li,
 .nav-right li {
     margin-right: 20px;
+
 }
 
 .nav-menu li:last-child,
@@ -332,10 +404,26 @@ body {
     width: 30%;
     margin-left: -65%;
     margin-top: 55%;
+    z-index: 1000;
     background-color: #ffffff;
     border: 1px solid #898989;
 
 
+}
+
+.nav-menu .paddig-hover {
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.paddig-hover:hover+#sub-menu-web {
+    display: block;
+}
+
+/* Đảm bảo sub-menu không bị mất khi di chuột vào */
+#sub-menu-hover:hover #sub-menu-web,
+#sub-menu-web:hover {
+    display: block;
 }
 
 .nav-menu:first-child {
@@ -343,9 +431,7 @@ body {
 
 }
 
-.nav-menu:first-child:hover #sub-menu-web {
-    display: block;
-}
+
 
 #sub-menu-web .col-menu-cap1>.sub-item-menu {
     display: flex;
@@ -370,16 +456,14 @@ body {
     color: #1d371d;
 }
 
-.login-hover a {
-    padding: 24px;
-}
+.login-hover a {}
 
 
 .header-icons .login-hover:hover .login-box {
     display: block;
     position: absolute;
     top: 129px;
-    margin-left: 11px;
+    margin-right: 100px;
 }
 
 .login-box {
@@ -390,13 +474,25 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 300px;
+    width: 250px;
+
+
 }
 
 .login-box h3 {
     margin-bottom: 20px;
-    font-size: 18px;
+
     color: #333;
+}
+
+.login-box p {
+    color: #333;
+}
+
+.login-box p a {
+    color: #2b4d2b;
+    font-size: 16px;
+    font-style: bold;
 }
 
 .login-box .social-login {
