@@ -45,9 +45,9 @@ if (tagData) {
         // Mảng chứa dữ liệu các mục trong menu
         const menuItems = [
             { href: "../index/mangageUser.html", className: "account-user account", iconClass: "fas fa-user", text: "Tài khoản của bạn" },
-            { href: "#", className: "account-user orders-product", iconClass: "fas fa-box", text: "Quản lý đơn hàng" },
+            { href: "../index/qldonhang.html", className: "account-user orders-product", iconClass: "fas fa-box", text: "Quản lý đơn hàng" },
             { href: "../index/spyt.html", className: "account-user product-like", iconClass: "fas fa-heart", text: "Sản phẩm yêu thích" },
-            { href: "#", className: "account-user address", iconClass: "fas fa-map-marker-alt", text: "Địa chỉ giao hàng" },
+            { href: "../index/sodiachi.html", className: "account-user address", iconClass: "fas fa-map-marker-alt", text: "Địa chỉ giao hàng" },
             { href: "#", className: "account-user logout-account", iconClass: "fas fa-sign-out-alt", text: "Thoát" }
         ];
         // Tạo các liên kết trong .dropdown-content
