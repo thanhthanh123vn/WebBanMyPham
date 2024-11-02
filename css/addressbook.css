@@ -654,18 +654,26 @@ a:hover {
 .title-1{
     font-size: 20px;
 }
+.box{
+    display: flex;
+    justify-content:center;
+    margin-bottom: 20px;
+}
 .title-2{
     font-size: 16px;
-    text-align: left;
+    color: gray;
+ 
 }
 .btn-1{
-    padding: 10px;
     background-color: #055617;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-   
+    margin: 20px 20px;
+    height: 50px;
+    padding: 15px;
+    font-size: 18px;
 }
 #session-footer {
     margin-top: 20px;
