@@ -1,0 +1,164 @@
+.container {
+    width: 1340px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#session-body {
+    height: 500px;
+}
+
+.contentsss {
+    display: flex;
+    gap: 10px; /* Tạo khoảng cách 10px giữa body-left và container-body-right */
+}
+
+.body-left {
+    width: 20%; /* Chiều rộng cố định cho phần bên trái */
+}
+
+.container-body-right {
+    flex: 1; /* Cho phần bên phải chiếm phần còn lại của contentsss */
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+}
+
+
+/* Các định dạng còn lại */
+.content-icon {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 450px;
+    margin: 10px auto;
+    background-color: #f9f9f9;
+}
+
+.avt {
+    margin-right: 15px;
+}
+
+.avt img {
+    width: 50px;
+    height: auto;
+}
+
+.name {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.name strong,
+.name a {
+    margin: 5px 0;
+}
+
+.menu_profile {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 450px;
+    margin: 10px auto;
+}
+
+.item_menu_profile {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.item_menu_profile:hover {
+    background-color: #e0e0e0;
+}
+
+.item_menu_profile.active {
+    font-weight: bold;
+    color: orange;
+}
+
+.account-info {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.user-details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#user-name {
+    font-size: 16px;
+}
+
+#user-email {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.edit-link {
+    text-decoration: none;
+    color: #006400;
+    margin-left: auto;
+}
+
+.edit-link:hover {
+    text-decoration: underline;
+}
+
+.newsletter-options {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start; /* Căn chỉnh phần tử con ở đầu */
+    justify-content: space-between; /* Đẩy nút sang bên phải */
+}
+
+.newsletter-options div {
+    display: flex;
+    flex-direction: column; /* Đặt các phần tử con theo cột */
+}
+
+.newsletter-options label {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.save-btn {
+    background-color: #006400;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 10px; /* Thêm khoảng cách giữa nút và chữ */
+}
+
+.save-btn:hover {
+    background-color: #004d00;
+}
+
+
+.bolded {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+}
