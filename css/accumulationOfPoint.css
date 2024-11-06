@@ -1,0 +1,324 @@
+.container {
+    width: 1340px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#session-body {
+    height: 500px;
+}
+
+.contentsss {
+    display: flex;
+    gap: 10px; /* Tạo khoảng cách 10px giữa body-left và container-body-right */
+}
+
+.body-left {
+    width: 20%; /* Chiều rộng cố định cho phần bên trái */
+}
+
+.container-body-right {
+    flex: 1; /* Cho phần bên phải chiếm phần còn lại của contentsss */
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+}
+
+.content-icon {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 450px;
+    margin: 10px auto;
+    background-color: #f9f9f9;
+}
+
+.avt {
+    margin-right: 15px;
+}
+
+.avt img {
+    width: 50px;
+    height: auto;
+}
+
+.name {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.name strong,
+.name a {
+    margin: 5px 0;
+}
+
+.menu_profile {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 450px;
+    margin: 10px auto;
+}
+
+.item_menu_profile {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.item_menu_profile:hover {
+    background-color: #e0e0e0;
+}
+
+.item_menu_profile.active {
+    font-weight: bold;
+    color: orange;
+}
+
+.account-info {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.user-details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#user-name {
+    font-size: 16px;
+}
+
+#user-email {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.edit-link {
+    text-decoration: none;
+    color: #006400;
+    margin-left: auto;
+}
+
+.edit-link:hover {
+    text-decoration: underline;
+}
+
+.newsletter-options {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start; /* Căn chỉnh phần tử con ở đầu */
+    justify-content: space-between; /* Đẩy nút sang bên phải */
+}
+
+.newsletter-options div {
+    display: flex;
+    flex-direction: column; /* Đặt các phần tử con theo cột */
+}
+
+.newsletter-options label {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.save-btn {
+    background-color: #006400;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 10px; /* Thêm khoảng cách giữa nút và chữ */
+}
+
+.save-btn:hover {
+    background-color: #004d00;
+}
+
+.available-Point {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 10px; /* Cách trên/dưới 20px, trái/phải 10px */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 20px); /* Chiều rộng trừ đi 20px để bù cho khoảng cách 10px mỗi bên */
+    box-sizing: border-box;
+    background-color: #F2F1F6;
+}
+
+.available-Point ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.available-Point img {
+    width: 40px; /* Đặt chiều rộng mong muốn */
+    height: 40px; /* Đặt chiều cao mong muốn */
+}
+
+#point-Avai {
+    font-size: 30px;
+}
+
+.bolded {
+    font-weight: bold;
+}
+
+.content-gifts {
+    display: flex;
+    justify-content: space-between; /* Để các phần tử con cách đều nhau */
+    align-items: center;
+    margin: 20px 10px; /* Cách trên/dưới 20px, trái/phải 10px */
+    padding: 50px;
+    border: 1px solid #ccc; /* Thêm viền 1px màu xám */
+    border-radius: 5px; /* Bo góc */
+    width: calc(100% - 20px); /* Chiều rộng trừ đi 20px để bù cho khoảng cách 10px mỗi bên */
+    box-sizing: border-box;
+    background-color: #F2F1F6; /* Màu nền giống thẻ .available-Point */
+}
+
+.content-gifts div {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.content-gifts div:hover {
+    color: orange; /* Đổi màu chữ thành cam */
+    transform: scale(1.05); /* Tăng nhẹ kích thước khi rê chuột vào */
+}
+
+.content-gifts div:hover i { /* Đổi màu icon thành cam khi rê chuột vào */
+    color: orange;
+}
+
+.content-gifts div i {
+    width: 60px;
+    height: 60px;
+    font-size: 60px; /* Đặt kích thước icon */
+    line-height: 60px; /* Để căn giữa icon trong thẻ */
+    text-align: center; /* Căn giữa nội dung */
+}
+
+.content-gifts .manager-change-gift,
+.content-gifts .exchange-gitfs,
+.content-gifts .history-point {
+    width: 100%;
+}
+
+
+.content-gifts ul {
+    display: flex;
+    flex-direction: column; /* Đặt các <li> theo chiều dọc */
+    align-items: center; /* Căn giữa các phần tử */
+    gap: 10px; /* Tạo khoảng cách giữa các phần tử */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.content-gifts li {
+    text-align: center; /* Căn giữa văn bản trong <li> */
+}
+
+.content-gifts img {
+    width: 40px; /* Điều chỉnh kích thước ảnh */
+    height: 40px;
+}
+
+.bolded {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.content-gifts .item_menu_profile {
+    padding: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+}
+
+.content-gifts .item_menu_profile:hover {
+    background-color: #e0e0e0;
+}
+
+#hh {
+    margin-left: 10px;
+}
+
+.gift-hot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 300px; /* Đảm bảo chiều cao tối thiểu cho thẻ này */
+}
+
+.part-gift {
+    width: calc(20% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+.gift-hot .part-gift:first-child {
+    margin-left: 10px;
+}
+
+.gift-hot .part-gift:last-child {
+    margin-right: 10px;
+}
+
+.part-gift img {
+    max-width: 60px;
+    max-height: 60px;
+    object-fit: cover;
+}
+
+.product-price,
+.product-name {
+    text-align: center;
+    font-size: 14px;
+}
+
+.product-price {
+    font-weight: bold;
+    color: orange;
+}
+
+.product-name {
+    font-size: 12px;
+    color: #333;
+}
