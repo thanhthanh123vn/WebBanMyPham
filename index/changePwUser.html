@@ -541,15 +541,19 @@
         <script src="../js/validator.js"></script>
 
         <script>
-            var registerForm = Validator('#register-form', {
-                onSubmit: function () {
+            var registerForm = document.getElementsByClassName('registerForm');
+             registerForm.onclick = function(){
+             
                     // Kiểm tra dữ liệu form
                     console.log("onlick");
+                    const fullname = localStorage.getItem('tagData');
 
                     const password = document.getElementById('password').value;
-
+                    const re_password = document.getElementById('re-password').value;
+                    const confi_password = document.getElementById('confirm-password').value;
                     // Tạo một đối tượng chứa thông tin người dùng
                     const userData = {
+                        fullname:fullname,
 
                         password: password
                     };
@@ -558,9 +562,11 @@
                     fetch('http://localhost:3000/users')
                         .then(response => response.json())
                         .then(users => {
-                            const existingUser = users.find(user => user.password === userData.password);
+                            const fullName = localStorage.getItem('tagData');
+                            const existingUser = users.find(user => user.fullName === userData.fullName);
 
                             if (existingUser) {
+                                if(userData.password === existingUser.password && re_password === confi_password){
                                 // Email đã tồn tại, cập nhật mật khẩu
                                 fetch(`http://localhost:3000/users/${existingUser.id}`, {
                                     method: 'PATCH',
@@ -579,12 +585,13 @@
                                     .then(data => {
                                         console.log('Cập nhật mật khẩu thành công:', data);
                                         alert('Mật khẩu đã được cập nhật thành công!');
-                                        window.location.href = 'login.html'; // Chuyển hướng đến trang đăng nhập
+                                        //window.location.href = 'login.html'; // Chuyển hướng đến trang đăng nhập
                                     })
                                     .catch(error => {
                                         console.error('Lỗi khi cập nhật mật khẩu:', error);
                                         alert('Cập nhật mật khẩu thất bại!');
                                     });
+                                }
                             } else {
                                 // Nếu email chưa tồn tại, thực hiện đăng ký
                                 fetch('http://localhost:3000/users', {
@@ -615,7 +622,8 @@
                             alert('Lỗi kiểm tra email!');
                         });
                 }
-            });
+            
+        
 
 
 
