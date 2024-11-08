@@ -1,0 +1,302 @@
+.container {
+    width: 1340px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#session-body {
+    height: 500px;
+}
+
+.contentsss {
+    display: flex;
+    gap: 10px;
+}
+
+.body-left {
+    width: 20%;
+}
+
+.container-body-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.content-icon {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 450px;
+    margin: 10px auto;
+    background-color: #f9f9f9;
+}
+
+.avt {
+    margin-right: 15px;
+}
+
+.avt img {
+    width: 50px;
+    height: auto;
+}
+
+.name {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.name strong,
+.name a {
+    margin: 5px 0;
+}
+
+.menu_profile {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 450px;
+    margin: 10px auto;
+}
+
+.item_menu_profile {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.item_menu_profile:hover {
+    background-color: #e0e0e0;
+}
+
+.item_menu_profile.active {
+    font-weight: bold;
+    color: orange;
+}
+
+.account-info {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.user-details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#user-name {
+    font-size: 16px;
+}
+
+#user-email {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.edit-link {
+    text-decoration: none;
+    color: #006400;
+    margin-left: auto;
+}
+
+.edit-link:hover {
+    text-decoration: underline;
+}
+
+.newsletter-options {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.newsletter-options div {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-options label {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.save-btn {
+    background-color: #006400;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.save-btn:hover {
+    background-color: #004d00;
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.footer-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 150px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+}
+
+.promo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.promo-input {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.promo-input input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.promo-download {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.app-links img {
+    width: 100px;
+    height: auto;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-license {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    color: #666;
+}
+.container-body-right {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    padding-top: 10px; /* Thêm khoảng cách giữa phần trên cùng và nội dung */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container-body-right h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    margin-left: 10px; /* Căn trái cách mép 10px */
+    text-align: left; /* Căn lề trái cho h2 */
+}
+
+.container-body-right p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center; /* Căn giữa cho văn bản p */
+}
+
+.continue-shopping {
+    background-color: #2d6a4f;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-flex; /* Để chiều rộng của nút khít với nội dung */
+    align-items: center; /* Căn giữa nội dung theo chiều dọc */
+    justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+}
+
+
+.continue-shopping:hover {
+    background-color: #1b4332;
+}
