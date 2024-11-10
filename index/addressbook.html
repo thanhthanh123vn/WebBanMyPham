@@ -219,7 +219,7 @@
                             <h5 class="title-1">Sổ địa chỉ</h5>
                             <div class="box">
                                 <h6 class="title-2">Bạn muốn giao hàng đến địa chỉ khác? </h6>
-                                <button class="btn-1">Thêm địa chỉ mới</button></div>
+                                <button id="ids" class="btn-1">Thêm địa chỉ mới</button></div>
                             </div>
                     </div>       
                 </div>
@@ -364,6 +364,13 @@
         </div>
     </div>
     <script src="../js/updateUserMain.js"></script>
+    <script>
+         document.getElementById("ids").onclick = function () {
+         window.location.href = "newaddress.html";
+            };
+
+        
+    </script>
 </body>
 
 </html>

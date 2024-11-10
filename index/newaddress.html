@@ -259,7 +259,7 @@
                                             <input type="text" name="address" id="address" relus="required" placeholder="Số nhà + tên đường" class="form-control">
                                         </form>
                                         <div class="btn-icon">
-                                            <button class="btn-1">Hủy</button>
+                                            <button class="btn-1" id="cancel">Hủy</button>
                                             <button class="btn-2">Cập nhật</button>
                                         </div>
                                     </div>
@@ -409,6 +409,11 @@
         </div>
     </div>
     <script src="../js/updateUserMain.js"></script>
+    <script>
+         document.getElementById("cancel").onclick = function () {
+         window.location.href = "addressbook.html";
+            };
+    </script>
 </body>
 
 </html>
