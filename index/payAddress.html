@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm địa chỉ mới</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="address-modal">
+    <div class="modal-header">
+        <h2>Thêm địa chỉ mới</h2>
+        <button class="close-btn">×</button>
+    </div>
+    <div class="modal-body">
+        <div class="form-group">
+            <input type="text" placeholder="Số điện thoại">
+            <input type="text" placeholder="Họ và tên">
+        </div>
+        <div class="form-group">
+            <select>
+                <option>Chọn Tỉnh/ TP, Quận/ Huyện</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <select>
+                <option>Chọn Phường/ Xã</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Số nhà + Tên đường">
+        </div>
+        <p class="warning-text">Vui lòng chọn Tỉnh/TP, Quận/ Huyện và Phường/ xã trước khi nhập Số nhà + Tên Đường</p>
+        <div class="address-type">
+            <span>Chọn loại địa chỉ</span>
+            <button class="btn btn-selected">Nhà riêng</button>
+            <button class="btn">Công ty</button>
+        </div>
+        <div class="default-address">
+            <span>Đặt làm địa chỉ mặc định</span>
+            <input type="checkbox">
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn cancel-btn">Hủy</button>
+        <button class="btn continue-btn">Tiếp tục</button>
+    </div>
+</div>
+</body>
+</html>
