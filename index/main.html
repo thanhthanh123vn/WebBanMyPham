@@ -658,6 +658,21 @@
     <div id="session-footer">
         <div class="container">
             <footer>
+             
+            <div class="chat-box" id="chatBox">
+                <div class="chat-content">
+                    <div class="chat-header" onclick="toggleChat()">
+                        <span>Hỗ trợ trực tuyến</span>
+                        <button class="close-btn">X</button>
+                    </div>
+                    <div class="chat-content">
+                        <p>Xin chào! Bạn cần hỗ trợ gì?</p>
+                        <!-- Add more chat messages here if needed -->
+                    </div>
+                    <input type="text" class="chat-input" placeholder="Nhập tin nhắn...">
+                </div>
+            </div>
+              
                 <div class="footer-top">
                     <div class="footer-info">
                         <div class="footer-header">
@@ -898,6 +913,8 @@
                             <p>Đặc Trị Làm Đẹp Da | Làm Đẹp Tóc | Hỗ Trợ Giảm Cân | Vitamin và Khoáng Chất</p>
                         </div>
                     </div>
+                    
+                    
 
             </footer>
         </div>
@@ -912,7 +929,18 @@
 
 <script src="../js/updateUserMain.js"></script>
 <script src="../js/main.js"></script>
+<script>
+    // Function to toggle chat box visibility
+function toggleChat() {
+    var chatBox = document.getElementById("chatBox");
+    if (chatBox.style.display === "none" || chatBox.style.display === "") {
+        chatBox.style.display = "flex";
+    } else {
+        chatBox.style.display = "none";
+    }
+}
 
+</script>
 
 <script>
 
