@@ -152,7 +152,80 @@ body {
     z-index: 1;
 }
 
+.banner {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to right, #ff4e91, #ff7696);
+    padding: 20px;
+    color: white;
+    height: 200px;
+    text-align: center;
+}
 
+.banner-top {
+    width: 33%;
+    position: relative;
+}
+
+.banner-top img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.price {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.discount {
+    color: yellow;
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.gift {
+    background-color: #fff;
+    color: #ff4e91;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+}
+
+/* Icon Section */
+.icons {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 15px 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+.icon {
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    width: 80px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.icons .icon{
+    cursor: pointer;
+}
+.old-price {
+    text-decoration: line-through;
+    color: #ddd; /* Màu xám nhạt cho giá cũ */
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.icon span {
+    font-size: 24px;
+}
 
 .dropdown-content a:hover {
     background-color: #00ff44;
@@ -547,7 +620,7 @@ body {
 
 
 #session-body {
-    height: 4000px;
+    height: 4200px;
     padding: 20px;
 
 }
