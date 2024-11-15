@@ -564,7 +564,7 @@ body {
 
 .content-left {
     margin-bottom: 20px;
-    margin-left: 50px;
+   
 }
 
 .content-icon {
@@ -643,13 +643,14 @@ a:hover {
     
 }
 .content-right{
-  width: 100%;
-  margin: -15px 20px;
+    background: #fff;
+    width: 100%;
+    margin: 10px 0 20px 10px;
    
 }
 .content-box{
     margin-left: 20px;
-    margin-top: 20px;
+    padding: 10px;
     
 }
 .content-title{
@@ -664,15 +665,19 @@ a:hover {
 /* Column Styling */
 .colums {
     display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .col-left, .col-right {
     flex: 1;
     min-width: 300px;
 }
-
+.form{
+    margin-left: 20px;
+}
+.row-label{
+    margin: 0 10px 10px 0;
+}
 .form-group, .form-control {
     width: 90%;
     margin-bottom: 15px;

@@ -563,7 +563,7 @@ body {
 
 .content-left {
     margin-bottom: 20px;
-    margin-left: 50px;
+    
 }
 
 .content-icon {
@@ -644,7 +644,7 @@ a:hover {
 .content-right {
     background: #fff;
     width: 100%;
-    margin: 10px 20px;
+    margin: 10px 0 20px 10px;
    
 }
 .content-box{

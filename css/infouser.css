@@ -258,7 +258,7 @@ a:hover {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 20px;
-    width: 48%;
+    width: 50%;
     background-color: #f9f9f9;
 }
 
@@ -342,6 +342,7 @@ h3 {
 }
 .birthdate-selection-footer{
     margin-bottom: 20px;
+    align-items: center;
     
 }
 
@@ -350,9 +351,10 @@ h3 {
     background-color: #276143;
     color: #ffffff;
     border: none;
-    padding: 10px 50px;
+    padding: 10px 50px ;
     border-radius: 50px ;
     cursor: pointer;
+    text-align: center;
 
 }
 
@@ -364,6 +366,7 @@ h3 {
     background-color: #f9f9f9;
     width: 48%;
     font-size: 14px;
+    margin-left: 10px;
 }
 
 .contact-section .contact-info-update {
