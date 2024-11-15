@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán</title>
+   
+</head>
+<style>
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        background-color: gray;
+
+    }
+
+    .container {
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        margin-top: 50px;
+        border-radius: 10px;
+
+    }
+
+    .form {
+        background: white;
+        padding: 50px;
+        width: 60%;
+        border-radius: 25px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        display: block;
+    }
+
+    .form h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        color: rgb(156, 11, 79);
+        text-align: left;
+    }
+
+    .pay {
+        display: flex;
+        gap:10px;   
+        margin-bottom: 20px;
+       
+
+    }
+
+    .pay input {
+        width: 100%;
+        padding: 15px;
+        border-radius: 25px;
+        border: none;
+        font-size: 14px;
+        background: #F0F0F0;
+        box-sizing: border-box;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        gap: 20px
+    }
+
+    .city1,
+    .district,
+    .xa {
+        flex: 1;
+
+    }
+
+    .city1 select,
+    .district select,
+    .xa select {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 20px;
+        border: none;
+        background: #F0F0F0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .xa {
+        margin-right: 0;
+    }
+
+    .chosee {
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+
+    }
+
+    .btn-group {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+
+    }
+
+    .btn-group button {
+        border-radius: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        
+    }
+
+    .group button {
+        border-radius: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: center;
+        border: none;
+    }
+
+    .continue {
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    .btn {
+        display: flex;
+        gap: 15px;
+    }
+
+    .cancelButton,.continueButton {
+        padding: 20px 40px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 20px;
+        border: none;
+    }
+
+    .cancelButton{
+        background-color: #cfeadd;
+    }
+
+    .continueButton {
+        background-color: #306e51;
+    }
+    .btn-group button.active {
+            background-color: #007bff;
+            color: white;
+        }
+    .btn-group button:hover {
+            background-color:#306e51;
+        }
+        .selected {
+        background-color: #4CAF50; /* Màu nền khi được chọn */
+        color: white; /* Màu chữ khi được chọn */
+        cursor: not-allowed; /* Thay đổi con trỏ để thể hiện nút bị khóa */
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <h1>Thêm địa chỉ mới</h1>
+            <form id="addressForm" onsubmit="return submitForm()">
+            <form>
+                <div class="pay">
+                    <input type="text" id="phone" name="phone" placeholder="Họ tên" required>
+                    <input type="text" id="name" name="name" placeholder="Số điện thoại" required>
+                </div>
+                
+                <div class="main">
+                    <div class="city1">
+                        <select id="city" required>
+                            <option value="">Chọn tỉnh/TP</option>
+                            <option value="hanoi">Hà Nội</option>
+                            <option value="haiphong">Hải Phòng</option>
+                            <option value="thuathienhue">Thừa Thiên Huế</option>
+                            <option value="nhatrang">Nha Trang</option>
+                            <option value="danang">Đà Nẵng</option>
+                            <option value="tphcm">Thành phố Hồ Chí Minh</option>
+                            <option value="cantho">Cần Thơ</option>
+                        </select>
+                    </div>
+                    <div class="district">
+                        <select id="district" required>
+                            <option value="">Chọn Quận/Huyện</option>
+                        </select>
+                    </div>
+                    <div class="xa">
+                        <select id="address" required>
+                            <option value="">Chọn phường/xã</option>
+                        </select>
+                    </div>
+                    <div class="pay">
+                        <input type="text" id="name" name="name" placeholder="Tên nhà + số đường" required>
+                    </div>
+                </div>
+                <div class="chosee">
+
+                    <div class="form-group">
+                        <p>Chọn loại địa chỉ</p>
+                        <div class="btn-group">
+                            <button type="button" id="buttonhome" onclick="chooseAddress('Nhà riêng')">Nhà riêng</button>
+                            <button type="button" id="buttonCity" onclick="chooseAddress('Công ty')">Công ty</button>
+                           
+                        </div>
+                    </div>
+
+                </div>
+                <div class="continue">
+                    <div class="btn">
+                        <button class="cancelButton" onclick="resetForm()">Hủy</button>
+                        <button class="continueButton">Tiếp tục</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+   
+    </div>
+   
+
+   <script src="../js/main.js"></script>
+  
+</body>
+
+</html>

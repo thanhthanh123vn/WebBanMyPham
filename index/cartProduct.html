@@ -390,7 +390,7 @@
                         <p>Tạm tính: <span>270.000 ₫</span></p>
                         <p>(Đã bao gồm VAT)</p>
                        
-                        <button class="checkout-btn order-prodcut">Tiến hành đặt hàng</button>
+                        <button id="hang" class="checkout-btn order-prodcut">Tiến hành đặt hàng</button>
                     </div>
 
 
@@ -401,7 +401,7 @@
                     <p>Tạm tính: <span>270.000 ₫</span></p>
                     <p>Giảm giá: <span>-0 ₫</span></p>
                     <p><strong>Tổng cộng: <span>270.000 ₫</span></strong></p>
-                    <button class="checkout-btn order-prodcut">Tiến hành đặt hàng</button>
+                    <button id="hang" class="checkout-btn order-prodcut">Tiến hành đặt hàng</button>
                 </div>
             </div>
         </div>
@@ -751,9 +751,12 @@
             }
         });
 
-
+        
     </script>
-
+    <script>var hang = document.getElementById('hang');
+        hang.onclick = function () {
+        window.location.href = 'thanhtoan.html'
+    }</script>
 
 
 </body>
