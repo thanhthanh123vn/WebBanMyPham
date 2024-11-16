@@ -789,12 +789,13 @@ body {
 .btn-buy:hover {
     background-color: #218838;
 }
+
 #session-footer {
-    background-color: #F2F1F6;
-    color: white;
+    position: static;
+    width: 100%;  /* Đảm bảo footer chiếm toàn bộ chiều rộng */
+    margin: 0 auto;  /* Đặt margin tự động để căn giữa */
+    background-color: #f2f2f2;
     text-align: center;
-    padding: 10px 20px;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 footer {
@@ -1275,8 +1276,7 @@ strong {
 
 
 .container {
+    margin: 0 auto;
+    padding: 0 15px;  /* Căn giữa với padding */
     width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-
 }
