@@ -672,13 +672,11 @@ body {
 
 
 
-
 #session-body {
-    height: 4200px;
+    flex: 1; /* Đẩy footer xuống dưới */
     padding: 20px;
-
+    overflow-y: auto; /* Đảm bảo cuộn khi nội dung quá dài */
 }
-
 /* Sidebar Styling */
 .sidebar {
     width: 20%;
@@ -791,10 +789,12 @@ body {
 .btn-buy:hover {
     background-color: #218838;
 }
-
 #session-footer {
-    margin-top: 20px;
-
+    background-color: #F2F1F6;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 footer {
