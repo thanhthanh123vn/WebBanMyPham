@@ -547,6 +547,7 @@ li.custom-font-size {
 }
 #use {
     margin-top: 10px;
+   
     background-color: white;
     margin-left: 45px; /* Căn trái */
     margin-right: 70px; /* Căn phải */
@@ -554,11 +555,12 @@ li.custom-font-size {
 
 #use h3 {
     font-size: 20px; /* Cỡ chữ cho tiêu đề */
-    margin: 10px 0; /* Khoảng cách trên và dưới cho tiêu đề */
+    margin: 10px 20px;
+     /* Khoảng cách trên và dưới cho tiêu đề */
 }
 
 #use p {
-    margin: 5px 0; /* Khoảng cách giữa các đoạn văn */
+    margin: 5px 20px; /* Khoảng cách giữa các đoạn văn */
 }
 #Evaluate {
     margin-top: 10px; /* Khoảng cách trên */
