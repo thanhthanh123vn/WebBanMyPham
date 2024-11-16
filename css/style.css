@@ -17,6 +17,60 @@ body {
     --button-radius: 20px;
     --font-family: Arial, sans-serif;
 }
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .popup-logo {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .popup p {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .popup-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .popup-btn {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .popup-btn.agree {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .popup-btn:hover {
+    opacity: 0.8;
+  }
 
 .header {
 
@@ -1164,6 +1218,61 @@ strong {
     font-size: 18px;
     cursor: pointer;
 }
+.chat-box-icon {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    height: 80px;
+    
+    max-height: 400px;
+
+ 
+
+     /* Hidden by default */
+    flex-direction: column;
+}
+.chat-box-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: shake 0.5s ease infinite, glow 3s ease infinite; /* Thêm hiệu ứng rung và sáng */
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px); /* Di chuyển sang trái */
+    }
+    50% {
+        transform: translateX(5px); /* Di chuyển sang phải */
+    }
+    75% {
+        transform: translateX(-5px); /* Di chuyển sang trái */
+    }
+    100% {
+        transform: translateX(0); /* Quay lại vị trí ban đầu */
+    }
+}
+
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 40px rgba(106, 255, 0, 0.3); /* Ánh sáng nhẹ, màu xanh lá */
+    }
+    25% {
+        box-shadow: 0 0 50px rgba(106, 255, 0, 0.3); /* Màu xanh lá đậm hơn */
+    }
+    50% {
+        box-shadow: 0 0 60px rgba(106, 255, 0, 0.3); /* Màu xanh lá đậm hơn */
+    }
+    100% {
+        box-shadow: 0 0 30px rgba(106, 255, 0, 0.3); /* Ánh sáng nhẹ lại */
+    }
+}
+
 
 .container {
     width: 1200px;
