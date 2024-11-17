@@ -17,7 +17,6 @@ body {
     --button-radius: 20px;
     --font-family: Arial, sans-serif;
 }
-
 .popup {
     position: fixed;
     top: 0;
@@ -29,49 +28,49 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 1000;
-}
-
-.popup-content {
+  }
+  
+  .popup-content {
     background: white;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.popup-logo {
+  }
+  
+  .popup-logo {
     width: 100px;
     margin-bottom: 20px;
-}
-
-.popup p {
+  }
+  
+  .popup p {
     margin-bottom: 20px;
     font-size: 16px;
-}
-
-.popup-buttons {
+  }
+  
+  .popup-buttons {
     display: flex;
     justify-content: space-between;
-}
-
-.popup-btn {
+  }
+  
+  .popup-btn {
     padding: 10px 15px;
     font-size: 14px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease;
-}
-
-.popup-btn.agree {
+  }
+  
+  .popup-btn.agree {
     background-color: #007bff;
     color: white;
-}
-
-.popup-btn:hover {
+  }
+  
+  .popup-btn:hover {
     opacity: 0.8;
-}
+  }
 
 .header {
 
@@ -140,6 +139,7 @@ body {
     margin-left: 60px;
     position: relative;
 }
+
 
 
 .search-notification {
@@ -267,11 +267,9 @@ body {
     font-weight: bold;
     margin-bottom: 40px;
 }
-
-.icons .icon {
+.icons .icon{
     cursor: pointer;
 }
-
 .old-price {
     text-decoration: line-through;
     color: #ddd; /* Màu xám nhạt cho giá cũ */
@@ -437,7 +435,6 @@ body {
     text-decoration: none;
     font-size: 14px;
 }
-
 .dropdown-content a {
     color: black;
     padding: 10px 20px;
@@ -546,7 +543,7 @@ body {
     margin-right: 20px;
 }
 
-.paddig-hover:hover + #sub-menu-web {
+.paddig-hover:hover+#sub-menu-web {
     display: block;
 }
 
@@ -562,7 +559,8 @@ body {
 }
 
 
-#sub-menu-web .col-menu-cap1 > .sub-item-menu {
+
+#sub-menu-web .col-menu-cap1>.sub-item-menu {
     display: flex;
     text-align: center;
     align-items: center;
@@ -571,7 +569,7 @@ body {
 
 }
 
-#sub-menu-web .col-menu-cap1 .sub-item-menu > a {
+#sub-menu-web .col-menu-cap1 .sub-item-menu>a {
     display: block;
     text-decoration: none;
     color: #333;
@@ -585,8 +583,7 @@ body {
     color: #1d371d;
 }
 
-.login-hover a {
-}
+.login-hover a {}
 
 
 .header-icons .login-hover:hover .login-box {
@@ -673,9 +670,13 @@ body {
     background-color: #264b38;
 }
 
+
+
+
 #session-body {
-    flex-grow: 1;
-    overflow: visible;
+    height: 4200px;
+    padding: 20px;
+
 }
 
 /* Sidebar Styling */
@@ -792,10 +793,8 @@ body {
 }
 
 #session-footer {
-    background-color: #f2f2f2;
-    text-align: center;
-    height: 50px; /* Chiều cao cụ thể của footer */
-    margin: 10px auto 0; /* Khoảng cách phía trên là 10px */
+    margin-top: 20px;
+
 }
 
 footer {
@@ -879,8 +878,7 @@ footer {
     font-size: 16px;
     margin-bottom: 10px;
 }
-
-.social-media {
+.social-media{
     text-transform: uppercase;
 }
 
@@ -889,13 +887,11 @@ footer {
     width: 30px;
     margin-right: 5px;
 }
-
-.social-media p a {
+.social-media p a{
     text-decoration: none;
     color: #fff;
 
 }
-
 .payment-methods h3 {
     color: #fff;
     font-size: 16px;
@@ -974,7 +970,6 @@ footer {
     background-color: #25643b;
     /* Đổi màu khi hover */
 }
-
 .promo-section {
     border-radius: 10px;
     color: #ffffff;
@@ -1173,7 +1168,7 @@ strong {
     border-radius: 10px 10px 0 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    /* Hidden by default */
+     /* Hidden by default */
     flex-direction: column;
 }
 
@@ -1223,20 +1218,17 @@ strong {
     font-size: 18px;
     cursor: pointer;
 }
-
 .chat-box-icon {
     position: fixed;
     bottom: 0;
     right: 20px;
     height: 80px;
-
+    
     max-height: 400px;
-
-
-    /* Hidden by default */
+ 
+     /* Hidden by default */
     flex-direction: column;
 }
-
 .chat-box-icon img {
     width: 50px;
     height: 50px;
@@ -1244,7 +1236,6 @@ strong {
     cursor: pointer;
     animation: shake 0.5s ease infinite, glow 3s ease infinite; /* Thêm hiệu ứng rung và sáng */
 }
-
 @keyframes shake {
     0% {
         transform: translateX(0);
@@ -1262,8 +1253,6 @@ strong {
         transform: translateX(0); /* Quay lại vị trí ban đầu */
     }
 }
-
-
 @keyframes glow {
     0% {
         box-shadow: 0 0 40px rgba(106, 255, 0, 0.3); /* Ánh sáng nhẹ, màu xanh lá */
@@ -1279,8 +1268,8 @@ strong {
     }
 }
 
-
 .container {
-    margin: 0 auto;
     width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
