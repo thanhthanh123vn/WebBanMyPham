@@ -18,7 +18,7 @@
 
 .content-left {
     margin-bottom: 20px;
-   
+
 }
 
 .content-icon {
@@ -240,7 +240,7 @@ a:hover {
     background-color: #98d498;
 }
 
-.sub-menu-web>a:hover {
+.sub-menu-web > a:hover {
 
 
     color: #ff0303;
@@ -271,25 +271,27 @@ h3 {
 
 .profile-picture {
     display: flex;
-  
-  
+
+
     font-size: 14px;
     color: #055617;
     margin-bottom: 15px;
 }
 
-.profile-picture .profile-picture-left{
+.profile-picture .profile-picture-left {
     display: block;
     float: left;
     width: 40%;
-    
+
 }
-.profile-picture .profile-picture-left a{
+
+.profile-picture .profile-picture-left a {
     color: #055617;
     text-decoration: none;
     cursor: pointer;
 }
-.profile-picture .profile-picture-right input[type="text"]{
+
+.profile-picture .profile-picture-right input[type="text"] {
     padding: 8px;
     margin-bottom: 10px;
     border-radius: 4px;
@@ -297,38 +299,43 @@ h3 {
     border: 1px solid #ccc;
 
 }
-.profile-picture .profile-picture-right input[type="email"]{
-    
+
+.profile-picture .profile-picture-right input[type="email"] {
+
     padding: 8px;
- 
+
     margin-bottom: 10px;
     border-radius: 4px;
     width: 90%;
     border: 1px solid #ccc;
     background-color: #e9ebe9;
-    
+
 }
+
 .profile-picture img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
-.gender-selection{
+.gender-selection {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
+
 .gender-selection label {
     margin-right: 10px;
 }
-.birthdate-selection{
+
+.birthdate-selection {
     display: flex;
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 .birthdate-selection label {
     display: block;
     margin-bottom: 5px;
@@ -340,10 +347,11 @@ h3 {
     border-radius: 4px;
     border: 1px solid #ccc;
 }
-.birthdate-selection-footer{
+
+.birthdate-selection-footer {
     margin-bottom: 20px;
     align-items: center;
-    
+
 }
 
 .update-btn {
@@ -351,8 +359,8 @@ h3 {
     background-color: #276143;
     color: #ffffff;
     border: none;
-    padding: 10px 50px ;
-    border-radius: 50px ;
+    padding: 10px 50px;
+    border-radius: 50px;
     cursor: pointer;
     text-align: center;
 
@@ -377,7 +385,7 @@ h3 {
 
 }
 
-.contact-section .contact-info-update>button {
+.contact-section .contact-info-update > button {
     background-color: #e6e7e6;
     color: #212121;
     border: none;
@@ -446,4 +454,17 @@ h3 {
 
 .contact-section i {
     margin-right: 10px;
+}
+
+.breadcrumb {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #F2F1F6;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #B5B5B5;
+    margin-bottom: 20px;
+
 }

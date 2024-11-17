@@ -4,10 +4,6 @@
     margin-right: auto;
 }
 
-#session-body {
-    height: 500px;
-}
-
 .contentsss {
     display: flex;
     gap: 10px; /* Tạo khoảng cách 10px giữa body-left và container-body-right */
@@ -161,4 +157,15 @@
     font-weight: bold;
     font-size: 20px;
     padding: 5px;
+}
+.breadcrumb {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #F2F1F6 ;
+}
+.breadcrumb a{
+    text-decoration: none;
+    color: #B5B5B5;
+    margin-bottom: 20px;
+
 }

@@ -545,8 +545,7 @@ body {
 
 #session-body {
     height: 500px;
-    padding: 20px;
-    
+
 }
 
 .container-body {
@@ -859,7 +858,7 @@ footer {
 }
 
 .promo-section h3 {
-    
+
     margin-bottom: 15px;
 }
 
@@ -1042,5 +1041,15 @@ strong {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
+
+}.breadcrumb {
+     margin-top: 20px;
+     margin-bottom: 20px;
+     background-color: #F2F1F6 ;
+ }
+.breadcrumb a{
+    text-decoration: none;
+    color: #B5B5B5;
+    margin-bottom: 20px;
 
 }
