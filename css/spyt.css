@@ -151,7 +151,13 @@ a:hover {
     text-decoration: none;
 }
 
-
+.breadcrumb {
+    background-color: #F2F1F6 ;
+}
+.breadcrumb a{
+   text-decoration: none;
+   color: #B5B5B5;
+}
 .container{
     width: 1340px;
     margin-left: auto;

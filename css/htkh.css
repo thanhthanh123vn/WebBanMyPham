@@ -363,8 +363,8 @@ a {
 #footer-main .footer-link{
     margin: 0 0 8px;
 }
-.container{
-    width: 1430px;
-    margin-left: auto;
+#supper-center{
+    width: 1200px;
     margin-right: auto;
+    margin-left: auto;
 }
