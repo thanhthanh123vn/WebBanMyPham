@@ -10,7 +10,9 @@
 <div class="address-modal">
     <div class="modal-header">
         <h2>Thêm địa chỉ mới</h2>
-        <button class="close-btn">×</button>
+        <form id="Form" onsubmit="return submitForm()">
+            <form>
+        <button class="close-btn">×</button>         
     </div>
     <div class="modal-body">
         <div class="form-group">
@@ -56,17 +58,18 @@
         <p class="warning-text">Vui lòng chọn Tỉnh/TP, Quận/ Huyện và Phường/ xã trước khi nhập Số nhà + Tên Đường</p>
         <div class="address-type">
             <span>Chọn loại địa chỉ</span>
-            <button class="btn btn-selected">Nhà riêng</button>
-            <button class="btn">Công ty</button>
+            <button class="btn btn-selected" id="buttonhome">Nhà riêng</button>
+            <button class="btn" id="buttonCity">Công ty</button>
         </div>
         <div class="default-address">
             <span>Đặt làm địa chỉ mặc định</span>
             <input type="checkbox">
         </div>
     </div>
+
     <div class="modal-footer">
-        <button class="btn cancel-btn">Hủy</button>
-        <button class="btn continue-btn">Tiếp tục</button>
+        <button class="btn cancel-btn" onclick="resetForm()">Hủy</button>
+        <button class="btn continue-btn" onclick="continueToNext()">Tiếp tục</button>
     </div>
 </div>
 </body>

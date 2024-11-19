@@ -241,33 +241,28 @@ districtSelect.addEventListener('change', function () {
     }
 });
 
+// lấy nút
+const buttonhome = document.getElementById('buttonhome');
+const buttonCity = document.getElementById('buttonCity');
+//thêm sự kiện cho nút buttonHome
+buttonhome.addEventListener('click',()=> {
+    buttonhome.classList.add('btn-selected');
+    buttonCity.classList.remove('btn-selected');
+});
+// thêm nút sự kiện cho buttonCity
+buttonCity.addEventListener('click',() =>{
+    buttonCity.classList.add('btn-selected');
+    buttonhome.classList.remove('btn-selected')
+});
+
 function resetForm() {
-    document.getElementById("addressForm").reset();
-    document.getElementById("buttonhome").disabled = false;
-    document.getElementById("buttonCity").disabled = false;
+    document.getElementById("Form").reset();
 }
 
-function submitForm() {
-    // Kiểm tra xem biểu mẫu có hợp lệ không
-    const form = document.getElementById("addressForm");
-    if (form.checkValidity()) {
-        // Nếu hợp lệ, hiển thị thông báo thành công
-        alert("Thêm địa chỉ thành công!");
-        return true; // Cho phép gửi biểu mẫu
-    } else {
-        // Nếu không hợp lệ, ngăn gửi biểu mẫu
-        return false;
-    }
-}
-function chooseAddress(selectedButton) {
-    // Vô hiệu hóa cả hai nút khi người dùng chọn một nút
-    document.getElementById("buttonhome").disabled = false;
-    document.getElementById("buttonCity").disabled = true;
-    if (selectedButton === 'buttonhome') {
-        document.getElementById("buttonhome").classList.add("selected");
-    } else if (selectedButton === 'buttonCity') {
-        document.getElementById("buttonCity").classList.add("selected");
-    }
-   
-}
+function continueToNext() {
+    // Hiển thị thông báo thành công
+    alert('Đặt hàng thành công!');
 
+    // Chuyển hướng về trang chủ
+    window.location.href = 'deliveryAdd.html'; // Thay 'index.html' bằng đường dẫn trang chủ của bạn
+}
