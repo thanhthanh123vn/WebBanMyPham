@@ -241,7 +241,8 @@ districtSelect.addEventListener('change', function () {
     }
 });
 
-// lấy nút
+
+
 const buttonhome = document.getElementById('buttonhome');
 const buttonCity = document.getElementById('buttonCity');
 //thêm sự kiện cho nút buttonHome
@@ -255,14 +256,12 @@ buttonCity.addEventListener('click',() =>{
     buttonhome.classList.remove('btn-selected')
 });
 
-function resetForm() {
-    document.getElementById("Form").reset();
-}
-
 function continueToNext() {
-    // Hiển thị thông báo thành công
+    // Hiển thị thông báo thành công    
     alert('Đặt hàng thành công!');
 
     // Chuyển hướng về trang chủ
     window.location.href = 'deliveryAdd.html'; // Thay 'index.html' bằng đường dẫn trang chủ của bạn
 }
+
+

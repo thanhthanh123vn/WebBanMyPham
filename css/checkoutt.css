@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+.header{
+    background-color:#b6c6bf;
+    height: 50px; 
+    padding: 10px 0;
+}
+.logo-support{
+    float: left;
+    width: 50%;
+}
+.logo-support img{
+    height: 40px; 
+    vertical-align: middle;
+    margin-top: 5px;
+}
+.right-support{
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+.right-support a{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    color: rgb(75, 66, 66);
+    font-size: 24px;
+
+}
+.session-body {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+  }
+  .left-section {
+    flex: 2;
+  }
+  
+  .right-section {
+    flex: 1;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  
+  .card-content {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .address {
+    margin-top: 8px;
+  }
+  
+  .badge {
+    background-color: #2ea44f;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 12px;
+    margin-right: 8px;
+  }
+  
+  .name {
+    font-weight: bold;
+  }
+  
+  .phone {
+    margin-left: 4px;
+  }
+  
+  .action {
+    text-align: right;
+    margin-top: 8px;
+  }
+  
+  .action a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .action a:hover {
+    text-decoration: underline;
+  }
+  
+  .radio input {
+    margin-right: 8px;
+  }
+  
+  .order-btn {
+    display: block;
+    width: 100%;
+    background-color: #2ea44f;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .order-btn:hover {
+    background-color: #22863a;
+  }
+  
+  .invoice {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .order-details .row {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    font-size: 14px;
+  }
+  
+  .order-details .total {
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .policy {
+    font-size: 12px;
+    color: #777;
+    margin-top: 16px;
+  }
+  
+  .policy a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .policy a:hover {
+    text-decoration: underline;
+  }
+  .container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
