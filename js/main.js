@@ -241,9 +241,6 @@ districtSelect.addEventListener('change', function () {
     }
 });
 
-<<<<<<< HEAD
-
-
 const buttonhome = document.getElementById('buttonhome');
 const buttonCity = document.getElementById('buttonCity');
 //thêm sự kiện cho nút buttonHome
@@ -265,35 +262,4 @@ function continueToNext() {
     window.location.href = 'deliveryAdd.html'; // Thay 'index.html' bằng đường dẫn trang chủ của bạn
 }
 
-=======
-function resetForm() {
-    document.getElementById("addressForm").reset();
-    document.getElementById("buttonhome").disabled = false;
-    document.getElementById("buttonCity").disabled = false;
-}
-
-function submitForm() {
-    // Kiểm tra xem biểu mẫu có hợp lệ không
-    const form = document.getElementById("addressForm");
-    if (form.checkValidity()) {
-        // Nếu hợp lệ, hiển thị thông báo thành công
-        alert("Thêm địa chỉ thành công!");
-        return true; // Cho phép gửi biểu mẫu
-    } else {
-        // Nếu không hợp lệ, ngăn gửi biểu mẫu
-        return false;
-    }
-}
-function chooseAddress(selectedButton) {
-    // Vô hiệu hóa cả hai nút khi người dùng chọn một nút
-    document.getElementById("buttonhome").disabled = false;
-    document.getElementById("buttonCity").disabled = true;
-    if (selectedButton === 'buttonhome') {
-        document.getElementById("buttonhome").classList.add("selected");
-    } else if (selectedButton === 'buttonCity') {
-        document.getElementById("buttonCity").classList.add("selected");
-    }
-   
-}
->>>>>>> 1966157cf8efb6f41570a4c9be31aa6a9c6c7146
 

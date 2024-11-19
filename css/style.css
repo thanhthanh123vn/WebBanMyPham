@@ -674,6 +674,7 @@ body {
 }
 
 #session-body {
+    height: 4400px;
     flex-grow: 1;
     overflow: visible;
 }
