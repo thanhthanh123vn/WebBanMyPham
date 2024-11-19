@@ -1043,13 +1043,11 @@ strong {
     margin-right: auto;
 
 }.breadcrumb {
-     margin-top: 20px;
-     margin-bottom: 20px;
      background-color: #F2F1F6 ;
  }
 .breadcrumb a{
     text-decoration: none;
     color: #B5B5B5;
-    margin-bottom: 20px;
+   
 
 }
