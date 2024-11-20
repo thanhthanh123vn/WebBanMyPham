@@ -390,11 +390,17 @@ body {
 
 .search-bar input {
 
-    border-radius: 5px;
-    min-width: 300px;
-    max-width: 500px;
+    border-radius: 30px;
+    min-width: 382px;
+    max-width: 600px;
     height: 36px;
     border: none;
+
+}
+.search-bar #find-product{
+    margin-left: -26px;
+
+
 }
 
 .search-bar button {
