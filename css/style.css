@@ -397,7 +397,8 @@ body {
     border: none;
 
 }
-.search-bar #find-product{
+
+.search-bar #find-product {
     margin-left: -26px;
 
 
@@ -1291,6 +1292,7 @@ strong {
     margin: 0 auto;
     width: 1200px;
 }
+
 .FlashSale {
     background-color: #f8f8f8;
     padding: 20px;
@@ -1359,4 +1361,74 @@ strong {
     font-size: 14px;
     color: #333;
     margin-top: 10px;
+}
+
+.list-product {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.category {
+    text-align: center;
+    width: 120px;
+}
+
+.category img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.category p {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+.brand-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.brand-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.brand-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.brand-item {
+    width: 150px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.brand-item:hover {
+    transform: scale(1.05);
+}
+
+.brand-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.brand-item p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
 }
