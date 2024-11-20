@@ -30,7 +30,7 @@
     <div class="modal-footer">
         <a href="#" class="add-address-link">Thêm địa chỉ mới <i class="fas fa-plus-circle"></i></a>
         <button class="btn cancel-btn">Hủy</button>
-        <button class="btn continue-btn">Tiếp tục</button>
+        <button class="btn continue-btn" id="back">Tiếp tục</button>
     </div>
 </div>
 </body>
@@ -38,6 +38,11 @@
 </title>
 </head>
 <body>
-
+    <script>
+       var back = document.getElementById('back');
+        back.onclick = function () {
+        window.location.href = 'checkout.html';
+    }
+    </script>
 </body>
 </html>

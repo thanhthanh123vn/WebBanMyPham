@@ -545,7 +545,7 @@ body {
 
 #session-body {
     height: 500px;
-
+    padding: 20px;
 }
 
 .container-body {
@@ -643,7 +643,7 @@ a:hover {
 .content-right {
     background: #fff;
     width: 100%;
-    margin: 10px 0 20px 10px;
+    margin: 10px 0 0 20px;
    
 }
 .content-box{
@@ -1043,13 +1043,11 @@ strong {
     margin-right: auto;
 
 }.breadcrumb {
-     margin-top: 20px;
-     margin-bottom: 20px;
      background-color: #F2F1F6 ;
  }
 .breadcrumb a{
     text-decoration: none;
     color: #B5B5B5;
-    margin-bottom: 20px;
+   
 
 }
