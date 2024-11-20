@@ -374,6 +374,8 @@ li.custom-font-size {
     padding-bottom: 15px; /* Khoảng cách 15px ở phía dưới */
 }
 .button-light-green {
+    margin-top: 10px;
+  
     background-color: lightgreen; /* Màu xanh lá nhạt */
     color: black; /* Màu chữ */
     border: none; /* Bỏ viền */
@@ -383,6 +385,8 @@ li.custom-font-size {
 }
 
 .button-dark-green {
+    margin-top: 10px;
+    margin-left: 10px;
     background-color: green; /* Màu xanh lá đậm */
     color: white; /* Màu chữ trắng */
     border: none; /* Bỏ viền */
@@ -392,6 +396,7 @@ li.custom-font-size {
 }
 
 .button-orange {
+    margin-top: 10px;
     background-color: orange; /* Màu cam */
     color: black; /* Màu chữ */
     border: none; /* Bỏ viền */
