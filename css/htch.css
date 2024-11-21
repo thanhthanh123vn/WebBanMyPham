@@ -5,6 +5,11 @@ html, body{
     box-sizing: border-box;
 }
 /* for id*/
+#support-center{
+    width: 100%;
+    overflow: hidden;
+    
+}
 #wrapper-header{
     background-color: #ffff;
     height: 50px; 
@@ -141,6 +146,8 @@ html, body{
     font-size: 13px;
     padding: 10px;
     margin: 10px 0;
+    gap:20;
+    color: black;
 
 }
 
@@ -217,6 +224,7 @@ html, body{
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 10px;
+    color: red;
 }
 .bloack-info .item_menu_support {
     position: relative;
