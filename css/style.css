@@ -1432,3 +1432,138 @@ strong {
     font-weight: bold;
     color: #333;
 }
+.brand-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.brand-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.brand-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.brand-item {
+    width: 150px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.brand-item:hover {
+    transform: scale(1.05);
+}
+
+.brand-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.brand-item p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+.top-search-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.top-search-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.top-search-list {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.top-search-item {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.top-search-item:hover {
+    transform: translateY(-5px);
+}
+
+.top-search-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.item-info {
+    padding: 10px;
+}
+
+.item-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.item-count {
+    font-size: 14px;
+    color: #777;
+}
+
+.product-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+    scroll-behavior: smooth;
+}
+
+.product-card {
+    flex: 0 0 auto;
+    width: 150px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.sales-count {
+    margin: 10px 0 5px;
+    color: #555;
+    font-size: 14px;
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}

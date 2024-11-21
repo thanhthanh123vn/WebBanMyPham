@@ -1,17 +1,24 @@
 
 .contentsss {
+    width: 100%;
     display: flex;
     gap: 10px;
     align-items: flex-start; /* Đảm bảo cả 2 phần tử căn trên cùng một dòng */
 }
 
-
-
+.body-left{
+    float: left;
+    width: 30%;
+}
+.content-left{
+     
+}
 .container-body-right {
     flex: 1; /* Cho phần bên phải chiếm phần còn lại của contentsss */
     display: flex;
     flex-direction: column;
     background-color: white;
+    margin-top: 10px;
 
 }
 
@@ -45,6 +52,7 @@
 .name strong,
 .name a {
     margin: 5px 0;
+    text-decoration: none;
 }
 
 .menu_profile {
@@ -322,4 +330,4 @@
     color: #B5B5B5;
     margin-bottom: 20px;
 
-}
+} 
