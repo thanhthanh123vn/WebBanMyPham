@@ -20,7 +20,7 @@ body {
     margin-top: 5px;
 }
 .right-support{
-    float: right;
+    float: left;
     padding: 0;
     margin: 0;
 }
@@ -32,6 +32,7 @@ body {
     font-size: 24px;
 
 }
+/*body*/
 .session-body {
     display: flex;
     max-width: 1200px;
@@ -56,7 +57,7 @@ body {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
@@ -95,7 +96,7 @@ body {
   
   .action {
     text-align: right;
-    margin-top: 8px;
+    margin-bottom: 20px;
   }
   
   .action a {
@@ -104,9 +105,156 @@ body {
   }
   
   .action a:hover {
-    text-decoration: underline;
+    color: #2ea44f;
   }
-  
+  /* Container chung */
+.order-info-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  border-radius: 8px;
+ 
+  margin: 0 auto;
+}
+
+/* Thông tin giao hàng */
+.shipping-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eaf8ec;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #222;
+}
+
+.shipping-date span:first-child {
+  font-weight: bold;
+  color: #009846;
+}
+
+.shipping-cost {
+  font-weight: bold;
+  color: #009846;
+}
+
+/* Sản phẩm */
+.product-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.product-image {
+  width: 80px;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.product-details {
+  flex: 1;
+}
+
+.product-name {
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.discount {
+  color: #ff5722;
+  background-color: #ffe9e2;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.product-description {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.product-quantity-price {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.product-price {
+  font-weight: bold;
+  color: #222;
+}
+
+/* Tổng tiền và nút đặt hàng */
+.order-summary {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.total-label {
+  font-weight: bold;
+  color: #555;
+}
+
+.total-amount {
+  font-weight: bold;
+  color: #ff5722;
+}
+
+.order-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #009846;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.order-button:hover {
+  background-color: #007f3d;
+}
+
+.terms-note {
+  font-size: 12px;
+  color: #777;
+  margin-top: 10px;
+}
+
+.terms-note a {
+  color: #009846;
+  text-decoration: none;
+}
+
   .radio input {
     margin-right: 8px;
   }
