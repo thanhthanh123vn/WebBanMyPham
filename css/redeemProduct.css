@@ -79,6 +79,7 @@ h2 {
 .name strong,
 .name a {
     margin: 5px 0;
+    text-decoration: none;
 }
 
 .menu_profile {
