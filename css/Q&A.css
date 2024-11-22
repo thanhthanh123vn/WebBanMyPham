@@ -237,39 +237,34 @@
 }
 
 .container-body-right {
-    background: linear-gradient(135deg, #e8e8fc, #f4f4f9); /* Gradient nhẹ */
     padding: 20px;
-    border-radius: 8px; /* Tăng bo góc */
-    font-size: 16px;
+    border-radius: 8px;  
     font-weight: bold;
-    color: #333;
-    text-align: left;
     width: 100%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Đổ bóng đậm hơn */
-    transition: transform 0.3s, box-shadow 0.3s; /* Thêm hiệu ứng hover */
-    flex: 1; /* Cho phần bên phải chiếm phần còn lại */
-    display: flex;
-    flex-direction: column; /* Đặt các phần tử con theo cột */
-    background-color: white; /* Nền màu trắng cho gradient */
-    margin-top: 10px; /* Khoảng cách bên trên */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+    flex: 1; 
+    background-color: white; 
+    margin-top: 10px; 
 }
 .container-body-right:hover {
-    transform: translateY(-5px); /* Nâng lên khi hover */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Tăng bóng */
+   
 }
 
 .title-with-icon {
     display: flex;
-    align-items: center;
-    gap: 10px; /* Khoảng cách giữa icon và chữ */
+    
+    gap: 20px; 
 }
 
 .icon {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
 }
 
 .title-with-icon span {
-    font-size: 18px;
+    margin-top: 5px;
+    font-size: 24px;
     color: #333;
+    cursor: pointer;
 }
