@@ -1,0 +1,275 @@
+
+.contentsss {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start; /* Đảm bảo cả 2 phần tử căn trên cùng một dòng */
+}
+
+.body-left{
+    float: left;
+    width: 30%;
+}
+.content-left{
+
+}
+
+.content-icon {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 450px;
+    margin: 10px auto;
+    background-color: #f9f9f9;
+}
+
+.avt {
+    margin-right: 15px;
+}
+
+.avt img {
+    width: 50px;
+    height: auto;
+}
+
+.name {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.name strong,
+.name a {
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.menu_profile {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 450px;
+    margin: 10px auto;
+}
+
+.item_menu_profile {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.item_menu_profile:hover {
+    background-color: #e0e0e0;
+}
+
+.item_menu_profile.active {
+    font-weight: bold;
+    color: orange;
+}
+
+.account-info {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.user-details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#user-name {
+    font-size: 16px;
+}
+
+#user-email {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.edit-link {
+    text-decoration: none;
+    color: #006400;
+    margin-left: auto;
+}
+
+.edit-link:hover {
+    text-decoration: underline;
+}
+
+.newsletter-options {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start; /* Căn chỉnh phần tử con ở đầu */
+    justify-content: space-between; /* Đẩy nút sang bên phải */
+}
+
+.newsletter-options div {
+    display: flex;
+    flex-direction: column; /* Đặt các phần tử con theo cột */
+}
+
+.newsletter-options label {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.save-btn {
+    background-color: #006400;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 10px; /* Thêm khoảng cách giữa nút và chữ */
+}
+
+.save-btn:hover {
+    background-color: #004d00;
+}
+
+.available-Point ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.available-Point img {
+    width: 40px; /* Đặt chiều rộng mong muốn */
+    height: 40px; /* Đặt chiều cao mong muốn */
+}
+
+#point-Avai {
+    font-size: 30px;
+}
+
+.bolded {
+    font-weight: bold;
+}
+
+.content-gifts div {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.content-gifts div:hover {
+    color: orange; /* Đổi màu chữ thành cam */
+    transform: scale(1.05); /* Tăng nhẹ kích thước khi rê chuột vào */
+}
+
+.content-gifts div:hover i { /* Đổi màu icon thành cam khi rê chuột vào */
+    color: orange;
+}
+
+.content-gifts div i {
+    width: 60px;
+    height: 60px;
+    font-size: 60px; /* Đặt kích thước icon */
+    line-height: 60px; /* Để căn giữa icon trong thẻ */
+    text-align: center; /* Căn giữa nội dung */
+}
+
+
+.content-gifts ul {
+    display: flex;
+    flex-direction: column; /* Đặt các <li> theo chiều dọc */
+    align-items: center; /* Căn giữa các phần tử */
+    gap: 10px; /* Tạo khoảng cách giữa các phần tử */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.content-gifts li {
+    text-align: center; /* Căn giữa văn bản trong <li> */
+}
+
+.content-gifts img {
+    width: 40px; /* Điều chỉnh kích thước ảnh */
+    height: 40px;
+}
+
+
+
+.content-gifts .item_menu_profile {
+    padding: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+}
+
+.content-gifts .item_menu_profile:hover {
+    background-color: #e0e0e0;
+}
+
+#hh {
+    margin-left: 10px;
+}
+
+.breadcrumb {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #F2F1F6 ;
+}
+.breadcrumb a{
+    text-decoration: none;
+    color: #B5B5B5;
+    margin-bottom: 20px;
+
+}
+
+.container-body-right {
+    background: linear-gradient(135deg, #e8e8fc, #f4f4f9); /* Gradient nhẹ */
+    padding: 20px;
+    border-radius: 8px; /* Tăng bo góc */
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Đổ bóng đậm hơn */
+    transition: transform 0.3s, box-shadow 0.3s; /* Thêm hiệu ứng hover */
+    flex: 1; /* Cho phần bên phải chiếm phần còn lại */
+    display: flex;
+    flex-direction: column; /* Đặt các phần tử con theo cột */
+    background-color: white; /* Nền màu trắng cho gradient */
+    margin-top: 10px; /* Khoảng cách bên trên */
+}
+.container-body-right:hover {
+    transform: translateY(-5px); /* Nâng lên khi hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Tăng bóng */
+}
+
+.title-with-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Khoảng cách giữa icon và chữ */
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.title-with-icon span {
+    font-size: 18px;
+    color: #333;
+}
