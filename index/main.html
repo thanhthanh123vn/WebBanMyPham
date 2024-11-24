@@ -1142,8 +1142,8 @@
                             <div class="promo-section">
                                 <h3>CẬP NHẬT THÔNG TIN KHUYẾN MÃI</h3>
                                 <div class="promo-input">
-                                    <input type="email" placeholder="email của bạn">
-                                    <button>Đăng ký</button>
+                                    <input type="email" placeholder="email của bạn" id="input-email">
+                                    <button onclick="signUp()">Đăng ký</button>
                                 </div>
                                 <div class="promo-download">
                                     <img src="../image/qrcode.png" alt="QR code">
@@ -1308,6 +1308,14 @@
 <script src="../js/main.js"></script>
 <script>
     // Function to toggle chat box visibility
+    function signUp() {
+        var email = document.getElementById("input-email").value;
+        console.log(email);
+        localStorage.setItem("email", email);
+        window.location.href = "signUp.html";
+
+
+    }
     function toggleChat() {
         var chatBox = document.getElementById("chatBox");
         if (chatBox.style.display === "none" || chatBox.style.display === "") {
