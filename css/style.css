@@ -681,7 +681,7 @@ body {
 }
 
 #session-body {
-    height: 4400px;
+    height: 8000px;
     flex-grow: 1;
     overflow: visible;
 }
@@ -1314,7 +1314,7 @@ strong {
 
 .products {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 20px;
     flex-wrap: wrap;
 }
@@ -1323,7 +1323,7 @@ strong {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 160px;
+    width:40%;
     text-align: center;
     margin: 10px;
     padding: 10px;
@@ -1596,6 +1596,7 @@ strong {
     width: 100%;
     background-color: #fff;
     border-radius: 8px;
+    margin-bottom: 10px;
     padding: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
@@ -1633,6 +1634,7 @@ strong {
     overflow: hidden;
     max-height: 200px; /* Chiều cao giới hạn ban đầu */
     transition: max-height 0.3s ease-in-out;
+ 
 }
 
 .product-list.expanded {
@@ -1640,8 +1642,8 @@ strong {
 }
 
 .product {
-    width: 150px;
-    text-align: center;
+    width: 140px;
+  
 }
 
 .product img {
