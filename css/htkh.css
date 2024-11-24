@@ -13,37 +13,56 @@ html, body{
     
 }
 #wrapper-header{
-    background-color: #ffff;
-    height: 50px; 
-    padding: 10px 0;
+
+    background-color: #2e5f45;
+    height: 60px; 
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    margin-bottom: 10px;
 }
-#wrapper-header .left{
-    float: left;
-    width: 50%;
+.logo {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
 }
 
-#wrapper-header .left img{
-    height: 40px; 
-    vertical-align: middle;
-    margin-top: 5px;
+
+.logo img {
+    height: 80px; 
+    width: 100px; 
    
 }
 
-#wrapper-header .right{
-    float: right;
-    margin:0;
-    padding: 0;
-    
+
+.logo-text {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column; 
 }
-#wrapper-header .right-support a{
+
+.logo-text h3 {
+    font-size: 24px;
+    color: white;
+    margin: 0;
+    font-weight: bold;
+}
+
+.logo-text span {
+    color: white;
+    font-size: 14px;
+    margin-top: 5px;
+}
+#wrapper-header .logo-right a{
     text-decoration: none;
     display: inline-block;
-    margin-top: 25px;
-    color: rgb(75, 66, 66);
+    margin-top: 5px;
+    color: white;
     font-size: 14px;
 }
-#wrapper-header .right-support span{
+#wrapper-header .logo-right span{
     margin: 0 5px;
+    color: white;
 }
 #block_banner_page{
     margin-bottom: 20px;
