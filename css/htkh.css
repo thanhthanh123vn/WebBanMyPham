@@ -13,18 +13,18 @@ html, body{
     
 }
 #wrapper-header{
-<<<<<<< HEAD
+
 
     background-color: #2e5f45;
     height: 60px; 
     display: flex;
     align-items: center;
     padding: 10px 10px;
-=======
+
     background-color: #ffff;
     height: 50px; 
     padding: 10px 0;
->>>>>>> c5555e9 (update)
+
     margin-bottom: 10px;
 }
 .logo {
@@ -33,18 +33,18 @@ html, body{
     align-items: center;
 }
 
-<<<<<<< HEAD
+
 
 .logo img {
     height: 80px; 
     width: 100px; 
-=======
+}
 #wrapper-header .left img{
     height: 60px; 
     vertical-align: middle; 
     margin-top: 5px;
     margin-bottom: 5px;
->>>>>>> c5555e9 (update)
+
    
 }
 
