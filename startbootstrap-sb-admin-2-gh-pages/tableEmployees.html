@@ -134,7 +134,7 @@
                     <h6 class="collapse-header">Thông tin Bảng</h6>
                     <a class="collapse-item" href="tables.html">Thông tin người dùng</a>
                     <a class="collapse-item" href="tablesProduct.html">Thông tin Sản Phẩm</a>
-                    <a class="collapse-item" href="forgot-password.html">Thông tin người quản trị</a>
+                    <a class="collapse-item" href="tableEmployees.html">Thông tin người quản trị</a>
                     <div class="collapse-divider"></div>
                   
                 </div>
@@ -389,127 +389,185 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Bảng chi tiết Sản Phẩm</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Bảng chi tài khoản người dùng</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    
-                                        <thead>
-                                            <tr>
-                                                <th>Mã Sản Phẩm</th>
-                                                <th>Tên Sản Phẩm</th>
-                                                <th>Thương Hiệu</th>
-                                                <th>Image</th>
-                                                <th>Giá</th>
-                                                <th>Mô Tả</th>
-                                                <th>Loại</th>
-                                                <th>Trạng Thái</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>SP001</td>
-                                                <td>Sữa Chống Nắng Anessa</td>
-                                                <td>Anessa</td>
-                                                <td><img width="80px" src="https://media.hcdn.vn/catalog/product/f/a/facebook-dynamic-sua-chong-nang-anessa-cho-da-nhay-cam-tre-em-60ml-moi-1710558274_img_300x300_b798dd_fit_center.jpg" alt="Anessa"></td>
-                                                <td>237.000 đ</td>
-                                                <td>Sữa chống nắng dưỡng da, kiềm dầu.</td>
-                                                <td>Chống Nắng</td>
-                                                <td>Còn Hàng</td>
-                                            </tr>
-                                            <tr>
-                                                <td>SP002</td>
-                                                <td>Kem Dưỡng Trắng Da L'Oreal</td>
-                                                <td>L'Oreal</td>
-                                                <td><img width="80px" src="https://media.hcdn.vn/catalog/product/p/r/promotions-auto-nuoc-tay-trang-tuoi-mat-l-oreal-3-in-1-danh-cho-da-dau-da-hon-hop-400ml_VLF3ivLnqLaFKFed_img_220x220_0dff4c_fit_center.png" alt="L'Oreal"></td>
-                                                <td>399.000 đ</td>
-                                                <td>Kem dưỡng da ban ngày, cung cấp độ ẩm.</td>
-                                                <td>Dưỡng Da</td>
-                                                <td>Còn Hàng</td>
-                                            </tr>
-                                            <tr>
-                                                <td>SP003</td>
-                                                <td>Sữa Rửa Mặt Innisfree</td>
-                                                <td>Innisfree</td>
-                                                <td><img width="80px" src="https://media.hcdn.vn/catalog/product/f/a/facebook-dynamic-422215274-1696400387_img_300x300_b798dd_fit_center.jpg" alt="Innisfree"></td>
-                                                <td>250.000 đ</td>
-                                                <td>Sữa rửa mặt chiết xuất trà xanh.</td>
-                                                <td>Sữa Rửa Mặt</td>
-                                                <td>Hết Hàng</td>
-                                            </tr>
-                                            <tr>
-                                                <td>SP004</td>
-                                                <td>Kem Chống Nắng La Roche-Posay</td>
-                                                <td>Sunplay</td>
-                                                <td><img width="80px" src="https://media.hcdn.vn/catalog/product/f/a/facebook-dynamic-kem-chong-nang-la-roche-posay-kiem-soat-dau-spf50-50ml-1716437865_img_300x300_b798dd_fit_center.jpg" alt="Sunplay"></td>
-                                                <td>180.000 đ</td>
-                                                <td>Kem chống nắng SPF 50+, thích hợp cho mọi loại da.</td>
-                                                <td>Chống Nắng</td>
-                                                <td>Còn Hàng</td>
-                                            </tr>
-                                            <tr>
-                                                <td>SP005</td>
-                                                <td> Nước Tẩy Trang Bí Đao Cocoon</td>
-                                                <td>Vaseline</td>
-                                                <td><img width="80px" src="https://media.hcdn.vn/catalog/product/f/a/facebook-dynamic-422204884-1689925661_img_380x380_64adc6_fit_center.png" alt="Vaseline"></td>
-                                                <td>70.000 đ</td>
-                                                <td>  Combo 2 Nước Tẩy Trang Bí Đao Cocoon Làm Sạch & Giảm Dầu.</td>
-                                                <td>Son Môi</td>
-                                                <td>Còn Hàng</td>
-                                            </tr>
-                                            <tr>
-                                                <td>SP006</td>
-                                                <td>Mặt Nạ Đất Sét Kiehl's</td>
-                                                <td>Kiehl's</td>
-                                                <td><img width="80px"  src="https://media.hasaki.vn/catalog/product/f/a/facebook-dynamic-422212532-1696496153_img_320x320_b04c1a_fit_center.png" alt="Kiehl's"></td>
-                                                <td>450.000 đ</td>
-                                                <td>Mặt nạ giúp loại bỏ bã nhờn và làm sạch sâu.</td>
-                                                <td>Mặt Nạ</td>
-                                                <td>Hết Hàng</td>
-                                            </tr>
-                                            <tr>
-                                                <td>SP007</td>
-                                                <td>Toner Nước Hoa Hồng Simple</td>
-                                                <td>Simple</td>
-                                                <td><img width="80px" src="https://media.hcdn.vn/catalog/product/f/a/facebookdynamic-nuoc-hoa-hong-simple-danh-cho-da-nhay-cam-200ml-1719903361_img_300x300_b798dd_fit_center.jpg" alt="Simple"></td>
-                                                <td>120.000 đ</td>
-                                                <td>Nước hoa hồng dịu nhẹ, không chứa cồn.</td>
-                                                <td>Toner</td>
-                                                <td>Hết Hàng</td>
-                                            </tr>
-                                            <tr>
-                                                <td>SP008</td>
-                                                <td>Sữa Tắm Love Beauty And Planet</td>
-                                                <td>Love Beauty And Planet</td>
-                                                <td><img width="80px" src="https://media.hcdn.vn/catalog/product/f/a/facebook-dynamic-422217622-1704861754_img_300x300_b798dd_fit_center.jpg" alt="Love Beauty And Planet"></td>
-                                                <td>145.000 đ</td>
-                                                <td>Sữa tắm chiết xuất từ thiên nhiên, giữ ẩm cho da.</td>
-                                                <td>Sữa Tắm</td>
-                                                <td>Còn Hàng</td>
-                                            </tr>
-                                            <tr>
-                                                <td>SP009</td>
-                                                <td>Serum Trắng Da Vitamin C</td>
-                                                <td>Some By Mi</td>
-                                                <td><img width="80px" src="https://media.hcdn.vn/catalog/product/f/a/facebook-dynamic-serum-timeless-ha-vitamin-c-cap-am-lam-sang-da-30ml-1710496967_img_300x300_b798dd_fit_center.jpg" alt="Some By Mi"></td>
-                                                <td>350.000 đ</td>
-                                                <td>Serum chứa vitamin C giúp sáng da, mờ thâm.</td>
-                                                <td>Serum</td>
-                                                <td>Còn Hàng</td>
-                                            </tr>
-                                            <tr>
-                                                <td>SP010</td>
-                                                <td>Kem Tẩy Tế Bào Chết Felina</td>
-                                                <td>St.Ives</td>
-                                                <td><img width="80px" src="https://media.hcdn.vn/catalog/product/f/a/facebook-dynamic-422212388-1705726739_img_300x300_b798dd_fit_center.png" alt="St.Ives"></td>
-                                                <td>80.000 đ</td>
-                                                <td>Tẩy tế bào chết dịu nhẹ, hương trái cây.</td>
-                                                <td>Tẩy Tế Bào Chết</td>
-                                                <td>Còn Hàng</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                <table class="table table-bordered" id="userTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Fullname</th>
+                                            <th>Email</th>
+                                            <th>Password</th>
+                                            <th>Role</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- <tr>
+                                            <td>e141</td>
+                                            <td>Nthanh</td>
+                                            <td>22130260@st.hcmuaf.edu.vn</td>
+                                            <td>123456</td>
+                                            <td>administrator</td>
+                                        </tr> -->
+                                        <tr>
+                                            <td>40ee</td>
+                                            <td>LeThanh</td>
+                                            <td>22130255@st.hcmuaf.edu.vn</td>
+                                            <td>123456</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>5d5e</td>
+                                            <td>TranThanh</td>
+                                            <td>22130253@st.hcmuaf.edu.vn</td>
+                                            <td>123456</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>u001</td>
+                                            <td>NguyenVanA</td>
+                                            <td>user001@st.hcmuaf.edu.vn</td>
+                                            <td>password001</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>u002</td>
+                                            <td>NguyenVanB</td>
+                                            <td>user002@st.hcmuaf.edu.vn</td>
+                                            <td>password002</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>u003</td>
+                                            <td>NguyenVanC</td>
+                                            <td>user003@st.hcmuaf.edu.vn</td>
+                                            <td>password003</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>u004</td>
+                                            <td>NguyenVanD</td>
+                                            <td>user004@st.hcmuaf.edu.vn</td>
+                                            <td>password004</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>u005</td>
+                                            <td>NguyenVanE</td>
+                                            <td>user005@st.hcmuaf.edu.vn</td>
+                                            <td>password005</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>u006</td>
+                                            <td>NguyenVanF</td>
+                                            <td>user006@st.hcmuaf.edu.vn</td>
+                                            <td>password006</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>u007</td>
+                                            <td>NguyenVanG</td>
+                                            <td>user007@st.hcmuaf.edu.vn</td>
+                                            <td>password007</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>u008</td>
+                                            <td>NguyenVanH</td>
+                                            <td>user008@st.hcmuaf.edu.vn</td>
+                                            <td>password008</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>u009</td>
+                                            <td>NguyenVanI</td>
+                                            <td>user009@st.hcmuaf.edu.vn</td>
+                                            <td>password009</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>u010</td>
+                                            <td>NguyenVanJ</td>
+                                            <td>user010@st.hcmuaf.edu.vn</td>
+                                            <td>password010</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>u011</td>
+                                            <td>NguyenVanK</td>
+                                            <td>user011@st.hcmuaf.edu.vn</td>
+                                            <td>password011</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>u012</td>
+                                            <td>NguyenVanL</td>
+                                            <td>user012@st.hcmuaf.edu.vn</td>
+                                            <td>password012</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>u013</td>
+                                            <td>NguyenVanM</td>
+                                            <td>user013@st.hcmuaf.edu.vn</td>
+                                            <td>password013</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>u014</td>
+                                            <td>NguyenVanN</td>
+                                            <td>user014@st.hcmuaf.edu.vn</td>
+                                            <td>password014</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>u015</td>
+                                            <td>NguyenVanO</td>
+                                            <td>user015@st.hcmuaf.edu.vn</td>
+                                            <td>password015</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>u016</td>
+                                            <td>NguyenVanP</td>
+                                            <td>user016@st.hcmuaf.edu.vn</td>
+                                            <td>password016</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>u017</td>
+                                            <td>NguyenVanQ</td>
+                                            <td>user017@st.hcmuaf.edu.vn</td>
+                                            <td>password017</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>u018</td>
+                                            <td>NguyenVanR</td>
+                                            <td>user018@st.hcmuaf.edu.vn</td>
+                                            <td>password018</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>u019</td>
+                                            <td>NguyenVanS</td>
+                                            <td>user019@st.hcmuaf.edu.vn</td>
+                                            <td>password019</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>u020</td>
+                                            <td>NguyenVanT</td>
+                                            <td>user020@st.hcmuaf.edu.vn</td>
+                                            <td>password020</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
                                     
                             </div>
                         </div>
