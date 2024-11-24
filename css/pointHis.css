@@ -1,5 +1,8 @@
+#session{
+    width: 100%;
+}
 .container {
-    width: 1340px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -7,17 +10,19 @@
 .contentsss {
     display: flex;
     gap: 10px;
+    margin-top: 20px;
 }
 
 .body-left {
-    width: 20%;
+    width: 30%;
+    float: left;
 }
 
 .container-body-right {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+    width: 70%;
+    float: right;
     background-color: white;
+   margin-top: 10px;
 }
 
 .content-icon {
@@ -29,6 +34,7 @@
     max-width: 450px;
     margin: 10px auto;
     background-color: #f9f9f9;
+    
 }
 
 .avt {
@@ -46,7 +52,9 @@
     flex-direction: column;
     padding: 10px;
 }
-
+.name a{
+    text-decoration: none;
+}
 .menu_profile {
     display: flex;
     flex-direction: column;
@@ -130,20 +138,20 @@
     padding: 50px;
     width: calc(100% - 20px);
     box-sizing: border-box;
-
+   
 }
 .content-gifts ul.history-point {
-    list-style-type: none; /* Loại bỏ chấm đầu của mỗi li */
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
 .history-point li.bolded {
-    font-size: 20px; /* Chữ "Lịch sử tích điểm" font size 20px */
-    font-weight: bold; /* Đảm bảo chữ in đậm nếu cần */
+    font-size: 20px; 
+    font-weight: bold; 
 }
 #update-status {
-    font-style: italic; /* Chữ in nghiêng */
+    font-style: italic; 
 }
 
 
@@ -156,11 +164,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 10px; /* Cách trên/dưới 20px, trái/phải 10px */
-    padding: 10px;
+    margin: 20px 10px; 
+    padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: calc(100% - 20px); /* Chiều rộng trừ đi 20px để bù cho khoảng cách 10px mỗi bên */
     box-sizing: border-box;
     background-color: #F2F1F6;
 }
@@ -175,8 +182,8 @@
 }
 
 .available-Point img {
-    width: 40px; /* Đặt chiều rộng mong muốn */
-    height: 40px; /* Đặt chiều cao mong muốn */
+    width: 40px; 
+    height: 40px; 
 }
 
 #point-Avai {
