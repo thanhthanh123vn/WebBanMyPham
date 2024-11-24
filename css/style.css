@@ -85,7 +85,15 @@ body {
 
 
 }
-
+.header-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+   
+    color: white;
+    font-size: 14px;
+}   
 .top-banner {
     background-color: #9966cc;
     padding: 5px;
@@ -1186,6 +1194,8 @@ strong {
 }
 
 .chat-header {
+  position: fixed;
+  width: 17%;
     padding: 10px;
     background-color: #007bff;
     color: #fff;
@@ -1199,6 +1209,7 @@ strong {
     padding: 10px;
     height: 300px;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .chat-input {
@@ -1641,10 +1652,7 @@ strong {
     max-height: 1000px; /* Chiều cao khi mở rộng */
 }
 
-.product {
-    width: 140px;
-  
-}
+
 
 .product img {
     width: 100%;

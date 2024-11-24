@@ -256,7 +256,7 @@ buttonCity.addEventListener('click',() =>{
 
 function continueToNext() {
     // Hiển thị thông báo thành công    
-    alert('Đặt hàng thành công!');
+    
 
     // Chuyển hướng về trang chủ
     window.location.href = 'deliveryAdd.html'; // Thay 'index.html' bằng đường dẫn trang chủ của bạn
