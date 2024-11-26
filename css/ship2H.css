@@ -1288,7 +1288,7 @@ header {
     align-items: center;
     gap: 50px;
 
-    }
+}
 
 .info-item {
     display: flex;
@@ -1328,9 +1328,10 @@ header {
 .breadcrumb {
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: #F2F1F6 ;
+    background-color: #F2F1F6;
 }
-.breadcrumb a{
+
+.breadcrumb a {
     text-decoration: none;
     color: #B5B5B5;
     margin-bottom: 20px;
@@ -1338,19 +1339,20 @@ header {
 }
 
 /*content-body*/
-.content-body{
+.content-body {
     display: flex;
     align-items: stretch;
     width: 100%;
 }
 
 /*content-left*/
-.content-left{
+.content-left {
     background-color: white;
     padding: 15px;
     width: 15%;
 
 }
+
 .content-left ul {
     list-style: none;
     padding: 0;
@@ -1421,6 +1423,7 @@ header {
     border-bottom: 1px solid #ccc;
     position: relative; /* Đảm bảo các thẻ li không bị xê dịch */
 }
+
 .content-right-one ul li a {
     text-decoration: none;
     color: #333;
@@ -1445,8 +1448,18 @@ header {
     border-top: 1px solid #ccc;
 }
 
+.panel strong {
+    font-weight: bold;
+    color: black;
+}
+
+.panel p {
+    color: #777;
+    line-height: 1.5;
+}
+
 .accordion.active .panel {
-    display: block; /* Hiển thị nội dung khi thẻ được mở */
+    display: block;
 }
 
 

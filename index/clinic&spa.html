@@ -6,143 +6,198 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nthanh Header</title>
     <link rel="icon" href="../image/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/ship2H.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-          integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="../css/endSaleMonth.css">
+
 </head>
 
 <body>
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <img src="../image/logo.png" alt="Logo" class="popup-logo">
+        <p>Click vào Đồng Ý để nhận thông tin khuyến mãi nhanh nhất từ Hasaki</p>
+        <div class="popup-buttons">
+            <button class="popup-btn" id="deny-btn">Không đồng ý</button>
+            <button class="popup-btn agree" id="agree-btn">Đồng Ý</button>
+        </div>
+    </div>
+</div>
 <div id="web-service">
     <header class="header">
-        <div class="container">
-            <div class="wrapper-header">
-                <img src="../image/logo.png" alt="logo" class="logo">
-                <div class="user-actions">
-                    <a href="#" class="request-link">Gửi yêu cầu</a>
-                    <span>|</span>
-                    <a href="#" class="login-link">Đăng nhập</a>
+
+        <div class="top-banner">
+            <p>22.10 Ưu Đãi Đỉnh Nóc & Giờ Vàng Deal Sốc - Duy Nhất Từ 11h Ngày 22.10 (Áp Dụng Online)</p>
+        </div>
+        <div class="header-main">
+            <div class="logo-left">
+
+                <div class="logo">
+                    <img src="../image/logo.png" alt="NThanh.vn">
+                    <div class="logo-text">
+                        <h3>TTT.vn</h3>
+                        <span>Chất lượng thật - Giá trị thật</span>
+                    </div>
+                </div>
+
+                <div class="search-bar">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm..." id="search-input">
+                    <div class="search-notification">
+                        <div class="notification-container">
+                            <ul class="notifications">
+                                <li>24-26.10 Halloween Cực Chất - Săn Deal Độc Nhất (Online Từ 12H)</li>
+                                <li>Khai trương CN224 Q. Bình Tân, TP. HCM | Deal 2K (Chỉ 27/10)</li>
+                                <li>Khai trương CN223 TP. Hội An, Quảng Nam | Deal 2K (Chỉ 27/10)</li>
+                                <li>Mua Gì Cũng Rẻ - Dưới 99K</li>
+                                <li>Giảm 200K/Gói Triệt Lông Diode Laser Cho HSSV Nữ</li>
+                            </ul>
+                        </div>
+
+
+                        <!-- Phần danh mục và thương hiệu -->
+                        <div class="category-brand-container">
+                            <div class="category-title">
+                                <span>Nước Hoa</span>
+                            </div>
+
+                            <div class="categories">
+                                <div class="category-item">Trang Điểm Mặt</div>
+                                <div class="category-item">Trang Điểm Môi</div>
+                                <div class="category-item">Mặt Nạ</div>
+                                <div class="category-item">Sữa Tắm</div>
+                                <div class="category-item">Bộ Trang Điểm</div>
+                                <div class="category-item">Vấn Đề Về Da</div>
+                            </div>
+
+                            <div class="brands">
+                                <img src="https://media.hcdn.vn/brand/1593168007the-coc_img_150x75_766519_fit_center.jpg"
+                                     alt="L'Oreal">
+                                <img src="https://media.hcdn.vn//hsk/brandnaris-cosmetics-logo1716963318_img_150x75_766519_fit_center.jpg"
+                                     alt="Skin Aqua">
+                                <img src="https://media.hcdn.vn/hsk/brand/Sunplay-Skin-Aqua1662624548_img_150x75_766519_fit_center.jpg"
+                                     alt="Eucerin">
+                                <img src="https://media.hcdn.vn/hsk/brand/Sunplay-Skin-Aqua1662624548_img_150x75_766519_fit_center.jpg"
+                                     alt="Klairs">
+                                <img src="https://media.hcdn.vn//hsk/brandEucerin-logo1690282206_img_150x75_766519_fit_center.jpg"
+                                     alt="Garnier">
+                                <img src="https://media.hcdn.vn//hsk/brandSkin10041678681869_img_150x75_766519_fit_center.jpg"
+                                     alt="Skin1004">
+                                <img src="https://media.hcdn.vn/brand/1661766124cetaphil_img_150x75_766519_fit_center.jpg"
+                                     alt="Judydoll">
+                                <img src="https://media.hcdn.vn//hsk/brandHada-labo-logo1690282339_img_150x75_766519_fit_center.jpg"
+                                     alt="Dove">
+                            </div>
+                        </div>
+                    </div>
+                    <a type="button" id="find-product">
+                        <image src="https://hasaki.vn/v3/images/icons/search_icon.svg"/>
+                    </a>
                 </div>
             </div>
-            <div class="support-banner">
-                <h2 class="banner-title">Xin chào! Chúng tôi có thể giúp gì cho bạn?</h2>
-                <div class="banner-search">
-                    <input type="text" class="search-input"
-                           placeholder="Nhập từ khóa để tìm sản phẩm, thương hiệu bạn mong muốn. Ví dụ: TTT">
-                    <button class="search-btn">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </div>
-                <div class="support-info">
-                    <div class="info-item">
-                        <i class="fa fa-question-circle"></i>
-                        <a href="tel:18006310" class="info-text">
-                            1800 6310 <span>(Khiếu nại, góp ý)</span>
+            <div class="float-right">
+                <div class="header-icons">
+                    <img src="https://hasaki.vn/images/graphics/icon_header_2.svg">
+                    <div class="login-hover">
+                        <a href="login.html" target="_blank" class="login">Đăng nhập/
+                            <a href="signup.html" target="_blank">Đăng ký </br>Tài khoản &darr;</a>
+                            <div class="login-box">
+                                <h3>Đăng nhập với</h3>
+                                <div class="social-login">
+                                    <button class="facebook-login">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                                             alt="Facebook logo">
+                                        Facebook
+                                    </button>
+                                    <button class="google-login">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png"
+                                             alt="Google logo">
+                                        Google +
+                                    </button>
+                                </div>
+                                <p>Hoặc đăng nhập với Nthanh.vn</p>
+                                <button class="hasaki-login" onclick="window.location.href='login.html'">Đăng
+                                    nhập
+                                </button>
+                                <p>Bạn chưa có tài khoản? <a href="login.html">ĐĂNG KÝ NGAY</a></p>
+                            </div>
+
                         </a>
                     </div>
-                    <div class="info-item">
-                        <i class="fa fa-phone"></i>
-                        <a href="tel:18006324" class="info-text">
-                            1800 6324 <span>(Tư vấn)</span>
-                        </a>
+                    <div class="header-icon-sub">
+                        <img src="https://hasaki.vn/images/graphics/icon_header_store.svg">
+                        <a href="#" id="htch"> Hệ thống</br> cửa hàng</a>
                     </div>
-                    <div class="info-item">
-                        <i class="fa fa-comments"></i>
-                        <a href="chat-link.html" class="info-text">
-                            Chat
-                        </a>
+                    <div class="header-icon-sub">
+                        <img src="https://hasaki.vn/images/graphics/icon_header_3.svg">
+                        <a href="#" id="htkh"> Hỗ trợ </br>khách hàng</a>
+                    </div>
+                    <div class="header-icon-sub">
+                        <img src="https://hasaki.vn/images/graphics/icon_header_1.svg">
+
+                        <a href="cartProduct.html" class="cart-icon"> Giỏ hàng <span class="cart-count">2</span></a>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="header-list-product">
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <div class="paddig-hover">
+                        <li id="sub-menu-hover"><a href="">☰ DANH MỤC</a></li>
+                    </div>
+                    <div id="sub-menu-web">
+                        <div class="col-menu-cap1">
+                            <div class="sub-item-menu">
+                                <a href="#">Sức Khỏe - Làm Đẹp</a>
+                            </div>
+                            <div class="sub-item-menu">
+                                <a href="#">Mỹ Phẩm High-End</a>
+                            </div>
+                            <div class="sub-item-menu">
+                                <a href="#">Chăm Sóc Da Mặt</a>
+                            </div>
+                            <div class="sub-item-menu">
+                                <a href="#">Trang Điểm</a>
+                            </div>
+                            <div class="sub-item-menu">
+                                <a href="#">Chăm Sóc Tóc Và Da Đầu</a>
+                            </div>
+                            <div class="sub-item-menu">
+                                <a href="#">Chăm Sóc Cơ Thể</a>
+                            </div>
+                            <div class="sub-item-menu">
+                                <a href="#">Chăm Sóc Cá Nhân</a>
+                            </div>
+                            <div class="sub-item-menu">
+                                <a href="#">Nước Hoa</a>
+                            </div>
+                            <div class="sub-item-menu">
+                                <a href="#">Thực Phẩm Chức Năng</a>
+                            </div>
+                            <div class="sub-item-menu">
+                                <a href="#">Dịch Vụ Trải Nghiệm</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <li><a href="#">HASAKI DEALS</a></li>
+                    <li><a href="#">HOT DEALS</a></li>
+                    <li><a href="#">THƯƠNG HIỆU</a></li>
+                    <li><a href="#">HÀNG MỚI VỀ</a></li>
+                    <li><a href="#">BÁN CHẠY</a></li>
+                    <li><a href="#">CLINIC & SPA</a></li>
+                </ul>
+                <ul class="nav-right">
+                    <li><a href="#">Tra cứu đơn hàng</a></li>
+                    <li><a href="#">Tải ứng dụng</a></li>
+                    <li><a href="#">Chọn khu vực của bạn</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <div id="session-body">
         <div class="container">
-            <div class="breadcrumb">
-                <a href="main.html">Trang chủ ></a>
-                <a href="#">Vận chuyển 2H tại Hasaki | TTT.vn</a>
-            </div>
-            <div class="content-body">
-                <div class="content-left">
-                    <ul>
-                        <li><i class="fa-solid fa-user-tag"></i> <a href="#">Tài khoản</a></li>
-                        <li><i class="fa-solid fa-cart-arrow-down"></i> <a href="#">Đặt hàng</a></li>
-                        <li><i class="fa-solid fa-box-open"></i> <a href="#">Quy cách đóng gói</a></li>
-                        <li><i class="fa-solid fa-truck"></i> <a href="#">Vận chuyển 2H</a></li>
-                        <li><i class="fa-solid fa-hand-holding-dollar"></i> <a href="#">Phí vận chuyển</a></li>
-                        <li><i class="fa-solid fa-rotate"></i> <a href="#">Đổi trả, hoàn tiền</a></li>
-                        <li><i class="fa-solid fa-hands-bubbles"></i> <a href="#">Dịch vụ Spa</a></li>
-                        <li><i class="fa-solid fa-book-atlas"></i> <a href="#">Tuyển dụng</a></li>
-                    </ul>
-                    <h3>Thông tin hỗ trợ</h3>
-                    <ul>
-                        <li><a href="#">Giới thiệu Hasaki</a></li>
-                        <li><a href="#">Liên hệ</a></li>
-                        <li><a href="#">Hệ thống cửa hàng Hasaki trên toàn quốc</a></li>
-                        <li><a href="#">Các Kênh Chính Thức Của Hasaki</a></li>
-                        <li><a href="#">Hướng dẫn đặt hàng</a></li>
-                        <li><a href="#">Hướng dẫn đặt hàng 2H</a></li>
-                        <li><a href="#">Phương thức thanh toán</a></li>
-                        <li><a href="#">Chính sách vận chuyển giao nhận</a></li>
-                    </ul>
-                </div>
-                <div class="content-right">
-                    <div class="content-right-one">
-                        <ul>
-                            <li class="accordion">
-                                <a href="#">Đăng ký thành viên Hasaki như thế nào?</a>
-                                <div class="panel">
-                                    <p>Quý khách vui lòng nhấn vào nút <strong>“Đăng nhập/Đăng ký tài khoản”</strong>
-                                        trên góc phải màn hình sau đó chọn <strong>“Đăng ký/Đăng ký ngay”</strong> (Đối
-                                        với Desktop) hoặc tại góc trái màn hình, chọn biểu tượng Menu rồi chọn <strong>“Đăng
-                                            nhập/Đăng ký”</strong> (Đối với Mobile). Vui lòng điền đầy đủ các thông tin
-                                        được yêu cầu và nhấn nút <strong>“Đăng ký”</strong>. Hệ thống sẽ tự động gửi
-                                        email thông báo về việc kích hoạt tài khoản đến tài khoản email cá nhân của quý
-                                        khách. Quý khách vui lòng click vào đường link để được xác nhận đã tạo tài khoản
-                                        thành công.</p>
-                                    <p>Trường hợp không nhận được email kích hoạt, quý khách vui lòng kiểm tra kỹ trong
-                                        hộp thư rác hoặc Spam hoặc liên hệ trực tiếp qua Hotline <strong>1800
-                                            6324</strong> để được hỗ trợ.</p>
-                                </div>
 
-                            </li>
-                            <li class="accordion">
-                                <a href="#">Tại sao tôi không thể đăng nhập vào tài khoản của tôi?</a>
-                                <div class="panel">
-                                    <p>Quý khách vui lòng kiểm tra kỹ về kiểu gõ hoặc phím Caps Lock trong quá trình điền thông tin đăng nhập thành viên, trường hợp không thể đăng nhập thành công quý khách vui lòng chọn nút <strong>“Quên mật khẩu”</strong> trên góc phải màn hình và nhập email hoặc số điện thoại đã đăng ký. Hệ thống sẽ tự động gửi một đường dẫn vào email hoặc SMS của quý khách, quý khách vui lòng nhấp vào đường dẫn để tạo lại mật khẩu mới. Sau khi hoàn tất, quý khách có thể đăng nhập vào tài khoản bằng mật khẩu vừa tạo.</p>
-                                </div>
-
-                            </li>
-                            <li class="accordion">
-                                <a href="#">Tôi muốn thay đổi thông tin tài khoản thành viên như thế nào?</a>
-                                <div class="panel">
-                                    <p>Để thay đổi thông tin cá nhân quý khách vui lòng đăng nhập vào tài khoản của
-                                        mình, chọn nút “Tài khoản của bạn” rồi chọn vào nút “sửa” để thay đổi thông
-                                        tin.</p>
-                                </div>
-                            </li>
-                            <li class="accordion">
-                                <a href="#">Tại sao tôi không thể đăng nhập vào tài khoản của tôi?</a>
-                                <div class="panel">
-                                    <p>Đổi điểm lấy quà theo danh sách quà tặng có sẵn với các mức điểm tương ứng, quà sẽ được tặng kèm đơn hàng tiếp theo. <a href="#">Xem thêm hướng dẫn tại đây</a></p>
-                                    <p><a href="#">Đăng ký thành viên Hasaki như thế nào?</a></p>
-                                </div>
-
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="content-right-two">
-                        <ul>
-                            <li><a href="#">Tại sao tôi không thể đăng nhập vào tài khoản của tôi?</a></li>
-                            <li><a href="#">Tôi muốn thay đổi thông tin tài khoản thành viên như thế nào?</a></li>
-                            <li><a href="#">Tôi có thể sử dụng chung tài khoản với người khác được không?</a></li>
-                            <li><a href="#">Đăng ký thành viên tại Hasaki.vn sẽ giúp ích gì cho tôi?</a></li>
-                            <li><a href="#">Hasaki có chương trình ưu đãi nào hấp dẫn dành cho khách hàng thân
-                                thiết?</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <div id="session-footer">
@@ -161,6 +216,7 @@
                             </div>
                             <div class="chat-content">
                                 <p>Xin chào! Bạn cần hỗ trợ gì?</p>
+                                <!-- Add more chat messages here if needed -->
                             </div>
                             <input type="text" class="chat-input" placeholder="Nhập tin nhắn...">
                         </div>
@@ -455,6 +511,9 @@
         }
     }
 
+</script>
+
+<script>
 
     loginUser();
     // Lấy danh sách tất cả các phần tử có class "logout-account"
@@ -479,19 +538,6 @@
         window.location.href = 'htch.html'
     }
 
-
-</script>
-<script>
-    const accordions = document.querySelectorAll('.accordion');
-
-    accordions.forEach(accordion => {
-        accordion.querySelector('a').addEventListener('click', function (e) {
-            e.preventDefault(); // Ngừng việc mở liên kết mặc định
-
-            // Mở hoặc đóng phần nội dung khi nhấn vào thẻ
-            accordion.classList.toggle('active');
-        });
-    });
 
 </script>
 
