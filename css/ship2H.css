@@ -73,44 +73,6 @@ body {
     opacity: 0.8;
 }
 
-.header {
-
-    background-color: #2e5f45;
-    color: black;
-    position: sticky;
-    top: 0;
-    /* Dính vào cạnh trên của màn hình */
-    z-index: 1000;
-    /* Đảm bảo header nằm trên các phần tử khác */
-
-
-}
-.header-info{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-
-    color: white;
-    font-size: 14px;
-}
-.top-banner {
-    background-color: #9966cc;
-    padding: 5px;
-    height: 20%;
-    text-align: center;
-    font-size: 16px;
-
-}
-
-.header-main {
-    display: flex;
-    height: 40px;
-    align-items: center;
-    padding: 30px 20px;
-
-}
-
 .logo-left {
     display: flex;
 
@@ -681,7 +643,7 @@ body {
 }
 
 #session-body {
-    height: 8000px;
+    height: auto;
     flex-grow: 1;
     overflow: visible;
 }
@@ -859,25 +821,12 @@ footer {
 
 }
 
-.contact-info h3 {
-    color: #fff;
-    font-size: 16px;
-    font-size: bold;
-
-}
-
-.info-item p {
-    color: #218838;
-    cursor: pointer;
-    font-size: 14px;
-}
 
 .contact-info p {
     cursor: pointer;
     margin-left: 10px;
     font-size: 12px;
     margin-top: 5px;
-    font-size: bold;
     color: #dcdbdb;
 
 }
@@ -1249,11 +1198,298 @@ strong {
 }
 
 
-
 .container {
     margin: 0 auto;
     width: 1200px;
 }
 
 /*Ship*/
+header {
+    width: 100%;
+    background-color: white;
+}
 
+.wrapper-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    height: 60px;
+}
+
+.logo {
+    height: 100%;
+    width: auto;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+}
+
+.user-actions a {
+    text-decoration: none;
+    color: #555;
+    margin: 0 5px;
+    transition: color 0.2s ease;
+}
+
+.user-actions a:hover {
+    color: #28a745;
+    text-decoration: none;
+}
+
+
+/*Top BANNER*/
+/* Header */
+.support-banner {
+    background-color: #2f6e56; /* Màu nền xanh */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.banner-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.banner-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: 60%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+}
+
+.search-btn {
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.search-btn i {
+    color: #2f6e56;
+}
+
+.support-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    }
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.info-item i {
+    font-size: 30px;
+    color: #fff;
+    background-color: #276143;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-text {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+.info-text span {
+    font-size: 16px;
+    font-weight: normal;
+    color: #dcdbdb;
+}
+
+/*Breach*/
+
+.breadcrumb {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #F2F1F6 ;
+}
+.breadcrumb a{
+    text-decoration: none;
+    color: #B5B5B5;
+    margin-bottom: 20px;
+
+}
+
+/*content-body*/
+.content-body{
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+/*content-left*/
+.content-left{
+    background-color: white;
+    padding: 15px;
+    width: 15%;
+
+}
+.content-left ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.content-left ul li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.content-left ul li i {
+    margin-right: 8px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.content-left ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.content-left ul li a:hover {
+    color: #ff6600;
+}
+
+.content-left ul li:hover i {
+    color: #ff6600;
+}
+
+/* Tổng thể khối content-right */
+.content-right {
+    display: flex;
+    gap: 20px;
+    background-color: #fff;
+    flex: 1;
+}
+
+.content-right-one {
+    flex: 7;
+}
+
+.content-right-one ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* content-right-one */
+.content-right-one {
+    flex: 7;
+}
+
+.content-right-one ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.content-right-one ul li {
+    margin: 10px 0;
+    border-bottom: 1px solid #ccc;
+    position: relative; /* Đảm bảo các thẻ li không bị xê dịch */
+}
+.content-right-one ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold; /* Làm chữ in đậm */
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.content-right-one ul li a:hover {
+    color: lightgreen;
+    background-color: #f9f9f9;
+}
+
+/* Panel sẽ bị ẩn và sổ xuống khi nhấn */
+.panel {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.accordion.active .panel {
+    display: block; /* Hiển thị nội dung khi thẻ được mở */
+}
+
+
+.content-right-one ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.content-right-one ul li a:hover {
+    color: #ff6600;
+    background-color: #f9f9f9;
+}
+
+.content-right-two {
+    flex: 3;
+}
+
+.content-right-two ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.content-right-two ul li {
+    margin: 10px 0;
+}
+
+.content-right-two ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.content-right-two ul li a:hover {
+    color: #ff6600;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
