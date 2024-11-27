@@ -679,9 +679,9 @@ body {
 .hasaki-login:hover {
     background-color: #264b38;
 }
-
+ 
 #session-body {
-    height: 8000px;
+    height: 7000px;
     flex-grow: 1;
     overflow: visible;
 }
@@ -1820,16 +1820,23 @@ strong {
     background-color: #45a049;
 }
 
-.product-list {
+.product-header {
     display: flex;
+    flex-direction: row;
+    width: 102%;
     gap: 15px;
+    background-color:  #fff;
+    margin-bottom: 20px;
     flex-wrap: wrap;
     overflow: hidden;
-    max-height: 200px; /* Chiều cao giới hạn ban đầu */
+    max-height: 300px; /* Chiều cao giới hạn ban đầu */
     transition: max-height 0.3s ease-in-out;
  
 }
+.product-list{
 
+
+}
 .product-list.expanded {
     max-height: 1000px; /* Chiều cao khi mở rộng */
 }
