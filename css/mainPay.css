@@ -8,32 +8,35 @@ body {
 
 .navbar {
     display: flex;
-    align-items: center;
-    background-color: #2a7c40;
-    color: white;
-    padding: 16px;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  background-color:#2e5f45;
+  height: 80px; 
 }
 
-.navbar .logo {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.navbar .logo img {
-    width: 40px;
-    height: auto;
-}
-
-.navbar .logo span {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.navbar h2 {
-    margin-left: auto;
-    font-size: 18px;
-}
+.logo {
+    float: left;
+    width: 50%;
+  }
+  .logo img {
+    height: 80px; 
+    vertical-align: middle;
+  
+  }
+  .right-support{
+      float: right;
+    
+     
+  }
+  .right-support a{
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 24px;
+      color: white;
+      font-size: 24px;
+  
+  }
 
 .address-section {
     background-color: white;

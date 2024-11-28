@@ -6,29 +6,31 @@ body {
   }
   
 .header{
-    background-color:#b6c6bf;
-    height: 50px; 
-    padding: 10px 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  background-color:#2e5f45;
+  height: 80px; 
 }
-.logo-support{
-    float: left;
-    width: 50%;
+.logo {
+  float: left;
+  width: 50%;
 }
-.logo-support img{
-    height: 40px; 
-    vertical-align: middle;
-    margin-top: 5px;
+.logo img {
+  height: 80px; 
+  vertical-align: middle;
+
 }
 .right-support{
-    float: left;
-    padding: 0;
-    margin: 0;
+    float: right;
+   
 }
 .right-support a{
     text-decoration: none;
     display: inline-block;
-    margin-top: 10px;
-    color: rgb(75, 66, 66);
+    margin-top: 24px;
+    color: white;
     font-size: 24px;
 
 }
@@ -50,6 +52,7 @@ body {
     border-radius: 8px;
     padding: 16px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 350px;
   }
   
   .card {
