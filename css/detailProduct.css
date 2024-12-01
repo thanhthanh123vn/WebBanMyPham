@@ -5,6 +5,11 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.container {
+    margin: 0 auto;
+    width: 1500px;
+}
+
 .header {
     background-color: #2e5f45;
     color: white;
@@ -159,10 +164,12 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
+
 .synthetic {
     display: flex;
     margin-right: 70px;
 }
+
 .slection-product {
     background-color: #F2F1F6;
     height: 100%;
@@ -177,6 +184,7 @@ body {
     height: 100%;
     width: 100%;
 }
+
 #list-search-alpha a {
     color: gray;
 }
@@ -190,6 +198,7 @@ body {
     float: left;
     display: flex;
 }
+
 #list-search-alpha ul {
     display: flex;
     list-style: none;
@@ -207,6 +216,7 @@ body {
 .list-search-alpha ul li a:hover {
     color: lightgoldenrodyellow;
 }
+
 /* Liên kết - Xóa gạch chân khi hover */
 a {
     text-decoration: none;
@@ -370,12 +380,14 @@ li.custom-font-size {
     font-style: italic;
     font-size: 20px;
 }
+
 .your-class-name {
     padding-bottom: 15px; /* Khoảng cách 15px ở phía dưới */
 }
+
 .button-light-green {
     margin-top: 10px;
-  
+
     background-color: lightgreen; /* Màu xanh lá nhạt */
     color: black; /* Màu chữ */
     border: none; /* Bỏ viền */
@@ -411,6 +423,7 @@ li.custom-font-size {
 .button-orange:hover {
     opacity: 0.9; /* Giảm độ mờ khi hover */
 }
+
 .info-image {
     width: 50px; /* Đặt chiều rộng cho ảnh */
     height: auto; /* Giữ tỷ lệ cho ảnh */
@@ -427,6 +440,7 @@ li.custom-font-size {
         float: left;
         padding-right: 40px;
     }
+
     /* Các tùy chỉnh khác nếu cần */
 }
 
@@ -439,6 +453,7 @@ li.custom-font-size {
     align-items: center; /* Căn giữa theo chiều dọc */
     margin-bottom: 10px; /* Khoảng cách giữa các mục */
 }
+
 .main-infor-detail {
     margin-right: 490px;
 }
@@ -488,6 +503,7 @@ li.custom-font-size {
     text-decoration: none;
     color: black; /* Đổi màu chữ nếu cần */
 }
+
 #information {
     margin-top: 10px;
     margin-left: 45px; /* Căn trái */
@@ -505,6 +521,7 @@ li.custom-font-size {
     max-width: 100%; /* Giới hạn kích thước hình ảnh */
     height: auto; /* Giữ tỉ lệ hình ảnh */
 }
+
 #parameter {
     margin-top: 10px;
     margin-left: 45px; /* Căn trái */
@@ -527,6 +544,7 @@ li.custom-font-size {
     padding: 10px; /* Khoảng cách bên trong các ô */
     border: 1px solid #ddd; /* Đường viền cho ô */
 }
+
 #ingredient {
     margin-top: 10px;
     margin-left: 45px; /* Căn trái */
@@ -550,9 +568,10 @@ li.custom-font-size {
 #ingredient p {
     margin: 5px 0; /* Khoảng cách giữa các đoạn văn */
 }
+
 #use {
     margin-top: 10px;
-   
+
     background-color: white;
     margin-left: 45px; /* Căn trái */
     margin-right: 70px; /* Căn phải */
@@ -561,12 +580,13 @@ li.custom-font-size {
 #use h3 {
     font-size: 20px; /* Cỡ chữ cho tiêu đề */
     margin: 10px 20px;
-     /* Khoảng cách trên và dưới cho tiêu đề */
+    /* Khoảng cách trên và dưới cho tiêu đề */
 }
 
 #use p {
     margin: 5px 20px; /* Khoảng cách giữa các đoạn văn */
 }
+
 #Evaluate {
     margin-top: 10px; /* Khoảng cách trên */
     background-color: white; /* Màu nền */
@@ -584,7 +604,8 @@ li.custom-font-size {
 #Evaluate p {
     margin: 5px 0; /* Khoảng cách giữa các đoạn văn */
 }
-#Q&A {
+
+#Q& A {
     margin-top: 10px; /* Khoảng cách trên */
     background-color: white; /* Màu nền */
     margin-left: 45px; /* Căn trái */
@@ -593,13 +614,13 @@ li.custom-font-size {
     border-radius: 5px; /* Bo góc nếu muốn */
 }
 
-#Q&A h3 {
+#Q& A h3 {
     font-size: 20px; /* Cỡ chữ cho tiêu đề */
     margin: 10px 0; /* Khoảng cách trên và dưới cho tiêu đề */
     padding-left: 0; /* Bỏ padding bên trái nếu có */
 }
 
-#Q&A p {
+#Q& A p {
     margin: 5px 0; /* Khoảng cách giữa các đoạn văn */
 }
 
@@ -612,6 +633,6 @@ li.custom-font-size {
 }
 
 /* Nếu cần căn trái tiêu đề thêm 45px */
-#Q&A h3 {
+#Q& A h3 {
     padding-left: 45px; /* Căn trái cho tiêu đề */
 }
