@@ -192,7 +192,12 @@ body {
     position: relative;
     display: inline-block;
 }
-
+.account-menu:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color:#2f8440;
+}
 .account-button {
     background-color: #3e8e41;
     color: white;
@@ -455,7 +460,7 @@ body {
 
 }
 
-.login-hover {
+.login-hover{ 
     margin-top: 10px;
     margin-left: 10px;
     padding-bottom: 10px;
@@ -753,7 +758,19 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
+.price-product{
+    display: flex;
+    justify-content: space-between;
 
+}
+.price-product .price-new{
+    color: #666;
+    text-decoration: line-through;
+  
+    
+
+
+}
 .product:hover {
     border: 2px solid orange;
 }

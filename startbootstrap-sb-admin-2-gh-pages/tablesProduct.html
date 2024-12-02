@@ -22,7 +22,17 @@
 
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-
+    <style>
+        .updateUser {
+            background-color: #4e73df;
+            color: rgb(9, 255, 0);
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-left: 20px;  
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body id="page-top">
@@ -134,7 +144,7 @@
                     <h6 class="collapse-header">Thông tin Bảng</h6>
                     <a class="collapse-item" href="tables.html">Thông tin người dùng</a>
                     <a class="collapse-item" href="tablesProduct.html">Thông tin Sản Phẩm</a>
-                    <a class="collapse-item" href="forgot-password.html">Thông tin người quản trị</a>
+                   
                     <div class="collapse-divider"></div>
                   
                 </div>
@@ -383,7 +393,12 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Tables</h1>
+                    <h1 class="h3 mb-2 text-gray-800">Bảng</h1>
+                    <div class="card shadow mb-4" style="display: flex; flex-direction: row; align-items: center; 
+                    text-align: center; padding: 10px 20px;">  
+                        <a class="h3 mb-2 text-gray-800 updateUser" onclick="showAddModal()" >Thêm</a>
+                       
+                        </div>
      
 
                     <!-- DataTales Example -->
@@ -391,127 +406,46 @@
                         <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-primary">Bảng chi tiết Sản Phẩm</h6>
                         </div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    
-                                        <thead>
-                                            <tr>
-                                                <th>Mã Sản Phẩm</th>
-                                                <th>Tên Sản Phẩm</th>
-                                                <th>Thương Hiệu</th>
-                                                <th>Image</th>
-                                                <th>Giá</th>
-                                                <th>Mô Tả</th>
-                                                <th>Loại</th>
-                                                <th>Trạng Thái</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>SP001</td>
-                                                <td>Sữa Chống Nắng Anessa</td>
-                                                <td>Anessa</td>
-                                                <td><img width="80px" src="https://media.hcdn.vn/catalog/product/f/a/facebook-dynamic-sua-chong-nang-anessa-cho-da-nhay-cam-tre-em-60ml-moi-1710558274_img_300x300_b798dd_fit_center.jpg" alt="Anessa"></td>
-                                                <td>237.000 đ</td>
-                                                <td>Sữa chống nắng dưỡng da, kiềm dầu.</td>
-                                                <td>Chống Nắng</td>
-                                                <td>Còn Hàng</td>
-                                            </tr>
-                                            <tr>
-                                                <td>SP002</td>
-                                                <td>Kem Dưỡng Trắng Da L'Oreal</td>
-                                                <td>L'Oreal</td>
-                                                <td><img width="80px" src="https://media.hcdn.vn/catalog/product/p/r/promotions-auto-nuoc-tay-trang-tuoi-mat-l-oreal-3-in-1-danh-cho-da-dau-da-hon-hop-400ml_VLF3ivLnqLaFKFed_img_220x220_0dff4c_fit_center.png" alt="L'Oreal"></td>
-                                                <td>399.000 đ</td>
-                                                <td>Kem dưỡng da ban ngày, cung cấp độ ẩm.</td>
-                                                <td>Dưỡng Da</td>
-                                                <td>Còn Hàng</td>
-                                            </tr>
-                                            <tr>
-                                                <td>SP003</td>
-                                                <td>Sữa Rửa Mặt Innisfree</td>
-                                                <td>Innisfree</td>
-                                                <td><img width="80px" src="https://media.hcdn.vn/catalog/product/f/a/facebook-dynamic-422215274-1696400387_img_300x300_b798dd_fit_center.jpg" alt="Innisfree"></td>
-                                                <td>250.000 đ</td>
-                                                <td>Sữa rửa mặt chiết xuất trà xanh.</td>
-                                                <td>Sữa Rửa Mặt</td>
-                                                <td>Hết Hàng</td>
-                                            </tr>
-                                            <tr>
-                                                <td>SP004</td>
-                                                <td>Kem Chống Nắng La Roche-Posay</td>
-                                                <td>Sunplay</td>
-                                                <td><img width="80px" src="https://media.hcdn.vn/catalog/product/f/a/facebook-dynamic-kem-chong-nang-la-roche-posay-kiem-soat-dau-spf50-50ml-1716437865_img_300x300_b798dd_fit_center.jpg" alt="Sunplay"></td>
-                                                <td>180.000 đ</td>
-                                                <td>Kem chống nắng SPF 50+, thích hợp cho mọi loại da.</td>
-                                                <td>Chống Nắng</td>
-                                                <td>Còn Hàng</td>
-                                            </tr>
-                                            <tr>
-                                                <td>SP005</td>
-                                                <td> Nước Tẩy Trang Bí Đao Cocoon</td>
-                                                <td>Vaseline</td>
-                                                <td><img width="80px" src="https://media.hcdn.vn/catalog/product/f/a/facebook-dynamic-422204884-1689925661_img_380x380_64adc6_fit_center.png" alt="Vaseline"></td>
-                                                <td>70.000 đ</td>
-                                                <td>  Combo 2 Nước Tẩy Trang Bí Đao Cocoon Làm Sạch & Giảm Dầu.</td>
-                                                <td>Son Môi</td>
-                                                <td>Còn Hàng</td>
-                                            </tr>
-                                            <tr>
-                                                <td>SP006</td>
-                                                <td>Mặt Nạ Đất Sét Kiehl's</td>
-                                                <td>Kiehl's</td>
-                                                <td><img width="80px"  src="https://media.hasaki.vn/catalog/product/f/a/facebook-dynamic-422212532-1696496153_img_320x320_b04c1a_fit_center.png" alt="Kiehl's"></td>
-                                                <td>450.000 đ</td>
-                                                <td>Mặt nạ giúp loại bỏ bã nhờn và làm sạch sâu.</td>
-                                                <td>Mặt Nạ</td>
-                                                <td>Hết Hàng</td>
-                                            </tr>
-                                            <tr>
-                                                <td>SP007</td>
-                                                <td>Toner Nước Hoa Hồng Simple</td>
-                                                <td>Simple</td>
-                                                <td><img width="80px" src="https://media.hcdn.vn/catalog/product/f/a/facebookdynamic-nuoc-hoa-hong-simple-danh-cho-da-nhay-cam-200ml-1719903361_img_300x300_b798dd_fit_center.jpg" alt="Simple"></td>
-                                                <td>120.000 đ</td>
-                                                <td>Nước hoa hồng dịu nhẹ, không chứa cồn.</td>
-                                                <td>Toner</td>
-                                                <td>Hết Hàng</td>
-                                            </tr>
-                                            <tr>
-                                                <td>SP008</td>
-                                                <td>Sữa Tắm Love Beauty And Planet</td>
-                                                <td>Love Beauty And Planet</td>
-                                                <td><img width="80px" src="https://media.hcdn.vn/catalog/product/f/a/facebook-dynamic-422217622-1704861754_img_300x300_b798dd_fit_center.jpg" alt="Love Beauty And Planet"></td>
-                                                <td>145.000 đ</td>
-                                                <td>Sữa tắm chiết xuất từ thiên nhiên, giữ ẩm cho da.</td>
-                                                <td>Sữa Tắm</td>
-                                                <td>Còn Hàng</td>
-                                            </tr>
-                                            <tr>
-                                                <td>SP009</td>
-                                                <td>Serum Trắng Da Vitamin C</td>
-                                                <td>Some By Mi</td>
-                                                <td><img width="80px" src="https://media.hcdn.vn/catalog/product/f/a/facebook-dynamic-serum-timeless-ha-vitamin-c-cap-am-lam-sang-da-30ml-1710496967_img_300x300_b798dd_fit_center.jpg" alt="Some By Mi"></td>
-                                                <td>350.000 đ</td>
-                                                <td>Serum chứa vitamin C giúp sáng da, mờ thâm.</td>
-                                                <td>Serum</td>
-                                                <td>Còn Hàng</td>
-                                            </tr>
-                                            <tr>
-                                                <td>SP010</td>
-                                                <td>Kem Tẩy Tế Bào Chết Felina</td>
-                                                <td>St.Ives</td>
-                                                <td><img width="80px" src="https://media.hcdn.vn/catalog/product/f/a/facebook-dynamic-422212388-1705726739_img_300x300_b798dd_fit_center.png" alt="St.Ives"></td>
-                                                <td>80.000 đ</td>
-                                                <td>Tẩy tế bào chết dịu nhẹ, hương trái cây.</td>
-                                                <td>Tẩy Tế Bào Chết</td>
-                                                <td>Còn Hàng</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    
-                            </div>
+                        <table id="productTable">
+                            <thead>
+                                <tr>
+                                    <th>Mã Sản Phẩm</th>
+                                    <th>Tên Sản Phẩm</th>
+                                    <th>Thương Hiệu</th>
+                                    <th>Hình Ảnh</th>
+                                    <th>Giá</th>
+                                    <th>Mô Tả</th>
+                                    <th>Loại</th>
+                                    <th>Trạng Thái</th>
+                                    <th>Hành Động</th>
+                                </tr>
+                            </thead>
+                            <tbody id="productBody">
+                                <!-- Dữ liệu sẽ được thêm vào bằng JavaScript -->
+                            </tbody>
+                        </table>
+                    
+                        <!-- Modal thêm/sửa sản phẩm -->
+                        <div id="productModal" style="display:none;  top:30%; left:30%; background:#fff; padding:20px; border:1px solid #ddd; box-shadow: 0px 4px 6px rgba(0,0,0,0.1);">
+                            <h3 id="modalTitle">Thêm Sản Phẩm</h3>
+                            <label>Mã sản phẩm:</label><br>
+                            <input type="text" id="productID" ><br><br>
+                            <label>Tên sản phẩm:</label><br>
+                            <input type="text" id="productName"><br><br>
+                            <label>Thương hiệu:</label><br>
+                            <input type="text" id="brand"><br><br>
+                            <label>Hình ảnh (URL):</label><br>
+                            <input type="text" id="imageURL"><br><br>
+                            <label>Giá:</label><br>
+                            <input type="text" id="price"><br><br>
+                            <label>Mô tả:</label><br>
+                            <textarea id="description"></textarea><br><br>
+                            <label>Loại:</label><br>
+                            <input type="text" id="category"><br><br>
+                            <label>Trạng thái:</label><br>
+                            <input type="text" id="status"><br><br>
+                            <button onclick="saveProduct()">Lưu</button>
+                            <button onclick="hideModal()">Hủy</button>
                         </div>
                     </div>
 
@@ -561,7 +495,7 @@
             </div>
         </div>
     </div>
-
+<script src="js/manageProduct.js"></script>
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

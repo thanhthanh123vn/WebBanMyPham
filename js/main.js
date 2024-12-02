@@ -1,6 +1,6 @@
 // Lấy tất cả các phần tử có class 'facebook-login' (danh sách phần tử)
 var facebookButtons = document.getElementsByClassName('facebook-login');
-
+const user =  localStorage.getItem('tagData');
 // Lặp qua tất cả các nút 'facebook-login' và gắn sự kiện onclick
 for (var i = 0; i < facebookButtons.length; i++) {
     facebookButtons[i].onclick = function (event) {
@@ -255,11 +255,42 @@ buttonCity.addEventListener('click',() =>{
 });
 
 function continueToNext() {
-    // Hiển thị thông báo thành công    
-    
+    // Lấy dữ liệu từ form
+    const fullname = document.getElementById('fullname').value;
+    const phone = document.getElementById('phone').value;
+    const citySelect = document.getElementById('city');
+    const districtSelect = document.getElementById('district');
+    const addressSelect = document.getElementById('address');
 
-    // Chuyển hướng về trang chủ
-    window.location.href = 'deliveryAdd.html'; // Thay 'index.html' bằng đường dẫn trang chủ của bạn
+    // Kiểm tra nếu thiếu thông tin cần thiết
+    if (fullname === '' || phone === '' || citySelect.value === '' || districtSelect.value === '') {
+        alert('Vui lòng nhập đầy đủ thông tin');
+        return;
+    }
+
+    // Tạo đối tượng chứa thông tin người dùng và địa chỉ
+    var addressfull = {
+        fullname: fullname,
+        phone: phone,
+        address: {
+            city: citySelect.value,
+            district: districtSelect.value,
+            address: addressSelect.value
+        }
+    };
+
+    // Lưu đối tượng vào localStorage
+    localStorage.setItem('address', JSON.stringify(addressfull));
+
+    // Chuyển hướng sang trang khác
+    window.location.href = 'deliveryAdd.html'; 
 }
 
 
+function checkUser(){
+    if(user === null){
+        window.location.href = 'login.html';
+    }else{
+        window.location.href = 'cartProduct.html';
+    }
+}

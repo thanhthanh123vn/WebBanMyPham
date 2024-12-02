@@ -239,7 +239,7 @@
 
                 <div class="cart-summary cart-vat">
 
-                    <p>Tạm tính: <span>270.000 ₫</span></p>
+                    <p>Tạm tính: <span class="total-price-cart"> 270.000 ₫</span></p>
                     <p>(Đã bao gồm VAT)</p>
 
                     <button id="hang-1" class="checkout-btn order-prodcut">Tiến hành đặt hàng</button>
@@ -531,7 +531,8 @@
 </script>
 <script src="../js/detailProduct.js"></script>
 <script>
-
+var total_price_cart = document.getElementsByClassName('total-price-cart').value;
+localStorage.setItem('total-price-cart', JSON.stringify(total_price_cart));
     var cartProduct = localStorage.getItem('cartProduct');
     console.log(cartProduct);
     var productHtml = document.getElementsByClassName('table-container');
@@ -619,6 +620,10 @@
     hang.onclick = function(){
         window.location.href = 'payAddress.html'
     }
+</script>
+<script>
+ 
+
 </script>
 
 

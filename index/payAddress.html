@@ -13,6 +13,7 @@
         <h2>Thêm địa chỉ mới</h2>   
         <button class="close-btn">×</button>         
     </div>
+
     <div class="modal-body">
         <div class="form-group">
             <input id="fullname" name="fullname" type="text" rules="required" type="text" placeholder="Họ và tên" class="form-control">
@@ -20,7 +21,7 @@
             <input id="phone" name="phone" type="text" rules="required" type="text" placeholder="Số điện thoại" class="form-control">
             <span class="form-message"></span>
         </div>
-        <div class="city1">
+        <form class="city1">
             <div class="form-group">
                 <select id="city" required>
                     <option value="">Chọn Tỉnh/Thành phố</option>
@@ -36,16 +37,17 @@
             <div class="district1">
                 <div class="form-group">
                     <select id="district" required>
-                        <option value="">Chọn Quận/Huyện</option>
+                        <option value="" id="district-option">Chọn Quận/Huyện</option>
                     </select>
                 </div>
             </div>
-            <div class="xa">
+            <fo class="xa">
                 <div class="form-group">
                     <select id="address" required>
                         <option value="">Chọn phường/xã</option>
                     </select>
                 </div>
+        </form>
         <div class="form-group">
             <input id="phone" name="phone" type="text" rules="required" type="text" placeholder="Số nhà + tên đường" class="form-control">
             <span class="form-message"></span>
@@ -63,9 +65,11 @@
     </div>
     <div class="modal-footer">
         <button class="btn cancel-btn" onclick="resetForm()">Hủy</button>
-        <button class="btn continue-btn"  onclick="continueToNext()">Tiếp tục</button>
+        <button class="btn continue-btn"   onclick="continueToNext()">Tiếp tục</button>
     </div>
+
 </div>
 </body>
     <script src="../js/main.js"></script>
+ 
 </html>

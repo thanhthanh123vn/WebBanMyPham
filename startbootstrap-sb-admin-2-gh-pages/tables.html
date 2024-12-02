@@ -22,6 +22,17 @@
 
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <style>
+        .updateUser {
+            background-color: #4e73df;
+            color: rgb(9, 255, 0);
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+    </style>
 
 </head>
 
@@ -134,7 +145,7 @@
                     <h6 class="collapse-header">Thông tin Bảng</h6>
                     <a class="collapse-item" href="tables.html">Thông tin người dùng</a>
                     <a class="collapse-item" href="tablesProduct.html">Thông tin Sản Phẩm</a>
-                    <a class="collapse-item" href="tableEmployees.html">Thông tin người quản trị</a>
+                    
                     <div class="collapse-divider"></div>
                   
                 </div>
@@ -380,214 +391,57 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
+              
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Tables</h1>
-     
-
-                    <!-- DataTales Example -->
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">DataTables User</h6>
+                    <h1 class="h3 mb-2 text-gray-800">Bảng</h1>
+                   
+                    <div class="card shadow mb-4" style="display: flex; flex-direction: row; align-items: center; 
+                    text-align: center; padding: 10px 20px;">  
+                        <a class="h3 mb-2 text-gray-800 updateUser" onclick="showAddModal()"  >Thêm</a>
+                       
                         </div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-                                            <th>Tên người dùng</th>
-                                            <th>Tuổi</th>
-                                            <th>Địa chị</th>
-                                            <th>Image</th>
-                                            <th>email</th>
-                                            <th>SDT</th>
-                                        </tr>
-                                        <tr>
-                                            <td>Nguyễn Văn A</td>
-                                            <td>25</td>
-                                            <td>123 Đường A, Hà Nội</td>
-                                            <td><img width="80px" src="../image/man.jpg" alt="Nguyen Van A"></td>
-                                            <td>nguyenvana@example.com</td>
-                                            <td>0912345678</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Trần Thị B</td>
-                                            <td>30</td>
-                                            <td>456 Đường B, TP. Hồ Chí Minh</td>
-                                            <td><img width="80px" src="../image/wonmen.jpg" alt="Tran Thi B"></td>
-                                            <td>tranthib@example.com</td>
-                                            <td>0923456789</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Vũ Minh C</td>
-                                            <td>28</td>
-                                            <td>789 Đường C, Đà Nẵng</td>
-                                            <td><img width="80px" src="../image/man.jpg" alt="Vu Minh C"></td>
-                                            <td>vuminhc@example.com</td>
-                                            <td>0934567890</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Phan Thị D</td>
-                                            <td>35</td>
-                                            <td>101 Đường D, Hải Phòng</td>
-                                            <td><img width="80px" src="../image/wonmen.jpg" alt="Phan Thi D"></td>
-                                            <td>phanthid@example.com</td>
-                                            <td>0945678901</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Lê Văn E</td>
-                                            <td>22</td>
-                                            <td>202 Đường E, Bình Dương</td>
-                                            <td><img width="80px" src="../image/man.jpg" alt="Le Van E"></td>
-                                            <td>levane@example.com</td>
-                                            <td>0956789012</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Đặng Minh F</td>
-                                            <td>27</td>
-                                            <td>303 Đường F, Cần Thơ</td>
-                                            <td><img width="80px" src="../image/man.jpg" alt="Dang Minh F"></td>
-                                            <td>dangminhf@example.com</td>
-                                            <td>0967890123</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Hoàng Thị G</td>
-                                            <td>33</td>
-                                            <td>404 Đường G, Nha Trang</td>
-                                            <td><img width="80px" src="../image/wonmen.jpg" alt="Hoang Thi G"></td>
-                                            <td>hoangthig@example.com</td>
-                                            <td>0978901234</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Nguyễn Quang H</td>
-                                            <td>29</td>
-                                            <td>505 Đường H, Vũng Tàu</td>
-                                            <td><img width="80px" src="../image/man.jpg" alt="Nguyen Quang H"></td>
-                                            <td>nguyenquangh@example.com</td>
-                                            <td>0989012345</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Trương Kim I</td>
-                                            <td>40</td>
-                                            <td>606 Đường I, Quảng Ninh</td>
-                                            <td><img width="80px" src="../image/wonmen.jpg" alt="Truong Kim I"></td>
-                                            <td>truongkimi@example.com</td>
-                                            <td>0990123456</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Lâm Thanh J</td>
-                                            <td>31</td>
-                                            <td>707 Đường J, Hà Nội</td>
-                                            <td><img width="80px" src="../image/man.jpg" alt="Lam Thanh J"></td>
-                                            <td>lamthanhj@example.com</td>
-                                            <td>0911234567</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Nguyễn Thành K</td>
-                                            <td>23</td>
-                                            <td>808 Đường K, TP. Hồ Chí Minh</td>
-                                            <td><img width="80px" src="../image/man.jpg" alt="Nguyen Thanh K"></td>
-                                            <td>nguyenthanhk@example.com</td>
-                                            <td>0922345678</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Trần Minh L</td>
-                                            <td>26</td>
-                                            <td>909 Đường L, Đà Nẵng</td>
-                                            <td><img width="80px" src="../image/man.jpg" alt="Tran Minh L"></td>
-                                            <td>tranminhl@example.com</td>
-                                            <td>0933456789</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Phạm Thanh M</td>
-                                            <td>34</td>
-                                            <td>1010 Đường M, Hải Phòng</td>
-                                            <td><img width="80px" src="../image/man.jpg" alt="Pham Thanh M"></td>
-                                            <td>phamthanhm@example.com</td>
-                                            <td>0944567890</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Hoàng Minh N</td>
-                                            <td>38</td>
-                                            <td>1111 Đường N, Bình Dương</td>
-                                            <td><img width="80px" src="../image/man.jpg" alt="Hoang Minh N"></td>
-                                            <td>hoangminhn@example.com</td>
-                                            <td>0955678901</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Nguyễn Thị O</td>
-                                            <td>29</td>
-                                            <td>1212 Đường O, Cần Thơ</td>
-                                            <td><img width="80px" src="../image/wonmen.jpg" alt="Nguyen Thi O"></td>
-                                            <td>nguyenthio@example.com</td>
-                                            <td>0966789012</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Vũ Thị P</td>
-                                            <td>27</td>
-                                            <td>1313 Đường P, Nha Trang</td>
-                                            <td><img width="80px" src="../image/wonmen.jpg" alt="Vu Thi P"></td>
-                                            <td>vuthip@example.com</td>
-                                            <td>0977890123</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Trương Văn Q</td>
-                                            <td>22</td>
-                                            <td>1414 Đường Q, Vũng Tàu</td>
-                                            <td><img width="80px" src="../image/man.jpg" alt="Truong Van Q"></td>
-                                            <td>truongvanq@example.com</td>
-                                            <td>0988901234</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Đoàn Minh R</td>
-                                            <td>32</td>
-                                            <td>1515 Đường R, Quảng Ninh</td>
-                                            <td><img width="80px" src="../image/man.jpg" alt="Doan Minh R"></td>
-                                            <td>doanminhr@example.com</td>
-                                            <td>0999012345</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Phan Kim S</td>
-                                            <td>24</td>
-                                            <td>1616 Đường S, Hà Nội</td>
-                                            <td><img width="80px" src="../image/wonmen.jpg" alt="Phan Kim S"></td>
-                                            <td>phankims@example.com</td>
-                                            <td>0910123456</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Lê Quang T</td>
-                                            <td>27</td>
-                                            <td>1717 Đường T, TP. Hồ Chí Minh</td>
-                                            <td><img width="80px" src="../image/man.jpg" alt="Le Quang T"></td>
-                                            <td>lequangt@example.com</td>
-                                            <td>0921234567</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Nguyễn Minh U</td>
-                                            <td>29</td>
-                                            <td>1818 Đường U, Đà Nẵng</td>
-                                            <td><img width="80px" src="../image/man.jpg" alt="Nguyen Minh U"></td>
-                                            <td>nguyenminhu@example.com</td>
-                                            <td>0932345678</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Trần Thanh V</td>
-                                            <td>31</td>
-                                            <td>1919 Đường V, Hải Phòng</td>
-                                            <td><img width="80px" src="../image/man.jpg" alt="Tran Thanh V"></td>
-                                            <td>tranthanhv@example.com</td>
-                                            <td>0943456789</td>
-                                        </tr>
-                                    </thead>
-                                    <tfoot>
-                                       
-                                    </tfoot>
-                                    <tbody>
-                                    
-                                    </tbody>
-                                </table>
-                            </div>
+
+                    <!-- DataTales Example -->  
+                    <div class="card shadow mb-4">  
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Bảng User</h6>
+                        </div>
+                        <table id="userTable">
+                            <thead>
+                                <tr>
+                                    <th>Tên Người Dùng</th>
+                                    <th>Tuổi</th>
+                                    <th>Địa Chỉ</th>
+                                    <th>Ảnh</th>
+                                    <th>Email</th>
+                                    <th>SĐT</th>
+                                    <th>Hành Động</th>
+                                </tr>
+                            </thead>
+                            <tbody id="userBody">
+                                <!-- Dữ liệu người dùng sẽ được thêm vào bằng JavaScript -->
+                            </tbody>
+                        </table>
+                    
+                        <!-- Modal thêm/sửa người dùng -->
+                        <div id="userModal" style="display:none;  top:30%; left:30%; background:#fff; padding:20px; border:1px solid #ddd; box-shadow: 0px 4px 6px rgba(0,0,0,0.1);">
+                            <h3 id="modalTitle">Thêm Người Dùng</h3>
+                            <label>Tên người dùng:</label><br>
+                            <input type="text" id="userName"><br><br>
+                            <label>Tuổi:</label><br>
+                            <input type="number" id="age"><br><br>
+                            <label>Địa chỉ:</label><br>
+                            <input type="text" id="address"><br><br>
+                            <label>Ảnh (URL):</label><br>
+                            <input type="text" id="imageURL"><br><br>
+                            <label>Email:</label><br>
+                            <input type="email" id="email"><br><br>
+                            <label>SĐT:</label><br>
+                            <input type="text" id="phone"><br><br>
+                            <button onclick="saveUser()">Lưu</button>
+                            <button onclick="hideModal()">Hủy</button>
                         </div>
                     </div>
 
@@ -637,7 +491,7 @@
             </div>
         </div>
     </div>
-
+<script src="js/manageUser.js"></script>
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -1,6 +1,7 @@
 
 function loginUser(){
 const tagData = localStorage.getItem("tagData");
+
 console.log(tagData);
 if (tagData) {
     const loginHoverDiv = document.querySelector(".login-hover");
