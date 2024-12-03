@@ -1,7 +1,7 @@
 
 function loginUser(){
 const tagData = localStorage.getItem("tagData");
-
+localStorage.removeItem("tagData");
 console.log(tagData);
 if (tagData) {
     const loginHoverDiv = document.querySelector(".login-hover");

@@ -261,6 +261,7 @@ function continueToNext() {
     const citySelect = document.getElementById('city');
     const districtSelect = document.getElementById('district');
     const addressSelect = document.getElementById('address');
+    const numberHours = document.getElementById('number-hours');
 
     // Kiểm tra nếu thiếu thông tin cần thiết
     if (fullname === '' || phone === '' || citySelect.value === '' || districtSelect.value === '') {
@@ -275,7 +276,8 @@ function continueToNext() {
         address: {
             city: citySelect.value,
             district: districtSelect.value,
-            address: addressSelect.value
+            address: addressSelect.value,
+            numberHours: numberHours.value
         }
     };
 
@@ -293,4 +295,10 @@ function checkUser(){
     }else{
         window.location.href = 'cartProduct.html';
     }
+
+
+}
+function resetForm(){
+window.location.href = 'cartProduct.html';
+
 }

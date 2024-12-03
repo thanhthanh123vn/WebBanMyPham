@@ -8,6 +8,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <style>
+          .updateUser {
+         
+         background-color: #4e73df;
+         color: rgb(9, 255, 0);
+         padding: 10px 20px;
+         border-radius: 5px;
+         text-decoration: none;
+         margin-left: 20px;  
+         cursor: pointer;
+         margin-left: 44%;
+         margin-top: 1%;
+     }  
+     .updateUser:hover{
+      
+     background-color: #00ff40;
+     text-decoration:none ;
+     color: white;
+  }
+    </style>
 
     <title>SB Admin 2 - Tables</title>
 
@@ -22,17 +42,7 @@
 
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-    <style>
-        .updateUser {
-            background-color: #4e73df;
-            color: rgb(9, 255, 0);
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            margin-left: 20px;
-            cursor: pointer;
-        }
-    </style>
+    
 
 </head>
 
@@ -408,7 +418,8 @@
                         <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-primary">Bảng User</h6>
                         </div>
-                        <table id="userTable">
+                        <table id="userTable" style="padding: 10px 20px;
+    margin-left: 10px;">
                             <thead>
                                 <tr>
                                     <th>Tên Người Dùng</th>

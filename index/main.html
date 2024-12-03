@@ -14,7 +14,7 @@
 <div class="popup" id="popup">
     <div class="popup-content">
         <img src="../image/logo.png" alt="Logo" class="popup-logo">
-        <p>Click vào Đồng Ý để nhận thông tin khuyến mãi nhanh nhất từ Hasaki</p>
+        <p>Click vào Đồng Ý để nhận thông tin khuyến mãi nhanh nhất từ TTT.vn</p>
         <div class="popup-buttons">
             <button class="popup-btn" id="deny-btn">Không đồng ý</button>
             <button class="popup-btn agree" id="agree-btn">Đồng Ý</button>
@@ -132,7 +132,7 @@
                     <div class="header-icon-sub">
                         <img src="https://hasaki.vn/images/graphics/icon_header_1.svg">
 
-                        <a class="cart-icon" onclick="checkUser()"> Giỏ hàng <span class="cart-count">1</span></a>
+                        <a class="cart-icon" onclick="checkUser()" > Giỏ hàng <span class="cart-count">1</span></a>
                     </div>
                 </div>
             </div>
@@ -287,158 +287,40 @@
                 <div class="flash-deals-header">
                     <span>Flash Deals</span>
                     <div class="timer">
-                        <span>10</span> : <span>52</span> : <span>54</span>
+                        <span class="timer-day"></span>
                     </div>
                 </div>
-                <div class="products">
-                    <div class="product-item">
-                        <img src="https://media.hcdn.vn/catalog/product/p/r/promotions-auto-nuoc-tay-trang-tuoi-mat-l-oreal-3-in-1-danh-cho-da-dau-da-hon-hop-400ml_VLF3ivLnqLaFKFed_img_220x220_0dff4c_fit_center.png"
-                             alt="Product 1">
-                        <div class="product-info">
-                            <span class="discount">35% OFF</span>
-                            <span class="price">148.000 ₫</span>
-                            <span class="original-price">229.000 ₫</span>
-                            <p class="product-name">Nước Tẩy Trang L'Oreal Tươi Mát Cho Da Dầu, Hỗn Hợp</p>
-                        </div>
-
-                    </div>
-                    <div class="product-item">
-                        <img src="https://media.hcdn.vn/catalog/product/f/a/facebook-dynamic-318900012-1730367448_img_220x220_0dff4c_fit_center.jpg"
-                             alt="Product 2">
-                        <div class="product-info">
-                            <span class="discount">52% OFF</span>
-                            <span class="price">209.000 ₫</span>
-                            <span class="original-price">435.000 ₫</span>
-                            <p class="product-name">Nước Hoa Hồng Klairs Không Mùi Cho Da Nhạy Cảm 180ml</p>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <img src="https://media.hcdn.vn/catalog/product/f/a/facebook-dynamic-253900006-1695973833_img_220x220_0dff4c_fit_center.jpg"
-                             alt="Product 3">
-                        <div class="product-info">
-                            <span class="discount">51% OFF</span>
-                            <span class="price">219.000 ₫</span>
-                            <span class="original-price">445.000 ₫</span>
-                            <p class="product-name">Kem Chống Nắng Skin1004 Cho Da Nhạy Cảm SPF 50+ 50ml</p>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <img src="https://media.hcdn.vn/catalog/product/p/r/promotions-auto-nuoc-tay-trang-bioderma-danh-cho-da-nhay-cam-500ml_ZhseJ4SSbNTNotA5_img_220x220_0dff4c_fit_center.png"
-                             alt="Product 4">
-                        <div class="product-info">
-                            <span class="discount">34% OFF</span>
-                            <span class="price">348.000 ₫</span>
-                            <span class="original-price">525.000 ₫</span>
-                            <p class="product-name">Nước Tẩy Trang Bioderma Dành Cho Da Nhạy Cảm 500ml</p>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <img src="https://media.hcdn.vn/catalog/product/f/a/facebook-dynamic-422202025-1701315561_img_220x220_0dff4c_fit_center.png"
-                             alt="Product 5">
-                        <div class="product-info">
-                            <span class="discount">30% OFF</span>
-                            <span class="price">115.000 ₫</span>
-                            <span class="original-price">165.000 ₫</span>
-                            <p class="product-name">Tẩy Da Chết Mặt Cocoon Cà Phê Đắk Lắk 150ml</p>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <img src="https://media.hcdn.vn/catalog/product/f/a/facebook-dynamic-bong-tay-trang-hotosu-cao-cap-150-mieng-1718617065_img_220x220_0dff4c_fit_center.jpg"
-                             alt="Product 6">
-                        <div class="product-info">
-                            <span class="discount">96% OFF</span>
-                            <span class="price">26.000 ₫</span>
-                            <span class="original-price">50.000 ₫</span>
-                            <p class="product-name">Bông Tẩy Trang Hoto Cao Cấp 150 Miếng</p>
-                        </div>
-                    </div>
+             
+                <div class="products" id="productSlider">
+                    <!-- Các sản phẩm sẽ được chèn vào đây -->
+                  
+                </div>
+                <div class="directPage">
+                <button class="prev" style="padding: 10px 12px; background-color:gray ; cursor: pointer; border: 2px; border-radius: 2px;" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next"  onclick="changeSlide(1)">&#10095;</button>
                 </div>
             </div>
+       
 
             <!-- List Product -->
             <div class="list-product">
                 <div class="list-header">
                     <span>Danh Mục Sản Phẩm</span>
                 </div>
-                <div class="products2">
+                <div class="products2 category-product" id="category-product">
+                    <!-- Các danh mục sản phẩm sẽ được hiển thị ở đây -->
                     <div class="category">
-                        <img src="https://media.hcdn.vn/catalog/category/c24-trang-diem-moi_img_120x120_17b03c_fit_center.jpg"
-                             alt="Trang Điểm Môi">
-                        <p>Trang Điểm Môi</p>
-                    </div>
-                    <div class="category">
-                        <img src="https://media.hcdn.vn/catalog/category/30_1_img_120x120_17b03c_fit_center.jpg"
-                             alt="Mặt Nạ">
-                        <p>Mặt Nạ</p>
-                    </div>
-                    <div class="category">
-                        <img src="https://media.hcdn.vn/catalog/category/c52-trang-diem-mat_img_120x120_17b03c_fit_center.jpg"
-                             alt="Trang Điểm Mặt">
-                        <p>Trang Điểm Mặt</p>
-                    </div>
-                    <div class="category">
-                        <img src="https://media.hcdn.vn/catalog/category/19_3_img_120x120_17b03c_fit_center.jpg"
-                             alt="Sữa Rửa Mặt">
-                        <p>Sữa Rửa Mặt</p>
-                    </div>
-                    <div class="category">
-                        <img src="https://media.hcdn.vn/catalog/category/c50-trang-diem-mat_img_120x120_17b03c_fit_center.jpg"
-                             alt="Trang Điểm Mắt">
-                        <p>Trang Điểm Mắt</p>
-                    </div>
-                    <div class="category">
-                        <img src="https://media.hcdn.vn/catalog/category/2144_img_120x120_17b03c_fit_center.jpg"
-                             alt="Dầu Gội Và Dầu Xả">
-                        <p>Dầu Gội Và Dầu Xả</p>
-                    </div>
-                    <div class="category">
-                        <img src="https://media.hcdn.vn/catalog/category/11_1_img_120x120_17b03c_fit_center.jpg"
-                             alt="Chống Nắng Da Mặt">
-                        <p>Chống Nắng Da Mặt</p>
-                    </div>
-                    <div class="category">
-                        <img src="https://media.hcdn.vn/catalog/category/26_1_img_120x120_17b03c_fit_center.jpg"
-                             alt="Sữa Tắm">
-                        <p>Sữa Tắm</p>
-                    </div>
-                    <div class="category">
-                        <img src="https://media.hcdn.vn/catalog/category/48_1_img_120x120_17b03c_fit_center.jpg"
-                             alt="Tẩy Trang Mặt">
-                        <p>Tẩy Trang Mặt</p>
-                    </div>
-                    <div class="category">
-                        <img src="https://media.hcdn.vn/catalog/category/c1897-duong-the_img_120x120_17b03c_fit_center.jpg"
-                             alt="Dưỡng Thể">
-                        <p>Dưỡng Thể</p>
-                    </div>
-                    <div class="category">
-                        <img src="https://media.hcdn.vn/catalog/category/nuoc-hoa-c103_2_4_img_120x120_17b03c_fit_center.jpg"
-                             alt="Nước Hoa">
-                        <p>Nước Hoa</p>
-                    </div>
-                    <div class="category">
-                        <img src="https://media.hcdn.vn/catalog/category/cover-image-cham-soc-rang-mieng-c323_img_120x120_17b03c_fit_center.jpg"
-                             alt="Chăm Sóc Răng Miệng">
-                        <p>Chăm Sóc Răng Miệng</p>
-                    </div>
-                    <div class="category">
-                        <img src="https://media.hcdn.vn/catalog/category/c1899-khu-mui_img_120x120_17b03c_fit_center.jpg"
-                             alt="Khử Mùi">
-                        <p>Khử Mùi</p>
-                    </div>
-                    <div class="category">
-                        <img src="https://media.hcdn.vn/catalog/category/1901_1_img_120x120_17b03c_fit_center.jpg"
-                             alt="Tẩy Da Chết">
-                        <p>Chăm Sóc Phụ Nữ</p>
-                    </div>
-                    <div class="category">
-                        <img src="https://media.hcdn.vn/catalog/category/102_1_img_120x120_17b03c_fit_center.jpg"
-                             alt="Dầu Tẩy Trang">
-                        <p>Serum / Dầu Dưỡng Tóc</p>
-                    </div>
-                </div>
 
+                        </div>
+                </div>
+                <div class="directPage">
+                <button class="prevCategory prev" style="padding: 10px 12px; cursor: pointer; background-color:gray ; border: 2px; border-radius: 2px;" onclick="changeCategorySlide(-1)">&#10094;</button>
+                <button class="nextCategory next"  onclick="changeCategorySlide(1)">&#10095;</button>
+                </div>
+                <!-- Form thêm sản phẩm mới -->
+               
             </div>
+            
 
             <!--Thương hiệu-->
             <div class="brand-section">
@@ -446,102 +328,13 @@
                     <span>Thương hiệu</span>
                 </div>
                 <div class="brand-list">
-                    <div class="brand-item">
-                        <img src="https://media.hcdn.vn/hsk/1731925101carslanpop1811_img_410x410_8c5088_fit_center.jpg"
-                             alt="Carslan">
-                        <p>Carslan</p>
-                    </div>
-                    <div class="brand-item">
-                        <img src="https://media.hcdn.vn//hsk/brandL-oreal-cover-brand-500x500-190920241726736320_img_190x190_30c310_fit_center.jpg"
-                             alt="L'Oréal Paris">
-                        <p>L'Oréal Paris</p>
-                    </div>
-                    <div class="brand-item">
-                        <img src="https://media.hcdn.vn//hsk/brandcocoon-image-cover-500x5001712401401_img_190x190_30c310_fit_center.jpg"
-                             alt="Cocoon">
-                        <p>Cocoon</p>
-                    </div>
-                    <div class="brand-item">
-                        <img src="https://media.hcdn.vn//hsk/brandDove-cover-image-500-x-5001720598834_img_190x190_30c310_fit_center.jpg"
-                             alt="Dove">
-                        <p>Dove</p>
-                    </div>
-                    <div class="brand-item">
-                        <img src="https://media.hcdn.vn//hsk/brandbioderma-image-cover-500x500-171020241729156097_img_190x190_30c310_fit_center.jpg"
-                             alt="Bioderma">
-                        <p>Bioderma</p>
-                    </div>
-                    <div class="brand-item">
-                        <img src="https://media.hcdn.vn//hsk/brandLa-roche-posay-image-cover-500-x-5001718952735_img_190x190_30c310_fit_center.jpg"
-                             alt="La Roche-Posay">
-                        <p>La Roche-Posay</p>
-                    </div>
-                    <div class="brand-item">
-                        <img src="https://media.hcdn.vn//hsk/brandvaselineimage-cover500-x-5001715963019_img_190x190_30c310_fit_center.jpg"
-                             alt="Vaseline">
-                        <p>Vaseline</p>
-                    </div>
-                    <div class="brand-item">
-                        <img src="https://media.hcdn.vn//hsk/brandCeraveimagecover500x5001712652261_img_190x190_30c310_fit_center.jpg"
-                             alt="CeraVe">
-                        <p>CeraVe</p>
-                    </div>
-                    <div class="brand-item">
-                        <img src="https://media.hcdn.vn//hsk/brandNarisCosmeticsimage-cover500x5001715596352_img_190x190_30c310_fit_center.jpg"
-                             alt="Naris Up">
-                        <p>Naris Up</p>
-                    </div>
-                    <div class="brand-item">
-                        <img src="https://media.hcdn.vn//hsk/brandeucerinimagecover500x5001712730538_img_190x190_30c310_fit_center.jpg"
-                             alt="Eucerin">
-                        <p>Eucerin</p>
-                    </div>
-                    <div class="brand-item">
-                        <img src="https://media.hcdn.vn//hsk/brandSunplaycover-brand500x5001716547706_img_190x190_30c310_fit_center.jpg"
-                             alt="Skin Aqua">
-                        <p>Skin Aqua</p>
-                    </div>
-                    <div class="brand-item">
-                        <img src="https://media.hcdn.vn//hsk/brandSunplaycover-brand500x5001716547706_img_190x190_30c310_fit_center.jpg"
-                             alt="Skin1004">
-                        <p>Skin1004</p>
-                    </div>
-                    <div class="brand-item">
-                        <img src="https://media.hcdn.vn//hsk/brandcetaphil-image-cover500x5001716177431_img_190x190_30c310_fit_center.jpg"
-                             alt="Cetaphil">
-                        <p>Cetaphil</p>
-                    </div>
-                    <div class="brand-item">
-                        <img src="https://media.hcdn.vn//hsk/brandKlairsimage-cover500x5001715596332_img_190x190_30c310_fit_center.jpg"
-                             alt="Klairs">
-                        <p>Klairs</p>
-                    </div>
-                    <div class="brand-item">
-                        <img src="https://media.hcdn.vn//hsk/brandGarnierimage-cover500x5001716200491_img_190x190_30c310_fit_center.jpg"
-                             alt="Garnier">
-                        <p>Garnier</p>
-                    </div>
-                    <div class="brand-item">
-                        <img src="https://media.hcdn.vn//hsk/brandHada-Labo-image-cover-500x5001718186717_img_190x190_30c310_fit_center.jpg"
-                             alt="Hada Labo">
-                        <p>Hada Labo</p>
-                    </div>
-                    <div class="brand-item">
-                        <img src="https://media.hcdn.vn//hsk/brandAnessaimage-cover500x5001715855624_img_190x190_30c310_fit_center.jpg"
-                             alt="Anessa">
-                        <p>Anessa</p>
-                    </div>
-                    <div class="brand-item">
-                        <img src="https://media.hcdn.vn//hsk/brandVichyimagecover500x5001712652245_img_190x190_30c310_fit_center.jpg"
-                             alt="Vichy">
-                        <p>Anessa</p>
-                    </div>
-                    <div class="brand-item">
-                        <img src="https://media.hcdn.vn//hsk/brandjudydoll-image-cover-500x5001721187082_img_190x190_30c310_fit_center.jpg"
-                             alt="JuDyDoll">
-                        <p>Anessa</p>
-                    </div>
+                  
+                    
                 </div>
+                <div class="directPage">
+                <button class="prevBrand prev"  onclick="prevSlide()">&#10094;</button>
+                <button class="nextBrand next"   onclick="nextSlide()">&#10095;</button>
+            </div>
             </div>
 
             <!--Bán chạy-->
@@ -598,6 +391,7 @@
                             <p class="item-count">333 products</p>
                         </div>
                     </div>
+                    
                     <div class="top-search-item">
                         <img src="https://hasaki.vn/img/category/cate-son-duong-moi.jpg" alt="Lip Balm">
                         <div class="item-info">
@@ -623,27 +417,17 @@
             </div>
 
             <!--Sp Đã Xem-->
-            <div class="viewed-products">
-                <h3>Đã xem</h3>
-                <div class="product-item">
-                    <img src="https://media.hcdn.vn/catalog/product/p/r/promotions-auto-nuoc-tay-trang-tuoi-mat-l-oreal-3-in-1-danh-cho-da-dau-da-hon-hop-400ml_VLF3ivLnqLaFKFed_img_80x80_d200c5_fit_center.png"
-                         alt="Sản phẩm đã xem">
-                </div>
-            </div>
+            
 
             <!--GỢi ý-->
-            <div class="suggested-products">
-                <div class="header-info">
+            <div class="header-info">
                     <h3>Gợi ý cho bạn</h3>
                     <button id="view-more">Xem thêm</button>
                 </div>
-            </div>
             <div class="product-list">
+                
                 <div class="product-header">
-
                     <div class="products">
-
-
                         <div class="product-item">
                             <img width="80px"
                                  src="https://media.hcdn.vn/catalog/product/f/a/facebook-dynamic-kem-danh-rang-marvis-whitening-mint-lam-trang-rang-85ml-1732075625_img_300x300_b798dd_fit_center.jpg"
@@ -657,33 +441,36 @@
                                  src="https://media.hcdn.vn/catalog/product/f/a/facebook-dynamic-kem-danh-rang-median-dental-iq-lam-sang-mau-trang-bac-120g-moi-1723800420_img_300x300_b798dd_fit_center.jpg"
                                  alt="Product 2">
                             <p class="product-name">Median</p>
-
                             <p class="product-desc">Kem Đánh Răng Median IQ Tartar Protection</p>
                             <p class="product-price">38.000 đ</p>
                         </div>
                         <!-- Thêm nhiều sản phẩm khác -->
-
-
                     </div>
                 </div>
             </div>
-            <div class="suggested-products">
+            
+
+                        <!--Ship-->
+        
+            
+        <div style="height: 80px;"></div>
+            <div class="ship-products">
                 <div class="header-info">
                     <h3>Giao 2h</h3>
                     <button id="view-more">Xem thêm</button>
                 </div>
             </div>
-            <div class="product-list">
+            <div class="product-list-ship">
                 <div class="product-header">
 
                     <div class="products">
-                        <div class="product-item">
+                        <div class="product-item ship-2hours">
                             <img src="https://media.hcdn.vn/hsk/icon/v4/for_you.png" alt="Product 1">
                             <p class="product-name">Giao nhanh 1</p>
                             <p class="product-desc">Kem Dưỡng Da Nhanh Giao</p>
                             <p class="product-price">250.000 đ</p>
                         </div>
-                        <div class="product-item">
+                        <div class="product-item ship-2hours">
                             <img src="https://media.hcdn.vn/hsk/icon/v4/nowfree.png" alt="Product 2">
                             <p class="product-name">Giao nhanh 2</p>
                             <p class="product-desc">Bột Giặt Giao Nhanh</p>
@@ -1291,6 +1078,7 @@
                 </div>
                 <div class="chat-box" id="chatBox" style="display: none;">
                     <div class="chat-content">
+                        <button class="close-chat" onclick="toggleChat()">X</button>
                         <p>Xin chào! Bạn cần hỗ trợ gì?</p>
                         <!-- Add more chat messages here if needed -->
                     </div>
@@ -1584,12 +1372,45 @@
 <script src="../js/alert.js">
 
 </script>
-
-
+<script src="../js/brandProducts.js"></script>
+<script src="../js/catogeryProduct.js"></script>
+<script src="../js/directProduct.js"></script>
 <script src="../js/searchProduct.js"></script>
+<script>
+// Lấy phần tử hiển thị thời gian
+var timerDay = document.querySelector('.timer-day');
 
+// Thời gian kết thúc khuyến mãi (1 ngày từ thời điểm hiện tại)
+var endTime = new Date();
+endTime.setDate(endTime.getDate() + 1); // Thêm 1 ngày
+
+function updateTimer() {
+    var now = new Date();
+    var remainingTime = endTime - now;
+
+    if (remainingTime <= 0) {
+        timerDay.innerHTML = "Khuyến mãi đã kết thúc!";
+        clearInterval(timerInterval); // Dừng cập nhật
+        return;
+    }
+
+    var hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+    timerDay.innerHTML = ` ${hours} : ${minutes} : ${seconds} `;
+}
+
+// Cập nhật thời gian mỗi giây
+var timerInterval = setInterval(updateTimer, 1000);
+
+// Hiển thị lần đầu
+updateTimer();
+
+</script>
 <script src="../js/updateUserMain.js"></script>
 <script src="../js/main.js"></script>
+
 <script>
     // Function to toggle chat box visibility
     function signUp() {

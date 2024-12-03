@@ -317,7 +317,7 @@ li.custom-font-size {
     background-color: lightgreen; /* Màu xanh lá nhạt */
     color: black; /* Màu chữ */
     border: none; /* Bỏ viền */
-    padding: 10px 20px; /* Đệm cho nút */
+  
     border-radius: 5px; /* Bo góc */
     cursor: pointer; /* Con trỏ chuột khi hover */
 }
@@ -382,6 +382,7 @@ li.custom-font-size {
 
 .main-infor-detail {
     margin-right: 490px;
+    width: 1068px;
 }
 
 .choose-detail {
