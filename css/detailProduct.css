@@ -1,7 +1,11 @@
 
 
 
-
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: lightgreen;
+}
 
 .cart-count {
     background-color: orange;
@@ -123,6 +127,8 @@
 .product-detail {
     float: left;
     display: flex;
+    width: 1900px;
+
 }
 
 #list-search-alpha ul {
@@ -268,6 +274,7 @@ li.custom-font-size {
     overflow-y: auto;
     border: 1px solid #ccc;
     padding: 10px;
+    cursor: pointer;
 }
 
 .container-image::-webkit-scrollbar {
@@ -357,18 +364,11 @@ li.custom-font-size {
     vertical-align: middle; /* Căn giữa theo chiều dọc */
 }
 
-/* Đảm bảo văn bản trong danh sách có căn chỉnh tốt */
-.your-infor {
-
-    background-color: white;
-
     .your-infor {
+        background-color: white;
         float: left;
-        padding-right: 40px;
+        padding: 10px;
     }
-
-    /* Các tùy chỉnh khác nếu cần */
-}
 
 .your-infor ul {
     list-style-type: none; /* Xóa dấu đầu dòng */
@@ -382,11 +382,14 @@ li.custom-font-size {
 
 .main-infor-detail {
     margin-right: 490px;
-    width: 1068px;
+    width: 1115px;
+}
+.font-bold{
+    font-weight: bold;
 }
 
 .choose-detail {
-    height: 30px; /* Chiều cao có thể điều chỉnh nếu cần */
+    height: 40px; /* Chiều cao có thể điều chỉnh nếu cần */
     display: flex;
     margin-top: 10px;
     margin-right: 70px;
@@ -405,7 +408,6 @@ li.custom-font-size {
 
 .choose-detail li {
     margin-right: 15px; /* Khoảng cách giữa các mục */
-    position: relative; /* Để có thể dùng border cho thẻ li */
 }
 
 .choose-detail li:not(:last-child)::after {
@@ -430,7 +432,9 @@ li.custom-font-size {
     text-decoration: none;
     color: black; /* Đổi màu chữ nếu cần */
 }
-
+.choose-detail a:hover {
+    color: #90ee90; /* Màu xanh lá nhạt */
+}
 #information {
     margin-top: 10px;
     margin-left: 45px; /* Căn trái */
@@ -471,6 +475,9 @@ li.custom-font-size {
     padding: 10px; /* Khoảng cách bên trong các ô */
     border: 1px solid #ddd; /* Đường viền cho ô */
 }
+#parameter td:first-child {
+    background-color: #f0f0f0; /* Màu nền xám nhạt */
+}
 
 #ingredient {
     margin-top: 10px;
@@ -491,14 +498,18 @@ li.custom-font-size {
     display: block; /* Đưa phần tử strong xuống dòng mới */
     margin-top: 10px; /* Khoảng cách phía trên */
 }
-
-#ingredient p {
-    margin: 5px 0; /* Khoảng cách giữa các đoạn văn */
+strong {
+    color: black;
 }
 
+#ingredient ul li {
+    margin: 5px 0; /* Khoảng cách giữa các dòng */
+    font-size: 16px; /* Cỡ chữ của nội dung */
+    line-height: 1.6; /* Độ cao dòng để dễ đọc */
+}
 #use {
     margin-top: 10px;
-
+    padding-bottom: 10px;
     background-color: white;
     margin-left: 45px; /* Căn trái */
     margin-right: 70px; /* Căn phải */
@@ -507,63 +518,197 @@ li.custom-font-size {
 #use h3 {
     font-size: 20px; /* Cỡ chữ cho tiêu đề */
     margin: 10px 20px;
+    padding-top:10px ;
     /* Khoảng cách trên và dưới cho tiêu đề */
 }
 
 #use p {
     margin: 5px 20px; /* Khoảng cách giữa các đoạn văn */
 }
-
+#use ul li {
+    margin: 5px 0; /* Khoảng cách giữa các dòng */
+    font-size: 16px; /* Cỡ chữ cho nội dung */
+    line-height: 1.6; /* Độ cao dòng để dễ đọc */
+}
 #Evaluate {
-    margin-top: 10px; /* Khoảng cách trên */
-    background-color: white; /* Màu nền */
-    margin-left: 45px; /* Căn trái */
-    margin-right: 70px; /* Căn phải */
-    padding: 15px; /* Khoảng cách bên trong để nội dung không sát viền */
-    border-radius: 5px; /* Bo góc nếu muốn */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    width: 600px;
+    margin: 20px 45px;
 }
 
 #Evaluate h3 {
-    font-size: 20px; /* Cỡ chữ cho tiêu đề */
-    margin: 10px 0; /* Khoảng cách trên và dưới cho tiêu đề */
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 #Evaluate p {
-    margin: 5px 0; /* Khoảng cách giữa các đoạn văn */
+    margin: 8px 0;
+    font-size: 14px;
+    color: #555;
 }
 
-#Q& A {
+#Evaluate strong {
+    font-size: 48px;
+    color: #f48024;
+    font-weight: bold;
+}
+
+#Evaluate span.rating-bar {
+    display: inline-block;
+    height: 10px;
+    margin-right: 10px;
+    background-color: #f48024;
+    border-radius: 5px;
+}
+
+#Evaluate span.five-stars {
+    width: 80%;
+}
+
+#Evaluate span.four-stars {
+    width: 50%;
+    background-color: #f8c847;
+}
+
+#Evaluate span.three-stars {
+    width: 30%;
+    background-color: #ccc;
+}
+
+#Evaluate span.two-stars {
+    width: 15%;
+    background-color: #aaa;
+}
+
+#Evaluate span.one-star {
+    width: 5%;
+    background-color: #e74c3c;
+}
+
+#Evaluate p span:first-child {
+    font-size: 18px;
+    margin-right: 10px;
+    vertical-align: middle;
+    color: #f48024;
+}
+
+#Evaluate .submit-review {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #f48024;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#Evaluate .submit-review:hover {
+    background-color: #e56717;
+    cursor: pointer;
+}
+/* Container chính */
+#Q&A {
+    margin-left: 45px;  /* Khoảng cách bên trái */
     margin-top: 10px; /* Khoảng cách trên */
-    background-color: white; /* Màu nền */
-    margin-left: 45px; /* Căn trái */
-    margin-right: 70px; /* Căn phải */
-    padding: 15px; /* Khoảng cách bên trong để nội dung không sát viền */
-    border-radius: 5px; /* Bo góc nếu muốn */
+    background-color: white; /* Nền màu trắng */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
 }
 
-#Q& A h3 {
+/* Tiêu đề */
+#Q&A h3 {
     font-size: 20px; /* Cỡ chữ cho tiêu đề */
     margin: 10px 0; /* Khoảng cách trên và dưới cho tiêu đề */
-    padding-left: 0; /* Bỏ padding bên trái nếu có */
 }
 
-#Q& A p {
-    margin: 5px 0; /* Khoảng cách giữa các đoạn văn */
-}
-
+/* Câu hỏi và câu trả lời */
 .question, .answer {
     border: 1px solid #ccc; /* Viền cho câu hỏi và câu trả lời */
     padding: 10px; /* Khoảng cách bên trong cho câu hỏi và câu trả lời */
-    margin: 10px 0; /* Khoảng cách giữa câu hỏi và câu trả lời */
     border-radius: 3px; /* Bo góc */
     background-color: #f9f9f9; /* Màu nền cho câu hỏi và câu trả lời */
+    margin-bottom: 10px; /* Khoảng cách giữa các câu hỏi và câu trả lời */
 }
 
-/* Nếu cần căn trái tiêu đề thêm 45px */
-#Q& A h3 {
-    padding-left: 45px; /* Căn trái cho tiêu đề */
+/* Câu hỏi và câu trả lời khi hover */
+.question:hover, .answer:hover {
+    background-color: #f1f1f1;
 }
+
+/* Input và button */
+#Q&A input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#Q&A button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#Q&A button:hover {
+    background-color: #45a049;
+}
+
+/* Câu hỏi và trả lời */
+.question, .answer {
+    margin-bottom: 20px;
+}
+
+.question p, .answer p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.question strong, .answer strong {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Đường dẫn Trả lời */
+.question p a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+}
+
+.question p a:hover {
+    text-decoration: underline;
+}
+
+/* Thích và Trả lời */
+.question p span, .answer p span {
+    font-size: 14px;
+    color: #28a745;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
 .containers {
     margin: 0 auto;
     width: 1500px;
+
+}
+.container {
+    margin: 0 auto;
+    width: 1400px;
+
 }
